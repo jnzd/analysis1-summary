@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.19)  25 JUL 2020 12:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.19)  25 JUL 2020 21:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -174,38 +174,107 @@ Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
 \f@nch@O@erf=\skip58
 \f@nch@O@olf=\skip59
 \f@nch@O@orf=\skip60
+) (c:/texlive/2020/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count190
+\mult@box=\box47
+\multicol@leftmargin=\dimen154
+\c@unbalance=\count191
+\c@collectmore=\count192
+\doublecol@number=\count193
+\multicoltolerance=\count194
+\multicolpretolerance=\count195
+\full@width=\dimen155
+\page@free=\dimen156
+\premulticols=\dimen157
+\postmulticols=\dimen158
+\multicolsep=\skip61
+\multicolbaselineskip=\skip62
+\partial@page=\box48
+\last@line=\box49
+\maxbalancingoverflow=\dimen159
+\mult@rightbox=\box50
+\mult@grightbox=\box51
+\mult@gfirstbox=\box52
+\mult@firstbox=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\c@minrows=\count196
+\c@columnbadness=\count197
+\c@finalcolumnbadness=\count198
+\last@try=\dimen160
+\multicolovershoot=\dimen161
+\multicolundershoot=\dimen162
+\mult@nat@firstbox=\box91
+\colbreak@box=\box92
+\mc@col@check@num=\count199
 ) (c:/texlive/2020/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
-\ttl@box=\box47
-\beforetitleunit=\skip61
-\aftertitleunit=\skip62
-\ttl@plus=\dimen154
-\ttl@minus=\dimen155
+\ttl@box=\box93
+\beforetitleunit=\skip63
+\aftertitleunit=\skip64
+\ttl@plus=\dimen163
+\ttl@minus=\dimen164
 \ttl@toksa=\toks24
-\titlewidth=\dimen156
-\titlewidthlast=\dimen157
-\titlewidthfirst=\dimen158
+\titlewidth=\dimen165
+\titlewidthlast=\dimen166
+\titlewidthfirst=\dimen167
 ) (c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-06-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count190
-\l__pdf_internal_box=\box48
+\l__kernel_color_stack_int=\count266
+\l__pdf_internal_box=\box94
 ) (c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.aux)
 \openout1 = `summary.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -214,13 +283,13 @@ LaTeX Font Info:    ... okay on input line 19.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(51.21495pt, 495.07797pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 742.61694pt, 51.21495pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=495.07797pt
-* \textheight=742.61694pt
+* modes: landscape 
+* h-part:(L,W,R)=(51.21495pt, 742.61694pt, 51.21495pt)
+* v-part:(T,H,B)=(51.21495pt, 495.07797pt, 51.21495pt)
+* \paperwidth=845.04684pt
+* \paperheight=597.50787pt
+* \textwidth=742.61694pt
+* \textheight=495.07797pt
 * \oddsidemargin=-21.05504pt
 * \evensidemargin=-21.05504pt
 * \topmargin=-58.05504pt
@@ -228,7 +297,7 @@ LaTeX Font Info:    ... okay on input line 19.
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=65.0pt
+* \marginparwidth=144.0pt
 * \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
@@ -243,16 +312,16 @@ LaTeX Font Info:    ... okay on input line 19.
 
 (c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count191
-\scratchdimen=\dimen159
-\scratchbox=\box49
-\nofMPsegments=\count192
-\nofMParguments=\count193
+\scratchcounter=\count267
+\scratchdimen=\dimen168
+\scratchbox=\box95
+\nofMPsegments=\count268
+\nofMParguments=\count269
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count194
-\MPscratchDim=\dimen160
-\MPnumerator=\count195
-\makeMPintoPDFobject=\count196
+\MPscratchCnt=\count270
+\MPscratchDim=\dimen169
+\MPnumerator=\count271
+\makeMPintoPDFobject=\count272
 \everyMPtoPDFconversion=\toks26
 ) (c:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -260,117 +329,100 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 27.
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 33.
  (c:/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 27.
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 33.
  (c:/texlive/2020/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 27.
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 33.
  (c:/texlive/2020/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 27.
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 33.
  (c:/texlive/2020/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 27.
+(Font)              scaled to size 10.42007pt on input line 33.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 27.
+(Font)              scaled to size 7.91925pt on input line 33.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 27.
+(Font)              scaled to size 6.25204pt on input line 33.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 27.
+(Font)              scaled to size 10.42007pt on input line 33.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 27.
+(Font)              scaled to size 7.91925pt on input line 33.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 27.
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 27.
+(Font)              scaled to size 6.25204pt on input line 33.
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 33.
  (c:/texlive/2020/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 33.
  (c:/texlive/2020/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 83--420
-
+Underfull \hbox (badness 8019) in paragraph at lines 147--196
+[][][][][][] [][][][][][]\T1/ppl/m/n/10 [[][][][][][]] $\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 a[]\OT1/zplm/m/n/10 )[]$ \T1/ppl/m/n/10 ist \T1/ppl/b/n/10 mono-ton
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--420
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--420
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--420
-
+Underfull \hbox (badness 10000) in paragraph at lines 197--208
+[][][][][][] \T1/ppl/m/n/10 Sei []$\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 a[]\OT1/zplm/m/n/10 )[]$[] \T1/ppl/m/n/10 eine
  []
 
 [1{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2]
-Overfull \hbox (13.4944pt too wide) in paragraph at lines 422--760
-[][][][][][] \T1/ppl/m/n/10 [[][][][][][]/[][][][][][]] [][][][][][] $\OML/zplm/m/it/10 f$ \T1/ppl/m/n/10 ist nach \T1/ppl/b/n/10 [oben/unten] beschränkt \T1/ppl/m/n/10 wenn []$\OML/zplm/m/it/10 f\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 D\OT1/zplm/m/n/10 ) \OMS/zplm/m/n/10 ^^R \U/fplmbb/m/n/10 R$[] \T1/ppl/m/n/10 nach \T1/ppl/b/n/10 [oben/unten] beschränkt 
+]
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 257.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 257.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 257.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 257.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 257.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 257.
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--506
+\OML/zplm/m/it/10 a[]b[] \OT1/zplm/m/n/10 + (\OML/zplm/m/it/10 a[]b[] \OT1/zplm/m/n/10 + \OML/zplm/m/it/10 a[]b[]\OT1/zplm/m/n/10 ) + (\OML/zplm/m/it/10 a[]b[] \OT1/zplm/m/n/10 + \OML/zplm/m/it/10 a[]b[] \OT1/zplm/m/n/10 + \OML/zplm/m/it/10 a[]b[]\OT1/zplm/m/n/10 ) + \OT1/ppl/m/n/10 ...$[]
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 422--760
-
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 509--524
+[][][][][][] \T1/ppl/m/n/10 [[][][][][][]/[][][][][][]] [][][][][][] $\OML/zplm/m/it/10 f$ \T1/ppl/m/n/10 ist nach
  []
 
-[3] [4] [5] [6]
-Overfull \hbox (4.49004pt too wide) in paragraph at lines 1094--1467
-[][][][][][] \T1/ppl/m/n/10 Seien []$\OML/zplm/m/it/10 f\OT1/ppl/m/n/10 , \OML/zplm/m/it/10 g \OT1/zplm/m/n/10 : [\OML/zplm/m/it/10 a\OT1/ppl/m/n/10 , \OML/zplm/m/it/10 b\OT1/zplm/m/n/10 ] [][]\OMS/zplm/m/n/10 ! \U/fplmbb/m/n/10 R$[] \T1/ppl/b/n/10 beschränkt, in-te-grier-bar und []$\OML/zplm/m/it/10 ^^U \OMS/zplm/m/n/10 2 \U/fplmbb/m/n/10 R$[]\T1/ppl/m/n/10 . Dann sind []$\OML/zplm/m/it/10 f \OT1/zplm/m/n/10 + \OML/zplm/m/it/10 g$[]\T1/ppl/m/n/10 , []$\OML/zplm/m/it/10 ^^U \OMS/zplm/m/n/10 ^^A \OML/zplm/m/it/10 f$[]\T1/ppl/m/n/10 , []$\OML/zplm/m/it/10 f \OMS/zplm/m/n/10 ^^A \OML/zplm/m/it/10 g$[]\T1/ppl/m/n/10 , []$\OMS/zplm/m/n/10 j\OML/zplm/m/it/10 f\OMS/zplm/m/n/10 j$[]\T1/ppl/m/n/10 ,[]$[]\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 f\OT1/ppl/m/n/10 , \OML/zplm/m/it/10 g\OT1/zplm/m/n/10 )$[]\T1/ppl/m/n/10 , 
+[3] [4] [5]
+Underfull \hbox (badness 5741) in paragraph at lines 1190--1563
+[]$\OML/zplm/m/it/10 s\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 f\OT1/zplm/m/n/10 ) = [] \OML/zplm/m/it/10 s\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 f\OT1/ppl/m/n/10 , \OML/zplm/m/it/10 P\OT1/zplm/m/n/10 )$[]\T1/ppl/m/n/10 , []$\OML/zplm/m/it/10 S\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 f\OT1/zplm/m/n/10 ) = [] \OML/zplm/m/it/10 S\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 f\OT1/ppl/m/n/10 , \OML/zplm/m/it/10 P\OT1/zplm/m/n/10 )$[]\T1/ppl/m/n/10 .
  []
 
-
-Overfull \hbox (1.15858pt too wide) in paragraph at lines 1094--1467
-[]\T1/ppl/m/n/10 eine Funk-tion []$\OML/zplm/m/it/10 f \OT1/zplm/m/n/10 : [\OML/zplm/m/it/10 a\OT1/ppl/m/n/10 , \OML/zplm/m/it/10 b\OT1/zplm/m/n/10 ] [][]\OMS/zplm/m/n/10 ! \U/fplmbb/m/n/10 R$[] \T1/ppl/b/n/10 kon-vergiert\T1/ppl/m/n/10 . So ist []$\OML/zplm/m/it/10 f$[] \T1/ppl/b/n/10 beschränkt in-te-grier-bar und []$[] [][] \OML/zplm/m/it/10 f[]\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 x\OT1/zplm/m/n/10 ) \OML/zplm/m/it/10 dx \OT1/zplm/m/n/10 = [][] \OML/zplm/m/it/10 f\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 x\OT1/zplm/m/n/10 ) \OML/zplm/m/it/10 dx$[]\T1/ppl/m/n/10 . 
+[6] [7]
+Underfull \hbox (badness 5302) in paragraph at lines 1796--1816
+[] \OML/zplm/m/it/10 x [] y \OMS/zplm/m/n/10 ^^G [] \OML/zplm/m/it/10 x [] y$ $[]\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 x \OMS/zplm/m/n/10 ^^F \OML/zplm/m/it/10 y\OT1/zplm/m/n/10 ) = []$
  []
 
-[7] [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 1714--1734
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1737--1755
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 1771--1791
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1793--1799
-
- []
-
-[11] (c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.aux) ) 
+[8] (c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.aux) ) 
 Here is how much of TeX's memory you used:
- 4290 strings out of 480478
- 54473 string characters out of 5903485
- 350458 words of memory out of 5000000
- 20234 multiletter control sequences out of 15000+600000
- 555686 words of font info for 81 fonts, out of 8000000 for 9000
+ 4443 strings out of 480478
+ 56698 string characters out of 5903485
+ 392620 words of memory out of 5000000
+ 20375 multiletter control sequences out of 15000+600000
+ 566851 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,11n,45p,432b,203s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,11n,45p,432b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.pdf" (11 pages, 202255 bytes).
+Output written on "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.pdf" (8 pages, 218629 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
