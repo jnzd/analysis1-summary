@@ -23,6 +23,15 @@
 \setlength{\parskip}{0pt}
 \setlength{\multicolsep}{4.0pt plus 2.0pt minus 1.5pt}
 
+\makeatletter
+\g@addto@macro\normalsize{
+  \setlength\abovedisplayskip{1pt}
+  \setlength\belowdisplayskip{1pt}
+  \setlength\abovedisplayshortskip{1pt}
+  \setlength\belowdisplayshortskip{1pt}
+}
+\makeatother
+
 \begin{document}
 \pagestyle{fancy}
 \fancyhf{}
@@ -51,11 +60,13 @@
               \colorbox{magenta}{Satz 1.1.8} \textcolor{NavyBlue}{
                      $\forall t\geqslant 0, t\in\R$} hat \textcolor{NavyBlue}{$x^2=t$} 
                      eine Lösung in $\R$\\
-              \colorbox{magenta}{Satz 1.1.10} $\forall x,y\in\R$ 
-                     \colorbox{SkyBlue}{(i)} $|x|\geqslant 0$ 
-                     \colorbox{SkyBlue}{(ii)} $|xy|=|x||y|$
-                     \colorbox{SkyBlue}{(iii)} $|x+y|\leqslant |x|+|y|$
-                     \quad\colorbox{SkyBlue}{(iv)} $|x+y|\geqslant ||x|-|y||$\\
+              \colorbox{magenta}{Satz 1.1.10} $\forall x,y\in\R$
+                     \begin{multicols}{2}
+                     \colorbox{SkyBlue}{(i)} $|x|\geqslant 0$ \\
+                     \colorbox{SkyBlue}{(ii)} $|xy|=|x||y|$\\
+                     \colorbox{SkyBlue}{(iii)} $|x+y|\leqslant |x|+|y|$\\
+                     \colorbox{SkyBlue}{(iv)} $|x+y|\geqslant ||x|-|y||$\\
+                     \end{multicols}
               \colorbox{magenta}{Satz 1.1.11}
               (\textbf{Young'sche Ungleichung})\\
                      \textcolor{NavyBlue}{
@@ -95,9 +106,17 @@
               \colorbox{magenta}{Satz 1.3.4} 
               (\textbf{Fundamentalsatz der Algebra}) 
                      Sei $n\geqslant 1,\,n\in\N,\,a_j\in\C$ und 
-                     \textcolor{NavyBlue}{$P(z)=z^n+a_{n-1}z^{n-1}+...+a_0$}
-                     Dann \textcolor{NavyBlue}{$\exists z_1,...,z_n\in\C$}, so dass 
-                     \textcolor{NavyBlue}{$P(z)=(z-z_1)(z-z_2)...(z-z_n)$}
+                     \begin{equation*}
+                            P(z)=z^n+a_{n-1}z^{n-1}+...+a_0
+                     \end{equation*}
+                     Dann 
+                     \begin{equation*}
+                            \exists z_1,...,z_n\in\C,
+                     \end{equation*}
+                     so dass
+                     \begin{equation*}
+                            P(z)=(z-z_1)(z-z_2)...(z-z_n)
+                     \end{equation*}
 \section{Folgen und Reihen}
        \subsection{Grenzwert einer Folge}
               \colorbox{cyan}{Definition 2.1.1} 
@@ -172,11 +191,11 @@
                      Das folgt aus
                      \textcolor{NavyBlue}{
                      $\lim\limits_{n\to\infty}(1+\frac{1}{n})=1$}
-                     unde wiederholter Anwendung von
+                     und wiederholter Anwendung von
                      \textbf{Satz 2.1.8 (2) und (3)}.
        \subsection{Satz von Weierstrass}
               \colorbox{cyan}{Definition 2.2.1} 
-                     \colorbox{SkyBlue}{(1)}[\colorbox{SkyBlue}{(2)}] 
+                     \colorbox{SkyBlue}{(1)[(2)]} 
                      $(a_n)_{n\geqslant 1}$ ist \textbf{monoton
                      wachsend [fallend]} wenn: \textcolor{NavyBlue}{
                      $a_n\leqslant[\geqslant]a_{n+1}\enspace\forall n\geqslant1$}\\
@@ -187,67 +206,107 @@
                      [fallend]} und \textbf{nach oben [unten] beschränkt}. Dann 
                      \textbf{konvergiert} 
                      \textcolor{NavyBlue}{$(a_n)_{n\geqslant 1}$} mit 
-                     \textcolor{NavyBlue}{
-                     $\lim\limits_{n\to\infty}a_n=sup\{a_n:n\geqslant 1\}$}
-                     [\textcolor{NavyBlue}{
-                     $\lim\limits_{n\to\infty}a_n=inf\{a_n:n\geqslant 1\}$}]\\
+                     \begin{equation*}
+                            \lim\limits_{n\to\infty}a_n=sup\{a_n:n\geqslant 1\}
+                     \end{equation*}
+                     \begin{equation*}
+                            [\lim\limits_{n\to\infty}a_n=inf\{a_n:n\geqslant 1\}]
+                     \end{equation*}
               \colorbox{Dandelion}{Beispiel 2.2.3} 
                      Sei \textcolor{NavyBlue}{$a\in\mathbb{Z}$} und 
                      \textcolor{NavyBlue}{$0\leqslant q<1$}.
                      Dann gilt 
-                     \textcolor{NavyBlue}{$\lim\limits_{n\to\infty}n^aq^n=0$}.
-                     Wir können annehmen, dass \textcolor{NavyBlue}{$q>0$}. Sei 
-                     \textcolor{NavyBlue}{$x_n=n^aq^n$}; dann folgt:
-                     \textcolor{NavyBlue}{
-                     $x_{n+1}=(n+1)^aq^{n+1}=(\frac{n+1}{n})^aq\cdot n^aq^n
-                     =(1+\frac{1}{n})^a\cdot q\cdot x_n$}. Also:
-                     \textcolor{NavyBlue}{
-                     $x_{n+1}=(1+\frac{1}{n})^a\cdot q\cdot x_n$}. 
-                     Da \textcolor{NavyBlue}{$\lim\limits_{n\to\infty}(1+\frac{1}{n})^a=1$}
-                     (\textbf{Beispiel 2.1.9}), gibt es ein \textcolor{NavyBlue}{$n_0$}, so dass
-                     \textcolor{NavyBlue}{
-                     $(1+\frac{1}{n})^a<\frac{1}{q}\enspace\forall n\geqslant n_0$}.
+                     \begin{equation*}
+                            \lim\limits_{n\to\infty}n^aq^n=0.
+                     \end{equation*}
+                     Wir können annehmen, dass 
+                     \textcolor{NavyBlue}{$q>0$}. Sei 
+                     \textcolor{NavyBlue}{$x_n=n^aq^n$}, 
+                     dann folgt:
+                     % \begin{equation*}
+                     \begin{align*}
+                            x_{n+1}&=(n+1)^aq^{n+1}\\
+                                   &=(\frac{n+1}{n})^aq\cdot n^aq^n\\
+                                   &=(1+\frac{1}{n})^a\cdot q\cdot x_n.
+                     \end{align*}
+                     % \end{equation*}
+                     Also:
+                     \begin{equation*}
+                            x_{n+1}=(1+\frac{1}{n})^a\cdot q\cdot x_n.
+                     \end{equation*} 
+                     Da \textcolor{NavyBlue}{
+                     $\lim\limits_{n\to\infty}(1+\frac{1}{n})^a=1$}
+                     (\textbf{Beispiel 2.1.9}), gibt es ein 
+                     \textcolor{NavyBlue}{$n_0$}, so dass
+                     \begin{equation*}
+                            (1+\frac{1}{n})^a<\frac{1}{q}\enspace\forall n\geqslant n_0.
+                     \end{equation*}
                      Es folgt: 
-                     \textcolor{NavyBlue}{$x_{n+1}<x_n\enspace\forall n\geqslant n_0$}. 
-                     Da für \textcolor{NavyBlue}{$x_n>0\enspace\forall n\geqslant1$} 
+                     \begin{equation*}
+                            x_{n+1}<x_n\enspace\forall n\geqslant n_0.
+                     \end{equation*}
+                     Da für \textcolor{NavyBlue}{
+                     $x_n>0\enspace\forall n\geqslant1$} 
                      die Folge nach \textbf{unten beschränkt} ist und für 
                      \textcolor{NavyBlue}{$n\geqslant n_0$} \textbf{monoton
-                     fallend} ist.
-                     Sei \textcolor{NavyBlue}{$l=\lim\limits_{n\to\infty}x_n
-                     =\lim\limits_{n\to\infty}x_{n+1}
-                     =\lim\limits_{n\to\infty}(1+\frac{1}{n})^a\cdot qx^n
-                     =q\cdot\lim\limits_{n\to\infty}x_n=q\cdot l$}.
+                     fallend} ist.\\
+                     Sei 
+                     \begin{align*}{}
+                            l&=\lim\limits_{n\to\infty}x_n
+                            =\lim\limits_{n\to\infty}x_{n+1}
+                            =\lim\limits_{n\to\infty}(1+\frac{1}{n})^a\cdot qx^n\\
+                            &=q\cdot\lim\limits_{n\to\infty}x_n
+                            =q\cdot l.
+                     \end{align*}
                      Also \textcolor{NavyBlue}{$(1-q)\cdot l=0$} woraus 
                      \textcolor{NavyBlue}{$l=0$} folgt.\\
               \colorbox{green}{Bemerkung 2.2.24} 
                      In \textbf{Beispiel 2.2.3} wird zweimal die 
                      folgende einfache Tatsache verwendet: Sei 
-                     \textcolor{NavyBlue}{$(a_n)_{n\geqslant1}$} eine 
+                     \textcolor{NavyBlue}{$(a_n)_{n\geqslant1}$} 
+                     eine 
                      \textbf{konvergente} Folge mit 
                      \textcolor{NavyBlue}{$\lim\limits_{n\to\infty}a_n=a$}
                      und 
-                     \textcolor{NavyBlue}{$k\in\N$}. Dann ist die durch 
-                     \textcolor{NavyBlue}{$b_n:=a_{n+k}\enspace n\geqslant1$} 
+                     \textcolor{NavyBlue}{$k\in\N$}. 
+                     Dann ist die durch 
+                     \begin{equation*}
+                            b_n:=a_{n+k}\enspace n\geqslant1
+                     \end{equation*} 
                      definierte Folge \textbf{konvergent} und 
-                     \textcolor{NavyBlue}{$\lim\limits_{n\to\infty}b_n=a$}.\\
+                     \begin{equation*}
+                            \lim\limits_{n\to\infty}b_n=a.
+                     \end{equation*}
               \colorbox{yellow}{Lemma 2.2.7} 
               (\textbf{Bernoulli Ungleichung}) 
-                     \textcolor{NavyBlue}{
-                     $(1+x)^n\geqslant 1+n\cdot x \quad\forall n\in\N,\, x>-1$}
+                     \begin{equation*}
+                            (1+x)^n\geqslant 1+n\cdot x \quad\forall n\in\N,\, x>-1
+                     \end{equation*}
        \subsection{Limes superior und Limes inferior}
               \colorbox{gray}{Limes inferior/ superior:} 
                      Sei \textcolor{NavyBlue}{$(a_n)_{n\geqslant 1}$}
                      eine \textbf{beschränkte Folge}. Sei 
                      \textcolor{NavyBlue}{
-                     $\forall n\geqslant1$: $b_n=inf\{a_k:k\geqslant n\},$
-                     $c_n=sup\{a_k:k\geqslant n\}$} Dann folgt 
-                     \textcolor{NavyBlue}{$\forall n\geqslant1\,b_n\leqslant b_{n+1}$} 
-                     (\textbf{monoton wachsend}) und 
-                     \textcolor{NavyBlue}{$c_n\geqslant c_{n+1}$} (\textbf{monoton fallend}) 
-                     und \textbf{beide Folgen beschränkt}. Wir definieren: 
+                     $\forall n\geqslant1$}:
+                     \begin{align*}
+                            b_n=inf\{a_k:k\geqslant n\}\\
+                            c_n=sup\{a_k:k\geqslant n\}
+                     \end{align*}
+                     Dann folgt 
                      \textcolor{NavyBlue}{
-                     $\liminf\limits_{n\to\infty}a_n:=\lim\limits_{n\to\infty}b_n$ \qquad
-                     $\limsup\limits_{n\to\infty}a_n:=\lim\limits_{n\to\infty}c_n$}
+                     $\forall n\geqslant1\,b_n\leqslant b_{n+1}$} 
+                     (\textbf{monoton wachsend}) und 
+                     \textcolor{NavyBlue}{
+                     $c_n\geqslant c_{n+1}$} 
+                     (\textbf{monoton fallend}) 
+                     und \textbf{beide Folgen beschränkt}. 
+                     Wir definieren: 
+                     \begin{align*}
+                            \liminf\limits_{n\to\infty}a_n
+                            :=\lim\limits_{n\to\infty}b_n\\
+                            \limsup\limits_{n\to\infty}a_n
+                            :=\lim\limits_{n\to\infty}c_n
+                     \end{align*}
        \subsection{Cauchy Kriterium}
               \colorbox{yellow}{Lemma 2.4.1} 
                      $(a_n)_{n\geqslant1}$ \textbf{konvergiert genau dann, wenn} 
@@ -261,8 +320,10 @@
                      \textbf{genau dann kovergent, wenn} 
                      \textcolor{NavyBlue}{
                      $\forall\varepsilon >0\,\exists N\geqslant1$}, 
-                     so dass \textcolor{NavyBlue}{
-                     $|a_n-a_m|<\varepsilon\quad\forall n,m\geqslant N$}
+                     \begin{equation*}
+                            |a_n-a_m|<\varepsilon\quad
+                            \forall n,m\geqslant N
+                     \end{equation*}
        \subsection{Satz von Bolzano-Wierstrass}
               \colorbox{cyan}{Definition 2.5.1} 
                      Ein \textbf{abgeschlossenes Intervall} 
@@ -283,7 +344,8 @@
                      $(a_n)_{n\geqslant1}$ 
                      mit \textcolor{NavyBlue}{
                      $a_n\in I$\quad$\lim\limits_{n\to\infty}a_n\in I$}.\\
-              \colorbox{green}{Bemerkung 2.5.3} Seien $I=[a,b],\,J=[c,d]$ mit 
+              \colorbox{green}{Bemerkung 2.5.3}
+                     Seien $I=[a,b],\,J=[c,d]$ mit \\
                      \textcolor{NavyBlue}{
                      $a\leqslant b,\,c\leqslant d,\,a,b,c,d\in\R$}. 
                      Dann ist 
@@ -291,45 +353,73 @@
                      wenn} \textcolor{NavyBlue}{$c\leqslant a,\,b\leqslant d$}\\
               \colorbox{magenta}{Satz 2.5.5.5} 
               (\textbf{Cauchy-Cantor}) 
-                     Sei \textcolor{NavyBlue}{
-                     $I_1\supseteq I_2\supseteq ...I_n\supseteq I_{n+1}
-                     \supseteq ...$} eine Folge 
+                     Sei
+                     \begin{equation*}
+                            I_1\supseteq I_2\supseteq ...I_n\supseteq 
+                            I_{n+1}\supseteq ...
+                     \end{equation*}
+                     eine Folge 
                      abgeschlossener Intervalle mit 
-                     \textcolor{NavyBlue}{$\mathcal{L}(I_1)<+\infty$} Dann gilt 
-                     \textcolor{NavyBlue}{$\bigcap_{n\geqslant1}I_n\neq\emptyset$}. 
+                     \begin{equation*}
+                            \mathcal{L}(I_1)<+\infty
+                     \end{equation*}
+                     Dann gilt 
+                     \begin{equation*}
+                            \bigcap_{n\geqslant1}I_n\neq\emptyset.
+                     \end{equation*}
                      Falls \textbf{zudem}  
-                     \textcolor{NavyBlue}{
-                     $\lim\limits_{n\to\infty}\mathcal{L}(I_n)=0$} 
+                     \begin{equation*}
+                            \lim\limits_{n\to\infty}\mathcal{L}(I_n)=0
+                     \end{equation*} 
                      gilt, enthält 
-                     \textcolor{NavyBlue}{$\bigcap_{n\geqslant1}I_n$} 
+                     \begin{equation*}
+                            \bigcap_{n\geqslant1}I_n
+                     \end{equation*}
                      \textbf{genau einen Punkt}.\\
               \colorbox{cyan}{Definition 2.5.7} 
                      Eine \textbf{Teilfolge} einer Folge 
                      \textcolor{NavyBlue}{$(a_n)_{n\geqslant1}$}
                      ist eine Folge 
-                     \textcolor{NavyBlue}{$(b_n)_{n\geqslant1}$}, wobei 
-                     \textcolor{NavyBlue}{$b_n=a_{l(n)}$} und 
-                     \textcolor{NavyBlue}{$l:\N^{*}\longrightarrow\N^*$} 
+                     \textcolor{NavyBlue}{$(b_n)_{n\geqslant1}$}, 
+                     wobei 
+                     \begin{equation*}
+                            b_n=a_{l(n)}
+                     \end{equation*}
+                     und 
+                     \begin{equation*}
+                            l:\N^{*}\longrightarrow\N^*
+                     \end{equation*}
                      eine \textbf{Abbildung} mit der Eigenschaft 
-                     \textcolor{NavyBlue}{$l(n)<l(n+1)\quad\forall n\geqslant1$}\\
+                     \begin{equation*}
+                            l(n)<l(n+1)\quad\forall n\geqslant1
+                     \end{equation*}
               \colorbox{magenta}{Satz 2.5.9} 
               (\textbf{Bolzano-Weierstrass}) 
                      \textbf{Jede beschränkte Folge} 
                      besitzt eine \textbf{konvergente Teilfolge}.
        \subsection{Folgen in $\R^d$ und $\C$}
-              \colorbox{cyan}{Definition 2.6.1} Eine \textbf{Folge in} 
-                     \textcolor{NavyBlue}{$\R^d$} ist eine Abbildung 
-                     \textcolor{NavyBlue}{$a:\N^*\longrightarrow\R^d$}. 
-                     Wir schreiben $a_n$ statt $a(n)$ und bezeichnen 
-                     die Folge mit \textcolor{NavyBlue}{$(a_n)_{n\geqslant1}$}\\
+              \colorbox{cyan}{Definition 2.6.1} 
+                     Eine \textbf{Folge in} 
+                     \textcolor{NavyBlue}{$\R^d$} 
+                     ist eine Abbildung 
+                     \textcolor{NavyBlue}{
+                     $a:\N^*\longrightarrow\R^d$}. 
+                     Wir schreiben $a_n$ statt $a(n)$ 
+                     und bezeichnen die Folge mit 
+                     \textcolor{NavyBlue}{
+                     $(a_n)_{n\geqslant1}$}\\
               \colorbox{cyan}{Definition 2.6.2} 
                      Eine Folge $(a_n)_{n\geqslant1}$ in $\R^d$ 
                      ist \textbf{konvergent}, wenn 
-                     \textcolor{NavyBlue}{$\exists a\in\R^d$}, so dass
+                     \textcolor{NavyBlue}{$\exists a\in\R^d$}, 
+                     so dass
                      \textcolor{NavyBlue}{
-                     $\forall\varepsilon >0\,\exists N\geqslant1$} mit 
-                     \textcolor{NavyBlue}{
-                     $\norm{a_n-a}<\varepsilon\qquad\forall n\geqslant N$}\\
+                     $\forall\varepsilon >0\,\exists N\geqslant1$} 
+                     mit 
+                     \begin{equation*}
+                            \norm{a_n-a}<\varepsilon
+                            \qquad\forall n\geqslant N
+                     \end{equation*}
               \colorbox{magenta}{Satz 2.6.3} 
                      Sei \textcolor{NavyBlue}{$b=(b_1,...,b_d)$}. 
                      Folgende Aussagen sind äquivalent:
@@ -341,17 +431,28 @@
                             $\lim\limits_{n\to\infty}a_{nj}=b_j$\quad
                             $\forall 1\leqslant j\leqslant d$}
                      \end{multicols}
-              \colorbox{green}{Bemerkung 2.6.4} Sei \textcolor{NavyBlue}{$x=(x_1,...,x_d)$}. Dann ist 
-                     \textcolor{NavyBlue}{$\forall 1\leqslant j\leqslant d$:
-                     $x^2_j\leqslant\sum_{i=1}^{d}x_i^2=\norm{x}^2\leqslant 
-                     d\cdot \max\limits_{1\leqslant i\leqslant d}x_i^2$} woraus 
-                     \textcolor{NavyBlue}{$|x_j|\leqslant \norm{x}\leqslant
-                     \sqrt{d}\cdot\max\limits_{1\leqslant i\leqslant d}|x_i|$} folgt.\\
+              \colorbox{green}{Bemerkung 2.6.4} 
+                     Sei \textcolor{NavyBlue}{$x=(x_1,...,x_d)$}. \\
+                     Dann ist 
+                     \textcolor{NavyBlue}{
+                     $\forall 1\leqslant j\leqslant d$}
+                     \begin{align*}
+                            x^2_j\leqslant\sum_{i=1}^{d}x_i^2=\norm{x}^2\leqslant 
+                            d\cdot \max\limits_{1\leqslant i\leqslant d}x_i^2
+                     \end{align*}
+                     woraus 
+                     \begin{equation*}
+                            |x_j|\leqslant \norm{x}\leqslant
+                            \sqrt{d}\cdot\max
+                            \limits_{1\leqslant i\leqslant d}|x_i|
+                     \end{equation*}
+                     folgt.\\
               \colorbox{green}{Bemerkung 2.6.5} \textbf{Eine konvergente Folge} $(a_n)_{n\geqslant1}$ in 
                      $\R^d$ \textbf{ist beschränkt}. Das heisst: 
                      \textcolor{NavyBlue}{$\exists R\geqslant0$} mit 
                      \textcolor{NavyBlue}{
                      $\norm{a_n}\leqslant R\enspace\forall n\geqslant1$}\\
+              \\
               \colorbox{magenta}{Satz 2.6.6} 
                      \colorbox{SkyBlue}{(1)} 
                             Eine Folge $(a_n)_{n\geqslant1}$ 
@@ -366,30 +467,59 @@
                             \textbf{Jede beschränkte Folge} hat eine 
                             \textbf{konvergente Teilfolge}.\\
        \subsection{Reihen}
-              \colorbox{cyan}{Definition 2.7.1} Die \textbf{Reihe $\sum_{k=1}^\infty a_k$ ist konvergent}, 
-                     wenn die Folge \textcolor{NavyBlue}{$(S_n)_{n\geqslant1}$} 
+              \colorbox{cyan}{Definition 2.7.1} 
+                     Die \textbf{Reihe 
+                     $\sum_{k=1}^\infty a_k$ ist konvergent}, 
+                     wenn die Folge 
+                     \textcolor{NavyBlue}{$(S_n)_{n\geqslant1}$} 
                      der \textbf{Partialsummen konvergiert}. In 
                      diesem Fall definieren wir: 
                      \textcolor{NavyBlue}{
-                     $\sum_{k=1}^\infty a_k=\lim\limits_{n\to\infty}S_n$}\\
-              \colorbox{Dandelion}{Beispiel 2.7.2} (\textbf{Geometrische Reihe}) Sei $q\in\C$ mit 
-                     $|q|<1$. Dann konvergiert $\sum_{k=0}^\infty q^k$ und
-                     dessen Wert ist: $\frac{1}{1-q}$. 
-                     Sei $S_n=\sum_{k=0}^n q^k=1+q+...+q^n.$
-                     $q\cdot S_n=q+...+q^n+q^{n+1}$ woraus
-                     $(1-q)S_n=1-q^{n+1}$ folgt. Es gilt 
-                     also: $S_n=\frac{1-q^{n+1}}{1-q}$
+                     $\sum_{k=1}^\infty a_k
+                     =\lim\limits_{n\to\infty}S_n$}\\
+              \colorbox{Dandelion}{Beispiel 2.7.2} 
+              (\textbf{Geometrische Reihe}) 
+                     Sei $q\in\C$ mit 
+                     $|q|<1$. Dann konvergiert
+                     \begin{equation*}
+                            \sum_{k=0}^\infty q^k=\frac{1}{1-q}
+                     \end{equation*}
+                     Sei 
+                     \begin{align*}
+                            S_n=\sum_{k=0}^n q^k=1+q+...+q^n.
+                            q\cdot S_n=q+...+q^n+q^{n+1}
+                     \end{align*}
+                     woraus
+                     \begin{equation*}
+                            (1-q)S_n=1-q^{n+1}
+                     \end{equation*}
+                     folgt. Es gilt also: 
+                     \begin{equation*}
+                            S_n=\frac{1-q^{n+1}}{1-q}
+                     \end{equation*}
                      Nun zeigen wir die Konvergenz: 
-                     $|S_n-\frac{1}{1-q}|=|\frac{-q^{n+1}}{1-q}
-                     =\frac{|q|^{n+1}}{|1-q|}$. Es folgt aus
-                     Beispiel 2.2.3 
+                     \begin{equation*}
+                            |S_n-\frac{1}{1-q}|
+                            =|\frac{-q^{n+1}}{1-q}
+                            =\frac{|q|^{n+1}}{|1-q|}.
+                     \end{equation*}
+                     Es folgt aus
+                     \textbf{Beispiel 2.2.3} 
                      und $0\leqslant|q|<1$:
-                     $\lim\limits_{n\to\infty}|S_n-\frac{1}{1-1}|
-                     =\lim\limits_{n\to\infty}\frac{|q|^{n+1}}{|1-q|}=0$.
+                     \begin{equation*}
+                            \lim\limits_{n\to\infty}|S_n-\frac{1}{1-1}|
+                            =\lim\limits_{n\to\infty}\frac{|q|^{n+1}}{|1-q|}=0.
+                     \end{equation*}
                      Somit konvergiert $(S_n)_{n\geqslant1}$ gegen
                      $\frac{1}{1-q}$.\\
-              \colorbox{Dandelion}{Beispiel 2.7.3} (\textbf{Harmonische Reihe}) Die Reihe
-                     $\sum_{n=1}^\infty\frac{1}{n}$ divergiert.\\
+              \colorbox{Dandelion}{Beispiel 2.7.3} 
+              (\textbf{Harmonische Reihe}) 
+                     Die Reihe
+                     \begin{equation*}
+                            \sum_{n=1}^\infty\frac{1}{n}
+                     \end{equation*}
+                     divergiert.
+              \newpage
               \colorbox{magenta}{Satz 2.7.4} Seien 
                      \textcolor{NavyBlue}{
                      $\sum_{k=1}^\infty a_k,\,\sum_{j=1}^\infty b_j$} 
@@ -397,67 +527,113 @@
                      \textcolor{NavyBlue}{$\alpha\in\C$}. 
                      Dann ist:\\
                      \colorbox{SkyBlue}{(1)} 
-                            \textcolor{NavyBlue}{$\sum_{k=1}^\infty(a_k+b_k)$} 
-                            \textbf{konvergent} und 
                             \textcolor{NavyBlue}{
-                            $\sum_{k=1}^\infty(a_k+b_k
-                            )=(\sum_{k=1}^\infty a_k)+(\sum_{j=1}^\infty b_j)$}\\
+                            $\sum_{k=1}^\infty(a_k+b_k)$} 
+                            \textbf{konvergent} und 
+                            \begin{equation*}
+                                   \sum_{k=1}^\infty(a_k+b_k)
+                                   =(\sum_{k=1}^\infty a_k)
+                                   +(\sum_{j=1}^\infty b_j)
+                            \end{equation*}
                      \colorbox{SkyBlue}{(2)} 
-                            \textcolor{NavyBlue}{$\sum_{k=1}^\infty(\alpha\cdot a_k)$} 
-                            \textbf{konvergent} und 
                             \textcolor{NavyBlue}{
-                            $\sum_{k=1}^\infty(\alpha\cdot a_k)
-                            =\alpha\cdot\sum_{k=1}^\infty a_k$}\\
+                            $\sum_{k=1}^\infty(\alpha\cdot a_k)$} 
+                            \textbf{konvergent} und 
+                            \begin{equation*}
+                                   \sum_{k=1}^\infty
+                                   (\alpha\cdot a_k)
+                                   =\alpha\cdot
+                                   \sum_{k=1}^\infty a_k
+                            \end{equation*}
               \colorbox{magenta}{Satz 2.7.5} 
               (\textbf{Cauchy Kriterium}) 
-                     Die Reihe \textcolor{NavyBlue}{$\sum_{k=1}^\infty a_k$ }
+                     Die Reihe 
+                     \textcolor{NavyBlue}{
+                     $\sum_{k=1}^\infty a_k$ }
                      ist \textbf{genau dann konvergent, wenn}:
-                     \textcolor{NavyBlue}{$\forall\varepsilon >0\,\exists N\geqslant1$} mit 
+                     \textcolor{NavyBlue}{
+                     $\forall\varepsilon >0\,
+                     \exists N\geqslant1$} mit 
                      \textcolor{NavyBlue}{
                      $|\sum_{k=n}^m a_k|<\varepsilon$\quad
-                     $\forall m\geqslant n\geqslant N$}. \\
-              \colorbox{magenta}{Satz 2.7.6} Sei \textcolor{NavyBlue}{$\sum_{k=1}^\infty a_k$} 
-                     eine Reiehe mit \textcolor{NavyBlue}{
-                     $a_k\geqslant0\quad\forall k\in\N^*$. $\sum_{k=1}^\infty a_k$}
-                     \textbf{konvergiert genau dann, wenn} die Folge 
-                     \textcolor{NavyBlue}{$(S_n)_{n\geqslant1},S_n=\sum_{k=1}^n a_k$} 
-                     der \textbf{Partialsummen nach oben beschränkt ist}.\\
-              \colorbox{BurntOrange}{Korollar 2.7.7} (\textbf{Vergleichssatz}) Seien 
-                     \textcolor{NavyBlue}{$\sum_{k=1}^\infty a_k,\,\sum_{k=1}^\infty b_k$} 
-                     Reihen mit: 
-                     \textcolor{NavyBlue}{$0\leqslant a_k\leqslant b_k\quad\forall k\geqslant1$}. 
-                     Dann gelten: 
-                     \textcolor{NavyBlue}{$\sum_{k=1}^\infty b_k$} \textbf{konvergent} 
-                     \textcolor{NavyBlue}{$\Longrightarrow \sum_{k=1}^\infty a_k$} 
-                     \textbf{konvergent}
-                     \qquad \textcolor{NavyBlue}{$\sum_{k=1}^\infty a_k$} \textbf{divergent} 
-                     \textcolor{NavyBlue}{$\Longrightarrow \sum_{k=1}^\infty b_k$} 
-                     \textbf{divergent} 
-                     Die \textbf{Implikationen treffen auch zu}, wenn 
-                     \textcolor{NavyBlue}{$\exists K\geqslant1$} mit 
+                     $\forall m\geqslant n\geqslant N$}.\\
+              \colorbox{magenta}{Satz 2.7.6} 
+                     Eine Reihe \textcolor{NavyBlue}{
+                     $\sum_{k=1}^\infty a_k$} mit 
+                     \begin{equation*}
+                            a_k\geqslant0\quad\forall k\in\N^*
+                     \end{equation*}
+                     \textbf{konvergiert genau dann, wenn} 
+                     die Folge 
                      \textcolor{NavyBlue}{
-                     $0\leqslant a_k\leqslant b_k\quad\forall k\geqslant K$}\\
+                     $(S_n)_{n\geqslant1}$}
+                     \begin{equation*}
+                            S_n=\sum_{k=1}^n a_k
+                     \end{equation*}
+                     der \textbf{Partialsummen nach 
+                     oben beschränkt ist}.\\
+              \colorbox{BurntOrange}{Korollar 2.7.7} 
+              (\textbf{Vergleichssatz}) 
+                     Seien \textcolor{NavyBlue}{
+                     $\sum_{k=1}^\infty a_k$}, 
+                     \textcolor{NavyBlue}{
+                     $\sum_{k=1}^\infty b_k$} 
+                     Reihen mit: 
+                     \textcolor{NavyBlue}{
+                     $0\leqslant a_k\leqslant b_k\quad
+                     \forall k\geqslant1$}. 
+                     Dann gelten:
+                     \begin{align*}
+                            \sum_{k=1}^\infty b_k\,
+                            \textbf{konvergent}
+                            &\Longrightarrow 
+                            \sum_{k=1}^\infty a_k\,
+                            \textbf{konvergent}\\
+                            \sum_{k=1}^\infty a_k\,
+                            \textbf{divergent} 
+                            &\Longrightarrow 
+                            \sum_{k=1}^\infty b_k\,
+                            \textbf{divergent} 
+                     \end{align*}
+                     Die \textbf{Implikationen treffen auch zu}, 
+                     wenn \textcolor{NavyBlue}{
+                     $\exists K\geqslant1$} mit 
+                     \begin{equation*}
+                            0\leqslant a_k\leqslant b_k\quad
+                            \forall k\geqslant K
+                     \end{equation*}
               \colorbox{cyan}{Definition 2.7.9} 
-                     Die Reihe \textcolor{NavyBlue}{$\sum_{k=1}^\infty a_k$} ist 
+                     Die Reihe 
+                     \textcolor{NavyBlue}{
+                     $\sum_{k=1}^\infty a_k$} ist 
                      \textbf{absolut konvergent}, 
-                     wenn \textcolor{NavyBlue}{$\sum_{k=1}^\infty |a_k|$} 
+                     wenn \textcolor{NavyBlue}{
+                     $\sum_{k=1}^\infty |a_k|$} 
                      \textbf{konvergiert}.\\
               \colorbox{magenta}{Satz 2.7.10} 
                      Eine \textbf{absolut konvergente Reihe} 
                      \textcolor{NavyBlue}{$\sum_{k=1}^\infty a_k$}
                      ist \textbf{auch konvergent} und es gilt:
                      \textcolor{NavyBlue}{
-                     $|\sum_{k=1}^\infty a_k|\leqslant\sum_{k=1}^\infty |a_k|$}\\
-              \colorbox{magenta}{Satz 2.7.12} (\textbf{Leibniz} 1682) Sei 
-                     \textcolor{NavyBlue}{$(a_n)_{n\geqslant1}$}
+                     $|\sum_{k=1}^\infty a_k|
+                     \leqslant\sum_{k=1}^\infty |a_k|$}\\
+              \colorbox{magenta}{Satz 2.7.12} 
+              (\textbf{Leibniz} 1682) 
+                     Sei \textcolor{NavyBlue}{
+                     $(a_n)_{n\geqslant1}$}
                      \textbf{monoton fallend} 
                      mit \textcolor{NavyBlue}{
                      $a_n\geqslant0\quad\forall n\geqslant1$} und 
-                     \textcolor{NavyBlue}{$\lim\limits_{n\to\infty}a_n=0$}. 
+                     \textcolor{NavyBlue}{
+                     $\lim\limits_{n\to\infty}a_n=0$}. 
                      Dann \textbf{konvergiert} 
-                     \textcolor{NavyBlue}{$S:=\sum_{k=1}^\infty (-1)^{k+1}a_k$} 
+                     \begin{equation*}
+                            S:=\sum_{k=1}^\infty (-1)^{k+1}a_k
+                     \end{equation*}
                      und es gilt: 
-                     \textcolor{NavyBlue}{$a_1-a_2\leqslant S\leqslant a_1$}\\
+                     \begin{equation*}
+                            a_1-a_2\leqslant S\leqslant a_1
+                     \end{equation*}
               \colorbox{cyan}{Definition 2.7.14} 
                      Eine Reihe \textcolor{NavyBlue}{$\sum_{n=1}^\infty a_n'$} 
                      ist eine 
