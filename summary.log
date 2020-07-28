@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.19)  28 JUL 2020 20:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.19)  28 JUL 2020 22:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -408,70 +408,80 @@ Underfull \hbox (badness 10000) in paragraph at lines 448--469
 
  []
 
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 698--703
 
-Overfull \hbox (3.62498pt too wide) detected at line 491
-[]
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 636--809
+
+Underfull \hbox (badness 10000) in paragraph at lines 705--707
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 738--769
 [][][][][][] \T1/ppl/m/n/10 Die \T1/ppl/b/n/10 Poten-zreihe []$[][] \OML/zplm/m/it/10 c[]z[]$[] \T1/ppl/b/n/10 kon-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 812--835
-
- []
-
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 836--898
+Underfull \hbox (badness 10000) in paragraph at lines 892--898
 
  []
 
 
-Underfull \hbox (badness 6300) in paragraph at lines 970--1013
+Underfull \hbox (badness 10000) in paragraph at lines 899--961
+
+ []
+
+
+Underfull \hbox (badness 6300) in paragraph at lines 1033--1076
 [][][][][][] \T1/ppl/m/n/10 Der \T1/ppl/b/n/10 natür-lich Log-a-rith-mus $[] \OT1/zplm/m/n/10 :
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 1152--1199
+Underfull \hbox (badness 10000) in paragraph at lines 1215--1262
 
- []
-
-
-Underfull \hbox (badness 6842) in paragraph at lines 1288--1767
-[][][][][][] \T1/ppl/m/n/10 (\T1/ppl/b/n/10 Taylor Ap-prox-i-ma-tion\T1/ppl/m/n/10 ) Sei []$\OML/zplm/m/it/10 f \OT1/zplm/m/n/10 :
  []
 
 [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 1770--2221
+Underfull \hbox (badness 6842) in paragraph at lines 1741--1834
+[][][][][][] \T1/ppl/m/n/10 (\T1/ppl/b/n/10 Taylor Ap-prox-i-ma-tion\T1/ppl/m/n/10 ) Sei []$\OML/zplm/m/it/10 f \OT1/zplm/m/n/10 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1837--1936
 \T1/ppl/m/n/10 definieren: []$\OML/zplm/m/it/10 s\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 f\OT1/zplm/m/n/10 ) = [] \OML/zplm/m/it/10 s\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 f\OT1/ppl/m/n/10 , \OML/zplm/m/it/10 P\OT1/zplm/m/n/10 )$[]\T1/ppl/m/n/10 , []$\OML/zplm/m/it/10 S\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 f\OT1/zplm/m/n/10 ) =
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1770--2221
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 2042--2077
 [][][][][][] \T1/ppl/m/n/10 (\T1/ppl/b/n/10 Cauchy-Schwarz Un-gle-ichung\T1/ppl/m/n/10 ) Seien
  []
 
-[7] [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 2424--2430
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 2198--2290
 
  []
 
-[10] (c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.aux) ) 
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 2505--2511
+
+ []
+
+[10] [11] (c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.aux) ) 
 Here is how much of TeX's memory you used:
  4464 strings out of 480478
  57002 string characters out of 5903485
- 383546 words of memory out of 5000000
+ 344669 words of memory out of 5000000
  20396 multiletter control sequences out of 15000+600000
  575223 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,12n,45p,432b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,13n,45p,432b,528s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.pdf" (10 pages, 215062 bytes).
+Output written on "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.pdf" (11 pages, 215840 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 89 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

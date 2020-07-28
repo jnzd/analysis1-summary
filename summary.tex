@@ -486,7 +486,7 @@
                      \end{equation*}
                      Sei 
                      \begin{align*}
-                            S_n=\sum_{k=0}^n q^k=1+q+...+q^n.
+                            S_n=\sum_{k=0}^n q^k=1+q+...+q^n.\\
                             q\cdot S_n=q+...+q^n+q^{n+1}
                      \end{align*}
                      woraus
@@ -650,69 +650,97 @@
                      mit \textbf{demselben Grenzwert}.\\
               \colorbox{magenta}{Satz 2.7.17} 
               (\textbf{Quotientenkriterium}, Cauchy 1821) 
-                     Sei \textcolor{NavyBlue}{$(a_n)_{n\geqslant1}$} mit 
-                     \textcolor{NavyBlue}{$a_n\neq0\quad\forall n\geqslant1$}
-                     und \textcolor{NavyBlue}{$\sum_{n=1}^\infty a_n$} eine Reihe.
-                     Wenn: 
-                     \textcolor{NavyBlue}{$\limsup\limits_{n\to\infty}\frac{|a_{n+1}|}{|a_n|}<1$}
-                     \textbf{kovergiert die Reiehe} 
-                     \textcolor{NavyBlue}{$\sum_{n=1}^\infty a_n$} \textbf{absolut}.
-                     Wenn: 
-                     \textcolor{NavyBlue}{$\liminf\limits_{n\to\infty}\frac{|a_{n+1}|}{|a_n|}>1$}
-                     \textbf{divergiert die Reihe}\\
-              \colorbox{Dandelion}{Beispiel 2.7.18} (\textbf{Exponentialfunktion})
-                     Für $z\in\C$ betrachte die Reihe:
-                     $1+z+\frac{z^2}{2!}+\frac{z^3}{3!}+\dots$
-                     mit allgemeinem Glied 
-                     $a_n=\frac{z^n}{n!}$.
-                     Fann folgt für $z\neq0$:
-                     $\frac{|a_{n+1}|}{|a_n|}
-                     =|\frac{z^{n+1}}{(n+1)!}\frac{n!}{z^n}|
-                     =\frac{|z|}{n+1}$. Also gilt:
-                     $\lim\limits_{n\to\infty}\frac{|a_{n+1}|}{|a_n|}=0$
+                     Sei \textcolor{NavyBlue}{
+                     $(a_n)_{n\geqslant1}$} mit 
+                     \textcolor{NavyBlue}{
+                     $a_n\neq0\quad\forall n\geqslant1$}
+                     und \textcolor{NavyBlue}{
+                     $\sum_{n=1}^\infty a_n$} eine Reihe.
+                     \begin{align*}
+                            \limsup\limits_{n\to\infty}
+                            \frac{|a_{n+1}|}{|a_n|}<1 \,
+                            &\Longrightarrow
+                            \sum_{n=1}^\infty a_n \,
+                            \textbf{konvergiert absolut} \\
+                            \liminf\limits_{n\to\infty}
+                            \frac{|a_{n+1}|}{|a_n|}>1 \,
+                            &\Longrightarrow
+                            \sum_{n=1}^\infty a_n \,
+                            \textbf{divergiert}
+                     \end{align*}
+              \colorbox{Dandelion}{Beispiel 2.7.18} 
+              (\textbf{Exponentialfunktion})\\
+                     Für \textcolor{NavyBlue}{$z\in\C$}
+                     betrachten wir die Reihe:
+                     \begin{equation*}
+                            1+z+\frac{z^2}{2!}+\frac{z^3}{3!}+\dots
+                     \end{equation*}
+                     mit allgemeinem Glied
+                     \begin{equation*}
+                            a_n=\frac{z^n}{n!}.
+                     \end{equation*}
+                     Dann folgt für \textcolor{NavyBlue}{$z\neq0$}:
+                     \begin{equation*}
+                            \frac{|a_{n+1}|}{|a_n|}
+                            =|\frac{z^{n+1}}{(n+1)!}\frac{n!}{z^n}|
+                            =\frac{|z|}{n+1}.
+                     \end{equation*}
+                     Also gilt:
+                     \begin{equation*}
+                            \lim\limits_{n\to\infty}\frac{|a_{n+1}|}{|a_n|}=0
+                     \end{equation*}
                      und die Reihe konvergiert 
-                     für alle $z\in\C$.
+                     für alle \textcolor{NavyBlue}{$z\in\C$}.
                      Wir definieren die \textbf{Exponentialfunktion}: 
-                     $\exp z:=1+z+\frac{z^2}{2!}+\frac{z^3}{3!}+\dots$
-                     $=\sum_{n=0}^\infty\frac{z^n}{n!}$\\
+                     \begin{equation*}
+                            \exp z:=1+z+\frac{z^2}{2!}+\frac{z^3}{3!}+\dots
+                            =\sum_{n=0}^\infty\frac{z^n}{n!}
+                     \end{equation*}
               \colorbox{green}{Bemerkung 2.7.19} 
                      Das \textbf{Quotientenkriterium versagt}, wenn z. B. 
                      \textbf{unenedlich viele Glieder} $a_n$ der Reihe 
                      \textbf{verschwinden} ($=0$ sind)\\
+              \vfill\null
+              \columnbreak
               \colorbox{magenta}{Satz 2.7.20}
               (\textbf{Wurzelkriterium}, Cauchy 1821)\\
-                     \colorbox{SkyBlue}{(1)} 
-                            \textcolor{NavyBlue}{
-                            $\limsup\limits_{n\to\infty}\sqrt[n]{|a_n|}<1$}
-                            $\Longrightarrow$
-                            \textcolor{NavyBlue}{$\sum_{n=1}^\infty a_n$} 
-                            \textbf{konvergiert absolut}.\\
-                     \colorbox{SkyBlue}{(2)} 
-                            \textcolor{NavyBlue}{$\limsup\limits_{n\to\infty}\sqrt[n]{|a_n|}>1$}
-                            $\Longrightarrow$
-                            \textcolor{NavyBlue}{$\sum_{n=1}^\infty a_n$} und 
-                            \textcolor{NavyBlue}{$\sum_{n=1}^\infty |a_n|$}
-                            \textbf{divergieren}.\\
-              \colorbox{gray}{Konvergenzradius} \textcolor{NavyBlue}{$\rho$}: 
-                     Sei \textcolor{NavyBlue}{$(c_k)_{k\geqslant0}$} eine Folge 
-                     (in $\R$ oder $\C$). Wenn 
-                     \textcolor{NavyBlue}{$\limsup\limits_{k\to\infty}\sqrt[k]{|c_k|}$} 
+                     \begin{align*}
+                            \limsup\limits_{n\to\infty}
+                            \sqrt[n]{|a_n|}<1
+                            &\Longrightarrow
+                            \sum_{n=1}^\infty a_n \,
+                            \textbf{konvergiert absolut}\\
+                            \limsup\limits_{n\to\infty}
+                            \sqrt[n]{|a_n|}>1
+                            &\Longrightarrow
+                            \sum_{n=1}^\infty a_n \, \text{und} \,
+                            \sum_{n=1}^\infty |a_n| \,
+                            \textbf{divergieren}
+                     \end{align*}
+              \colorbox{gray}{Konvergenzradius} \\
+                     Sei \textcolor{NavyBlue}{$(c_k)_{k\geqslant0}$} 
+                     eine Folge (in $\R$ oder $\C$). Wenn 
+                     \begin{equation*}
+                            \limsup\limits_{k\to\infty}\sqrt[k]{|c_k|}
+                     \end{equation*}
                      existiert, definieren wir: 
-                     \textcolor{NavyBlue}{$\rho=+\infty$}
-                     wenn \textcolor{NavyBlue}{
-                     $\limsup\limits_{k\to\infty}\sqrt[k]{|c_k|}=0$}
-                     und 
-                     \textcolor{NavyBlue}{
-                     $\rho=\frac{1}{\limsup\limits_{k\to\infty}\sqrt[k]{|c_k|}}$}
-                     wenn 
-                     \textcolor{NavyBlue}{
-                     $\limsup\limits_{k\to\infty}\sqrt[k]{|c_k|} >0$}\\
+                     \begin{align*}
+                            \rho&=+\infty
+                            \qquad\qquad\text{ wenn } 
+                            \limsup\limits_{k\to\infty}\sqrt[k]{|c_k|}=0\\
+                            \rho&=\frac{1}{\limsup\limits_{k\to\infty}\sqrt[k]{|c_k|}}
+                            \text{ wenn }
+                            \limsup\limits_{k\to\infty}\sqrt[k]{|c_k|} >0
+                     \end{align*}
               \colorbox{gray}{Riemann Zeta Funktion} Sei $s>1$ und 
-                     $\zeta(s)=\sum_{n=1}^\infty\frac{1}{n^s}$.
+                     \begin{equation*}
+                            \zeta(s)=\sum_{n=1}^\infty\frac{1}{n^s}.
+                     \end{equation*}
                      Wir wissen, dass
-                     $\sum_{n=1}^\infty\frac{1}{n^2}$ konvergiert.
-                     Die Reihe 
-                     konvergiert $\forall s>1$\\
+                     \textcolor{NavyBlue}{
+                     $\sum_{n=1}^\infty\frac{1}{n^2}$} konvergiert.
+                     Die Reihe konvergiert 
+                     \textcolor{NavyBlue}{$\forall s>1$}\\
               \colorbox{BurntOrange}{Korollar 2.7.21}
                      Die \textbf{Potenzreihe}
                      \textcolor{NavyBlue}{$\sum_{k=0}^\infty c_kz^k$}
@@ -733,48 +761,72 @@
                      Wir nehmen an, dass es 
                      \textcolor{NavyBlue}{$B\geqslant0$} gibt, so dass 
                      \textcolor{NavyBlue}{
-                     $\sum_{i=0}^m\sum_{j=0}^m|a_{ij}|\leqslant B$\quad
+                     $\sum_{i=0}^m\sum_{j=0}^m|a_{ij}|\leqslant B$
+                     \quad
                      $\forall m\geqslant0$}.
                      Dann 
                      \textbf{kovergieren die folgenden Reihen absolut}: 
-                     \textcolor{NavyBlue}{$S_i:=\sum_{j=0}^\infty a_{ij}$\quad
-                     $\forall i\geqslant0$} 
-                     und 
-                     \textcolor{NavyBlue}{$U_j:=\sum_{i=0}^\infty a_{ij}$\quad
-                     $\forall j\geqslant0$}
+                     \begin{align*}
+                            S_i:=\sum_{j=0}^\infty a_{ij} \quad
+                            \forall i\geqslant0
+                            \text{ und }
+                            U_j:=\sum_{i=0}^\infty a_{ij} \quad
+                            \forall j\geqslant0
+                     \end{align*}
                      sowie 
-                     \textcolor{NavyBlue}{$\sum_{i=0}^\infty S_i$} 
-                     und \textcolor{NavyBlue}{$\sum_{j=0}^\infty U_j$}
-                     und es gilt: 
-                     \textcolor{NavyBlue}{
-                     $\sum_{i=0}^\infty S_i=\sum_{j=0}^\infty U_j$}
-                     Und \textbf{jede lineare Anordnug der Doppelreihe konvergiert 
+                     \begin{align*}
+                            \sum_{i=0}^\infty S_i
+                            \text{ und }
+                            \sum_{j=0}^\infty U_j
+                     \end{align*}
+                     und es gilt:
+                     \begin{align*}
+                            \sum_{i=0}^\infty S_i
+                            =\sum_{j=0}^\infty U_j
+                     \end{align*}
+                     Und \textbf{jede lineare Anordnug 
+                     der Doppelreihe konvergiert 
                      absolut mit gleichem Grenzwert}.\\
               \colorbox{cyan}{Definition 2.7.24} 
                      Das \textbf{Cauchy Produkt} der Reihen 
                      \textcolor{NavyBlue}{
                      $\sum_{i=0}^\infty a_i,\,\sum_{j=0}^\infty b_j$} 
                      ist die Reihe: 
-                     \textcolor{NavyBlue}{
-                     $\sum_{n=0}^\infty(\sum_{j=0}^\infty a_{n-j}b_j)
-                     =a_0b_0+(a_0b_1+a_1b_0)+(a_0b_2+a_1b_1+a_2b_0)+...$}\\
+                     \begin{align*}
+                            &\sum_{n=0}^\infty
+                            (\sum_{j=0}^\infty a_{n-j}b_j)\\
+                            &=a_0b_0+(a_0b_1+a_1b_0)
+                            +(a_0b_2+a_1b_1+a_2b_0)+...
+                     \end{align*}
               \colorbox{magenta}{Satz 2.7.26} Falls die Reihen 
                      \textcolor{NavyBlue}{
                      $\sum_{i=0}^\infty a_i,\,\sum_{j=0}^\infty b_j$}
                      \textbf{absolut konvergieren}, 
-                     \textbf{konvergiert ihr Cauchy Produkt} und es gilt: 
-                     \textcolor{NavyBlue}{
-                     $\sum_{n=0}^\infty(\sum_{j=0}^\infty a_{n-j}b_j)
-                     =(sum_{i=0}^\infty a_i)(\sum_{j=0}^\infty b_j)$}.\\
+                     \textbf{konvergiert ihr Cauchy Produkt}
+                     und es gilt: 
+                     \begin{align*}
+                            \sum_{n=0}^\infty
+                            (\sum_{j=0}^\infty a_{n-j}b_j)
+                            =(\sum_{i=0}^\infty a_i)
+                            (\sum_{j=0}^\infty b_j)
+                     \end{align*}
               \colorbox{Dandelion}{Anwendung 2.7.27} 
               (\textbf{Exponentialfunktion})
-                     $\forall z,w\in\C:\exp(w+z)
-                     =\exp(w)\exp(z)$. Wir berechnen das Cauchy Produkt der 
-                     Reihen: $\sum_{i=0}^\infty\frac{w^i}{i!}$,
-                     $\sum_{i=0}^\infty\frac{z^i}{i!}$.
-                     Dies ist:
-                     $\sum_{n=0}^\infty(\sum_{j=0}^n\frac{w^{n-j}}{(n-j)!}
-                     \frac{z^j}{j!})$ Woraus die Behauptung folgt.\\
+                     \textcolor{NavyBlue}{
+                     $\forall z,w\in\C$}
+                     \begin{equation*}
+                            \exp(w+z)=\exp(w)\exp(z).                            
+                     \end{equation*}
+                     Wir berechnen das Cauchy Produkt der 
+                     Reihen: \textcolor{NavyBlue}{
+                     $\sum_{i=0}^\infty\frac{w^i}{i!}$},
+                     \textcolor{NavyBlue}{
+                     $\sum_{i=0}^\infty\frac{z^i}{i!}$}.
+                     Dieses ist:
+                     \textcolor{NavyBlue}{
+                     $\sum_{n=0}^\infty(\sum_{j=0}^n
+                     \frac{w^{n-j}}{(n-j)!}
+                     \frac{z^j}{j!})$} Woraus die Behauptung folgt.\\
               \colorbox{magenta}{Satz 2.7.28} 
                      Sei \textcolor{NavyBlue}{$f_n:\N\longrightarrow\R$} 
                      eine Folge. Wir nehmen an, dass: \\
@@ -794,18 +846,23 @@
                                    \forall n\geqslant0$} \\
                             \colorbox{SeaGreen}{2.2}
                                    \textcolor{NavyBlue}{$\sum_{j=0}^\infty g(j)$} 
-                                   \textbf{konvergiert}. Dann folgt: 
-                                   \textcolor{NavyBlue}{
-                                   $\sum_{j=0}^\infty f(j)
-                                   =\lim\limits_{n\to\infty}\sum_{j=0}^infty f_n(j)$}.\\
+                                   \textbf{konvergiert}. \\
+                            Dann folgt: 
+                            \begin{equation*}
+                                   \sum_{j=0}^\infty f(j)
+                                   =\lim\limits_{n\to\infty}
+                                   \sum_{j=0}^\infty f_n(j)
+                            \end{equation*}
               \colorbox{BurntOrange}{Korollar 2.7.29} 
               (\textbf{Exponentialfunktion})
                      \textcolor{NavyBlue}{
                      $\forall z\in\C$} \textbf{konvergiert} die Folge 
                      \textcolor{NavyBlue}{
                      $((1+\frac{z}{n})^n)_{n\geqslant1}$} und 
-                     \textcolor{NavyBlue}{
-                     $\lim\limits_{n\to\infty}(1+\frac{z}{n})^n=exp(z)$}
+                     \begin{equation*}
+                            \lim\limits_{n\to\infty}
+                            (1+\frac{z}{n})^n=exp(z)
+                     \end{equation*}
 
 \section{Stetige Funktionen}
        \subsection{Reellwertige Funktionen}
@@ -819,14 +876,20 @@
                      $D\subseteq\R$, ist:\\
                      \colorbox{SkyBlue}{(1)[(2)]}
                             \textbf{[streng] monoton 
-                            wachsend}, wenn \textcolor{NavyBlue}{
-                            $\forall x,y\in D\quad x\leqslant [<]y\Rightarrow$
-                            $f(x)\leqslant [<]f(y)$} \\
+                            wachsend}, wenn 
+                            \begin{equation*}
+                                   \forall x,y\in D\quad 
+                                   x\leqslant [<]y\Rightarrow
+                                   f(x)\leqslant [<]f(y)
+                            \end{equation*}
                      \colorbox{SkyBlue}{(3)[(4)]}
                             \textbf{[streng] monoton 
-                            fallend}, wenn \textcolor{NavyBlue}{
-                            $\forall x,y\in D\quad x\leqslant [<]y\Rightarrow$
-                            $f(x)\geqslant [>]f(y)$} \\
+                            fallend}, wenn 
+                            \begin{equation*}
+                                   \forall x,y\in D\quad 
+                                   x\leqslant [<]y\Rightarrow
+                                   f(x)\geqslant [>]f(y)
+                            \end{equation*}
                      \colorbox{SkyBlue}{(5)[(6)]} 
                             \textbf{[streng] monoton}, 
                             wenn \textcolor{NavyBlue}{$f$} 
@@ -1389,7 +1452,9 @@
                      \textbf{Häufungspunkt} von \textcolor{NavyBlue}{$E$}, 
                      \textcolor{NavyBlue}{$f^{-1}$} ist in \textcolor{NavyBlue}{$y_0$} 
                      \textbf{differenzierbar} 
-                     und \textcolor{NavyBlue}{$(f^{-1})'(y_0)=\frac{1}{f'(x_0)}$}\\
+                     und \textcolor{NavyBlue}{
+                     $(f^{-1})'(y_0)=\frac{1}{f'(x_0)}$}
+       \subsection{Zentrale Sätze über die Ableitung}
               \colorbox{cyan}{Definition 4.2.1} 
                      Sei \textcolor{NavyBlue}{$f:D\longrightarrow\R$},\,
                      \textcolor{NavyBlue}{$D\subseteq\R$}
@@ -1603,7 +1668,8 @@
                      \textcolor{NavyBlue}{$f$} ist \textbf{(streng) konvex}, 
                      wenn \textcolor{NavyBlue}{$f''\geqslant0$} (bzw. 
                      $\textcolor{NavyBlue}{f''>0}$) auf 
-                     \textcolor{NavyBlue}{$]a,b[$}.\\
+                     \textcolor{NavyBlue}{$]a,b[$}.
+       \subsection{Höhere Ableitungen}
               \colorbox{cyan}{Definition 4.3.1} 
                      \colorbox{SkyBlue}{(1)} Für $n\geqslant2$ ist 
                             $f\,n$\textbf{-mal differenzierbar in} $D$, wenn 
@@ -1670,7 +1736,8 @@
                      =\sum_{k=1}^nA_{n,k}(x)(g^{(k)}\circ f)(x)$}
                      wobei \textcolor{NavyBlue}{$A_{n,k}$} 
                      ein Polynom in den Funktionen 
-                     \textcolor{NavyBlue}{$f',f^{(2)},...,f^{n+1-k)}$} ist. \\
+                     \textcolor{NavyBlue}{$f',f^{(2)},...,f^{n+1-k)}$} ist.
+       \subsection{Potenzreihen \& Taylor Approximation}
               \colorbox{magenta}{Satz 4.4.1} 
                      Seien \textcolor{NavyBlue}{$f_n:]a,b[\longrightarrow\R$} 
                      eine Funktionenfolge wobei \textcolor{NavyBlue}{$f_n$} 
@@ -1864,7 +1931,9 @@
                      \textcolor{NavyBlue}{$\xi_i\in[x_{i-1},x_i]$},\,
                      \textcolor{NavyBlue}{$P=\{x_0,...,x_n\}$} 
                      \textcolor{NavyBlue}{
-                     $|A-\sum_{i+1}^nf(\xi_i)(x_i-x_{i-1})|<\varepsilon$}.\\
+                     $|A-\sum_{i+1}^nf(\xi_i)(x_i-x_{i-1})|
+                     <\varepsilon$}.
+       \subsection{Integrierbare Funktionen}
               \colorbox{magenta}{Satz 5.2.1} 
                      Seien \textcolor{NavyBlue}{$f,g:[a,b]\longrightarrow\R$} 
                      \textbf{beschränkt, integrierbar und} 
@@ -1965,8 +2034,11 @@
                      integrierbar} und \textcolor{NavyBlue}{$\lambda_1,\lambda_2\in\R$}. 
                      Dann gilt: 
                      \textcolor{NavyBlue}{
-                     $\int_a^b(\lambda_1f_1(x)+\lambda_2f_2(x))\,dx
-                     =\lambda_1\int_1^bf_1(x)\,dx+\lambda_2\int_a^bf_2(x)\,dx$}.\\ 
+                     $\int_a^b(\lambda_1f_1(x)
+                     +\lambda_2f_2(x))\,dx
+                     =\lambda_1\int_1^bf_1(x)\,dx
+                     +\lambda_2\int_a^bf_2(x)\,dx$}.
+       \subsection{Ungleichungen \& Mittelwertsatz}
               \colorbox{magenta}{Satz 5.3.1} 
                      Seien \textcolor{NavyBlue}{$f,g:[a,b]\longrightarrow\R$}
                      \textbf{beschränkt integrierbar}, und 
@@ -2000,7 +2072,9 @@
                      \textcolor{NavyBlue}{$g\geqslant0\quad\forall x\in[a,b]$}. 
                      Dann gibt es \textcolor{NavyBlue}{$\xi\in[a,b]$} mit: 
                      \textcolor{NavyBlue}{
-                     $\int_a^bf(x)g(x)\,dx=f(\xi)\int_a^bg(x)\,dx$}. \\
+                     $\int_a^bf(x)g(x)\,dx
+                     =f(\xi)\int_a^bg(x)\,dx$}.
+       \subsection{Fundamentalsatz Differentialrechnung}
               \colorbox{magenta}{Satz 5.4.1}
               (\textbf{Fundamentalsatz der Analysis}) 
                      Seien \textcolor{NavyBlue}{$a<b$} und 
@@ -2064,7 +2138,9 @@
                      \textcolor{NavyBlue}{$c\neq0$}, so dass das abgeschlossene Intervall mit den 
                      \textbf{Endpunkten} \textcolor{NavyBlue}{$ac,bc\in I$}. 
                      Dann gilt: \textcolor{NavyBlue}{
-                     $\int_a^bf(ct)\,dt=\frac{1}{c}\int_{ac}^{bc}f(x)\,dx$}.\\
+                     $\int_a^bf(ct)\,dt
+                     =\frac{1}{c}\int_{ac}^{bc}f(x)\,dx$}.
+       \subsection{Integration konvergenter Reihen}
               \colorbox{magenta}{Satz 5.5.1} 
                      Sei \textcolor{NavyBlue}{$f_n:[a,b]\longrightarrow\R$} 
                      eine Folge von \textbf{beschränkten, integrierbaren Funktionen}, 
@@ -2093,7 +2169,8 @@
                      auf \textcolor{NavyBlue}{$[-r,r]$}
                      \textbf{integrierbar} und es gilt 
                      \textcolor{NavyBlue}{$\forall x\in]-\rho,\rho[:\quad
-                     \int_0^xf(t)\,dt=\sum_{n=0}^\infty\frac{c_n}{n+1}x^{n+1}$}.\\
+                     \int_0^xf(t)\,dt
+                     =\sum_{n=0}^\infty\frac{c_n}{n+1}x^{n+1}$}.
        % \colorbox{cyan}{Definition}  5.6.1 $\forall k\geqslant0$ ist das $k$'te Bernoulli 
        % Polynom $B_k(x)=k!P_k(x)$. 
        % Bernoulli Plynome: $B_0(x)=1\quad B_1(x)=x-\frac{1}{2}\quad B_2(x)=x^2-x+\frac{1}{6}$.
@@ -2115,6 +2192,9 @@
        % Stirling'sche Formel 
        % \colorbox{magenta}{Satz} 5.7.1 
        % \colorbox{yellow}{Lemma}   5.7.2 
+       \stepcounter{subsection}
+       \stepcounter{subsection}
+       \subsection{Uneigentliche Integrale}
               \colorbox{cyan}{Definition 5.8.1} 
                      Sei \textcolor{NavyBlue}{$f:[a,\infty[\longrightarrow\R$}
                      \textbf{beschränkt und integrierbar} auf 
@@ -2207,6 +2287,7 @@
                      \textcolor{NavyBlue}{$f,g:[a,b]\longrightarrow\R$} gilt: 
                      \textcolor{NavyBlue}{
                      $\int_a^b|f(x)g(x)|\,dx\leqslant\norm{f}_p\norm{g}_q$}\\
+       \subsection{Das unbestimmte Integral}
               \colorbox{magenta}{Satz 5.9.3} 
                      Seien \textcolor{NavyBlue}{$P,Q$} \textbf{Polynome} mit 
                      \textcolor{NavyBlue}{
