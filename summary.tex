@@ -2828,35 +2828,54 @@
                             \end{equation*}
        \subsection{Integration konvergenter Reihen}
               \colorbox{magenta}{Satz 5.5.1} 
-                     Sei \textcolor{NavyBlue}{$f_n:[a,b]\longrightarrow\R$} 
-                     eine Folge von \textbf{beschränkten, integrierbaren Funktionen}, 
+                     Sei \textcolor{NavyBlue}{
+                     $f_n:[a,b]\longrightarrow\R$} 
+                     eine Folge von \textbf{beschränkten, 
+                     integrierbaren Funktionen}, 
                      die \textbf{gleichmässig} gegen 
                      eine Funktion 
-                     \textcolor{NavyBlue}{$f:[a,b]\longrightarrow\R$} 
+                     \textcolor{NavyBlue}{
+                     $f:[a,b]\longrightarrow\R$} 
                      \textbf{konvergiert}.
                      So ist \textcolor{NavyBlue}{$f$} 
                      \textbf{beschränkt integrierbar und} 
+                     \begin{equation*}
+                            \lim\limits_{n\to\infty}\int_a^bf_n(x)\,dx
+                            =\int_a^bf(x)\,dx.
+                     \end{equation*}
+              \colorbox{BurntOrange}{Korollar 5.5.2} 
+                     Sei \textcolor{NavyBlue}{
+                     $f_n:[a,b]\longrightarrow\R$} eine Folge 
+                     \textbf{beschränkter, integrierbarer 
+                     Funktionen}, so dass 
                      \textcolor{NavyBlue}{
-                     $\lim\limits_{n\to\infty}\int_a^bf_n(x)\,dx =\int_a^bf(x)\,dx$}.\\
-              \colorbox{BurntOrange}{Korollar 5.5.2} Sei 
-                     \textcolor{NavyBlue}{$f_n:[a,b]\longrightarrow\R$} eine Folge 
-                     \textbf{beschränkter, integrierbarer Funktionen}, so dass 
-                     \textcolor{NavyBlue}{$\sum_{n=0}^\infty f_n$} auf 
+                     $\sum_{n=0}^\infty f_n$} auf 
                      \textcolor{NavyBlue}{$[a,b]$}
-                     \textbf{gleichmässig konvergiert}. Dann gilt: 
-                     \textcolor{NavyBlue}{$\sum_{n=0}^\infty\int_a^bf_n(x)\,dx
-                     =\int_a^b(\sum_{n=0}^\infty f_n(x))\,dx$}. \\
+                     \textbf{gleichmässig konvergiert}. 
+                     Dann gilt: 
+                     \begin{equation*}
+                           \sum_{n=0}^\infty\int_a^bf_n(x)\,dx
+                            =\int_a^b(\sum_{n=0}^
+                            \infty f_n(x))\,dx 
+                     \end{equation*}
               \colorbox{BurntOrange}{Korollar 5.5.3} 
-                     Sei \textcolor{NavyBlue}{$f(x)=\sum_{n=0}^\infty c_kx^k$} 
-                     eine \textbf{Potenzreihe} mit positivem Konvergenzradius 
-                     \textcolor{NavyBlue}{$\rho>0$}. Dann ist für jedes 
+                     Sei \textcolor{NavyBlue}{
+                     $f(x)=\sum_{n=0}^\infty c_kx^k$} 
+                     eine \textbf{Potenzreihe} 
+                     mit positivem Konvergenzradius 
+                     \textcolor{NavyBlue}{$\rho>0$}. 
+                     Dann ist für jedes 
                      \textcolor{NavyBlue}{$0\leqslant r<\rho$},\,
                      \textcolor{NavyBlue}{$f$} 
                      auf \textcolor{NavyBlue}{$[-r,r]$}
                      \textbf{integrierbar} und es gilt 
-                     \textcolor{NavyBlue}{$\forall x\in]-\rho,\rho[:\quad
-                     \int_0^xf(t)\,dt
-                     =\sum_{n=0}^\infty\frac{c_n}{n+1}x^{n+1}$}.
+                     \textcolor{NavyBlue}{
+                     $\forall x\in]-\rho,\rho[$}:
+                     \begin{equation*}
+                            \int_0^xf(t)\,dt
+                            =\sum_{n=0}^
+                            \infty\frac{c_n}{n+1}x^{n+1}
+                     \end{equation*}
        % \colorbox{cyan}{Definition}  5.6.1 $\forall k\geqslant0$ ist das $k$'te Bernoulli 
        % Polynom $B_k(x)=k!P_k(x)$. 
        % Bernoulli Plynome: $B_0(x)=1\quad B_1(x)=x-\frac{1}{2}\quad B_2(x)=x^2-x+\frac{1}{6}$.
