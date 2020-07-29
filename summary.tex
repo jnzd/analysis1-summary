@@ -2173,67 +2173,111 @@
                      $f',f^{(2)},...,f^{n+1-k)}$} ist.
        \subsection{Potenzreihen \& Taylor Approximation}
               \colorbox{magenta}{Satz 4.4.1} 
-                     Seien \textcolor{NavyBlue}{$f_n:]a,b[\longrightarrow\R$} 
-                     eine Funktionenfolge wobei \textcolor{NavyBlue}{$f_n$} 
+                     Seien \textcolor{NavyBlue}{
+                     $f_n:]a,b[\longrightarrow\R$} 
+                     eine Funktionenfolge wobei 
+                     \textcolor{NavyBlue}{$f_n$} 
                      \textbf{einmal} in 
-                     \textcolor{NavyBlue}{$]a,b[\quad\forall n\geqslant1$} 
+                     \textcolor{NavyBlue}{
+                     $]a,b[\quad\forall n\geqslant1$} 
                      \textbf{stetig differenzierbar} ist.
                      Wir nehmen an, dass sowohl die Folge 
                      \textcolor{NavyBlue}{$(f_n)_{n\geqslant1}$} 
-                     wie auch \textcolor{NavyBlue}{$(f'_n)_{n\geqslant1}$} 
-                     \textbf{gleichmässig} in \textcolor{NavyBlue}{$]a,b[$} mit 
-                     \textcolor{NavyBlue}{$\lim\limits_{n\to\infty}f_n=:f$} 
-                     und \textcolor{NavyBlue}{$\lim\limits_{n\to\infty}f'_n=:p$}
-                     \textbf{konvergieren}. Dann ist \textcolor{NavyBlue}{$f$}
+                     wie auch \textcolor{NavyBlue}{
+                     $(f'_n)_{n\geqslant1}$} 
+                     \textbf{gleichmässig} in 
+                     \textcolor{NavyBlue}{$]a,b[$} mit 
+                     \textcolor{NavyBlue}{
+                     $\lim\limits_{n\to\infty}f_n=:f$} 
+                     und \textcolor{NavyBlue}{
+                     $\lim\limits_{n\to\infty}f'_n=:p$}
+                     \textbf{konvergieren}. 
+                     Dann ist \textcolor{NavyBlue}{$f$}
                      \textbf{stetig differenzierbar} 
                      und \textcolor{NavyBlue}{$f'=p$}. \\
               \colorbox{magenta}{Satz 4.4.2} 
-                     Sei \textcolor{NavyBlue}{$\sum_{k=0}^\infty c_kx^k$} 
+                     Sei \textcolor{NavyBlue}{
+                     $\sum_{k=0}^\infty c_kx^k$} 
                      eine \textbf{Potenzreihe} mit 
-                     pos. Konvergenzradius \textcolor{NavyBlue}{$\rho>0$}. Dann ist
-                     \textcolor{NavyBlue}{$f(x)=\sum_{k=0}^\infty c_k(x-x_0)^k$} 
-                     auf \textcolor{NavyBlue}{$]x_0-\rho,x_0+\rho[$} 
-                     \textbf{differenzierbar} und 
-                     \textcolor{NavyBlue}{
-                     $f'(x)=\sum_{k=0}^\infty kc_k(x-x_0)^{k-1}\quad
-                     \forall x\in]x_0-\rho,x_0+\rho[$}.\\
-              \colorbox{BurntOrange}{Korollar 4.4.3} 
-                     Unter der Voraussetzung von \textbf{Satz 4.4.1} ist 
-                     \textcolor{NavyBlue}{$f$} auf 
+                     positiven Konvergenzradius 
+                     \textcolor{NavyBlue}{$\rho>0$}. Dann ist
+                     \begin{equation*}
+                          f(x)=\sum_{k=0}^\infty c_k(x-x_0)^k  
+                     \end{equation*}
+                     auf 
                      \textcolor{NavyBlue}{$]x_0-\rho,x_0+\rho[$} 
-                     \textbf{glatt} und \textcolor{NavyBlue}{$f^{(j)}(x)
-                     =\sum_{k=j}^\infty c_k\frac{k!}{(k-j)!}(x-x_0)^{k-j}$}. 
+                     \textbf{differenzierbar} und
+                     \begin{equation*}
+                            f'(x)
+                            =\sum_{k=0}^\infty kc_k(x-x_0)^{k-1}
+                            \quad
+                            \forall x\in]x_0-\rho,x_0+\rho[.
+                     \end{equation*}\\
+              \colorbox{BurntOrange}{Korollar 4.4.3} 
+                     Unter der Voraussetzung von 
+                     \textbf{Satz 4.4.1} ist 
+                     \textcolor{NavyBlue}{$f$} auf 
+                     \textcolor{NavyBlue}{
+                     $]x_0-\rho,x_0+\rho[$} 
+                     \textbf{glatt} und
+                     \begin{equation*}
+                            f^{(j)}(x)
+                            =\sum_{k=j}^\infty c_k
+                            \frac{k!}{(k-j)!}(x-x_0)^{k-j}.
+                     \end{equation*}
                      Insbesondere ist 
-                     \textcolor{NavyBlue}{$c_j=\frac{f^{(j)}(x_0)}{j!}$}.\\
+                     \begin{equation*}
+                            c_j=\frac{f^{(j)}(x_0)}{j!}.  
+                     \end{equation*}
+              \vfill\null
+              \columnbreak
               \colorbox{magenta}{Satz 4.4.5} 
-                     Sei \textcolor{NavyBlue}{$f:[a,b]\longrightarrow\R$}
+                     Sei \textcolor{NavyBlue}{
+                     $f:[a,b]\longrightarrow\R$}
                      \textbf{stetig} und in 
                      \textcolor{NavyBlue}{$]a,b[$} 
                      \textbf{$(n+1)$-mal differenzierbar}. 
-                     Für jedes \textcolor{NavyBlue}{$a<x\leqslant b$} gibt es 
-                     \textcolor{NavyBlue}{$\xi\in]a,x[$} mit: 
-                     \textcolor{NavyBlue}{
-                     $f(x)=\sum_{k=0}^\infty\frac{f^{(k)}(a)}{k!}(x-a)^k
-                     +\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-a)^{n+1}$}. \\
+                     Für jedes \textcolor{NavyBlue}{
+                     $a<x\leqslant b$} gibt es 
+                     \textcolor{NavyBlue}{$\xi\in]a,x[$} mit:
+                     \begin{equation*}
+                            f(x)
+                            =\sum_{k=0}^\infty
+                            \frac{f^{(k)}(a)}{k!}(x-a)^k
+                            +\frac{f^{(n+1)}(\xi)}{(n+1)!}
+                            (x-a)^{n+1}.
+                     \end{equation*}
               \colorbox{BurntOrange}{Korollar 4.4.6} 
-              (\textbf{Taylor Approximation}) 
-                     Sei \textcolor{NavyBlue}{$f:[c,d]\longrightarrow\R$} 
+              (\textbf{Taylor Approximation}) \\
+                     Sei \textcolor{NavyBlue}{
+                     $f:[c,d]\longrightarrow\R$} 
                      \textbf{stetig} und in 
                      \textcolor{NavyBlue}{$]c,d[$} 
                      \textbf{$(n+1)$-mal differenzierbar}. Sei 
                      \textcolor{NavyBlue}{$c<a<d$}. 
-                     \textcolor{NavyBlue}{$\forall x\in[c,d]\,\exists\xi$} zwischen 
-                     \textcolor{NavyBlue}{$x$} und \textcolor{NavyBlue}{$a$}, 
-                     so dass: \textcolor{NavyBlue}{
-                     $f(x)=\sum_{k=0}^n\frac{f^{(k)}(a)}{k!}(x-a)^k
-                     +\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-a)^{n+1}$}.\\
+                     \textcolor{NavyBlue}{
+                     $\forall x\in[c,d]\,\exists\xi$} zwischen 
+                     \textcolor{NavyBlue}{$x$} und 
+                     \textcolor{NavyBlue}{$a$}, 
+                     so dass: 
+                     \begin{equation*}
+                            f(x)=\sum_{k=0}^n
+                            \frac{f^{(k)}(a)}{k!}(x-a)^k
+                            +\frac{f^{(n+1)}(\xi)}{(n+1)!}
+                            (x-a)^{n+1}.
+                     \end{equation*}
               \colorbox{BurntOrange}{Korollar 4.4.7} 
-                     Sei \textcolor{NavyBlue}{$n\geqslant0,\,a<x_0<b$} und 
-                     \textcolor{NavyBlue}{$f:[a,b]\longrightarrow\R$} 
+                     Sei \textcolor{NavyBlue}{
+                     $n\geqslant0$},\,
+                     \textcolor{NavyBlue}{$a<x_0<b$} und \\
+                     \textcolor{NavyBlue}
+                     {$f:[a,b]\longrightarrow\R$} 
                      in \textcolor{NavyBlue}{$]a,b[$} 
-                     \textbf{$(n+1)$-mal stetig differenzierbar}.
+                     \textbf{$(n+1)$-mal stetig 
+                     differenzierbar}.
                      Annahme: \textcolor{NavyBlue}{
-                     $f'(x_0)=f^{(2)}(x_0)=...=f^{(n)}(x_0)=0$}. \\
+                     $f'(x_0)=f^{(2)}(x_0)=...
+                     =f^{(n)}(x_0)=0$}. \\
                      \colorbox{SkyBlue}{(1)} 
                             Wenn \textcolor{NavyBlue}{$n$} 
                             \textbf{gerade} 
