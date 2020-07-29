@@ -1779,156 +1779,285 @@
                             $f'(\xi)=0\quad\forall\xi\in]a,b[$} 
                             ist, ist \textcolor{NavyBlue}{$f$} 
                             \textbf{konstant}.\\
+
+                     \columnbreak
                      \colorbox{SkyBlue}{(2)} 
                             Wenn \textcolor{NavyBlue}{
                             $f'(\xi)=g'(\xi)\quad
                             \forall\xi\in]a,b[$} 
                             ist, gibt es 
                             \textcolor{NavyBlue}{$c\in\R$} mit: 
-                            \textcolor{NavyBlue}{
-                            $f(x)=g(x)+c\quad
-                            \forall x\in[a,b]$}.\\
-                     \colorbox{SkyBlue}{(3)}[\colorbox{SkyBlue}{(4)}] 
+                            \begin{equation*}
+                                   f(x)=g(x)+c\quad
+                                   \forall x\in[a,b].
+                            \end{equation*}
+                     \colorbox{SkyBlue}{(3)[(4)]}
                             Wenn \textcolor{NavyBlue}{
-                            $f'(\xi)\geqslant[>]0\quad\forall\xi\in]a,b[$} ist, 
+                            $f'(\xi)\geqslant[>]0\quad
+                            \forall\xi\in]a,b[$} ist, 
                             ist \textcolor{NavyBlue}{$f$} auf 
                             \textcolor{NavyBlue}{$[a,b]$} 
                             \textbf{[strikt] monoton wachsend}.\\
-                     \colorbox{SkyBlue}{(5)}[\colorbox{SkyBlue}{(6)}] 
+                     \colorbox{SkyBlue}{(5)[(6)]}
                             Wenn \textcolor{NavyBlue}{
-                            $f'(\xi)\leqslant[<]0\quad\forall\xi\in]a,b[$} ist, 
+                            $f'(\xi)\leqslant[<]0\quad
+                            \forall\xi\in]a,b[$} ist, 
                             ist \textcolor{NavyBlue}{$f$} auf 
                             \textcolor{NavyBlue}{$[a,b]$} 
                             \textbf{[strikt] monoton fallend}.\\
                      \colorbox{SkyBlue}{(7)} Wenn es 
                             \textcolor{NavyBlue}{$M\geqslant0$} gibt, mit: 
                             \textcolor{NavyBlue}{
-                            $|f'(\xi)|\leqslant M\quad\forall\xi\in]a,b[$}, 
+                            $|f'(\xi)|\leqslant M\quad
+                            \forall\xi\in]a,b[$}, 
                             folgt \textcolor{NavyBlue}{ 
-                            $\forall x_1,x_2\in[a,b]:\enspace
-                            |f(x_1)-f(x_2)|\leqslant M|x_1-x_2|$}. \\
+                            $\forall x_1,x_2\in[a,b]$}
+                            \begin{equation*}
+                                   |f(x_1)-f(x_2)|
+                                   \leqslant M|x_1-x_2|.
+                            \end{equation*}
               \colorbox{Dandelion}{Beispiel 4.2.6}
                      \colorbox{SkyBlue}{(1) $\arcsin$} 
-                            Da $\sin'=\cos$ und 
+                            Da \textcolor{NavyBlue}{
+                            $\sin'=\cos$} und \\
+                            \textcolor{NavyBlue}{
                             $\cos(x)>0\enspace
-                            \forall x\in]-\frac{\pi}{2},\frac{\pi}{2}[$
-                            folgt aus \textbf{Korollar 4.2.5 (4)}, dass die 
+                            \forall x\in]-\frac{\pi}{2},
+                            \frac{\pi}{2}[$}
+                            folgt aus 
+                            \textbf{Korollar 4.2.5 (4)}, dass die 
                             Sinusfunktion auf
-                            $[-\frac{\pi}{2},\frac{\pi}{2}]$ strikt 
-                            monoton wachsend
+                            \textcolor{NavyBlue}{
+                            $[-\frac{\pi}{2},\frac{\pi}{2}]$} 
+                            strikt monoton wachsend
                             ist. Also ist 
-                            $\sin:[-\frac{\pi}{2},\frac{\pi}{2}]\longrightarrow[-1,1]$ 
-                            bijektiv. Wir definieren
-                            $\arcsin:[-1,1]\longrightarrow[-\frac{\pi}{2},\frac{\pi}{2}]$
-                            als die Umkehrfunktion von $\sin$. Nach 
+                            \textcolor{NavyBlue}{
+                            $\sin:[-\frac{\pi}{2},
+                            \frac{\pi}{2}]\longrightarrow[-1,1]$}
+                            bijektiv. Wir definieren:
+                            \begin{equation*}
+                                   \arcsin:[-1,1]\longrightarrow
+                                   [-\frac{\pi}{2},\frac{\pi}{2}]
+                            \end{equation*}
+                            als die Umkehrfunktion von
+                            \textcolor{NavyBlue}{
+                            $\sin$}. Nach 
                             \textbf{Korollar 4.1.12} 
-                            ist sie auf $]-1,1[$ differenzierbar und für
-                            $y=\sin x,\enspace x\in]-\frac{\pi}{2},\frac{\pi}{2}[$
+                            ist sie auf $]-1,1[$ 
+                            differenzierbar und für\\
+                            \textcolor{NavyBlue}{
+                            $y=\sin x,\enspace 
+                            x\in]-\frac{\pi}{2},\frac{\pi}{2}[$}
                             folgt nach \textbf{4.1.12}:
-                            $\arcsin'(y)=\frac{1}{\sin'(x)}=\frac{1}{\cos x}$.
-                            Wir verwenden nun: $y^2=\sin^2x=1-\cos^2x$
-                            woraus mit $\cos c>0$ folgt:
-                            $\cos x=\sqrt{1-y^2}$. Wir erhalten also 
-                            $\forall y\in ]-1,1[$
-                            $\arcsin'(y)=\frac{1}{\sqrt{1-y^2}}$.\\
+                            \begin{equation*}
+                                   \arcsin'(y)
+                                   =\frac{1}{\sin'(x)}
+                                   =\frac{1}{\cos x}.
+                            \end{equation*}
+                            Wir verwenden nun: 
+                            \begin{equation*}
+                                   y^2=\sin^2x=1-\cos^2x
+                            \end{equation*}
+                            woraus mit 
+                            \textcolor{NavyBlue}{
+                            $\cos c>0$} folgt:
+                            \textcolor{NavyBlue}{
+                            $\cos x=\sqrt{1-y^2}$}. 
+                            Wir erhalten also 
+                            \textcolor{NavyBlue}{
+                            $\forall y\in ]-1,1[$}
+                            \begin{equation*}
+                                   \arcsin'(y)
+                                   =\frac{1}{\sqrt{1-y^2}}.
+                            \end{equation*}
                      \colorbox{SkyBlue}{(2) $\arccos$}
-                            Eine analoge Diskussion, wie in (1) zeigt, dass
-                            $\cos:[0,\pi]\longrightarrow[-1,]$ strikt 
-                            monoton fallend ist
-                            und $[0,\pi]$ auf $[-1,1]$ bijektiv abbildet. Sei:
-                            $\arccos:[-1,1]\longrightarrow[0,\pi]$ die 
-                            Umkehrfunktion. Sie ist auf $]-1,1[$ 
+                            Eine analoge Diskussion, wie in 
+                            \textbf{(1)} zeigt, dass
+                            \textcolor{NavyBlue}{
+                            $\cos:[0,\pi]\longrightarrow[-1,]$}
+                            strikt monoton fallend ist
+                            und 
+                            \textcolor{NavyBlue}{
+                            $[0,\pi]$} auf 
+                            \textcolor{NavyBlue}{
+                            $[-1,1]$}
+                            bijektiv abbildet. Sei:
+                            \begin{equation*}
+                                  \arccos:[-1,1]
+                                   \longrightarrow[0,\pi] 
+                            \end{equation*}
+                            die Umkehrfunktion. Sie ist auf 
+                            \textcolor{NavyBlue}{
+                            $]-1,1[$}
                             differenzierbar und
-                            $\arccos'(y)=\frac{-1}{\sqrt{1-y^2}}\enspace
-                            \forall y\in]-1,1[$.\\
+                            \begin{equation*}
+                                  \arccos'(y)
+                                   =\frac{-1}{\sqrt{1-y^2}}
+                                   \enspace
+                                   \forall y\in]-1,1[.
+                            \end{equation*}
                      \colorbox{SkyBlue}{(3) $\arctan$}
-                            Für $x\notin\frac{\pi}{2}+\pi\cdot\mathbb{Z}$
-                            hatten wir die Tangensfunktion definiert:
-                            $\tan x=\frac{\sin x}{\cos x}$ und deren Ableitung 
-                            berechnet:
-                            $\tan'x=\frac{1}{cos^2x}$. Also ist $\tan$ auf
-                            $]-\frac{\pi}{2},\frac{\pi}{2}[$ streng monoton wachsend mit
-                            $\lim\limits_{x\to\frac{\pi}{2}^{-}}\tan x=+\infty$,
-                            $\lim\limits_{x\to\frac{\pi}{2}^{+}}\tan x=-\infty$.
+                            Für 
+                            \textcolor{NavyBlue}{
+                            $x\notin\frac{\pi}{2}
+                            +\pi\cdot\mathbb{Z}$}
+                            hatten wir die Tangensfunktion 
+                            definiert:
+                            \textcolor{NavyBlue}{
+                            $\tan x=\frac{\sin x}{\cos x}$} 
+                            und deren Ableitung berechnet:
+                            \textcolor{NavyBlue}{
+                            $\tan'x=\frac{1}{cos^2x}$}. 
                             Also ist 
+                            \textcolor{NavyBlue}{$\tan$} auf
+                            \textcolor{NavyBlue}{
+                            $]-\frac{\pi}{2},\frac{\pi}{2}[$} 
+                            streng monoton wachsend mit
+                            \textcolor{NavyBlue}{
+                            $\lim\limits_{x\to
+                            \frac{\pi}{2}^{-}}\tan x=+\infty$},
+                            \textcolor{NavyBlue}{
+                            $\lim\limits_{x\to
+                            \frac{\pi}{2}^{+}}\tan x=-\infty$}.
+                            Also ist 
+                            \textcolor{NavyBlue}{
                             $\tan:]-\frac{\pi}{2},\frac{\pi}{2}[
-                            \longrightarrow]-\infty,\infty[$ bijektiv. Sei
-                            $\arctan:]-\infty,\infty[\longrightarrow
-                            ]-\frac{\pi}{2},\frac{\pi}{2}[$ die 
-                            Umkehrfunktion.
-                            Dann ist $\arctan$ differenzierbar und für 
-                            $y=\tan x$: $\arctan'(y)=\cos^x=\frac{1}{1+y^2}$.\\
+                            \longrightarrow]-\infty,\infty[$} 
+                            bijektiv. Sei
+                            \begin{equation*}
+                                   \arctan:]-\infty,\infty[
+                                   \longrightarrow
+                                   ]-\frac{\pi}{2},\frac{\pi}{2}[
+                            \end{equation*}
+                            die Umkehrfunktion.
+                            Dann ist 
+                            \textcolor{NavyBlue}{
+                            $\arctan$} differenzierbar und für
+                            \textcolor{NavyBlue}{
+                            $y=\tan x$}: 
+                            \begin{equation*}
+                                  \arctan'(y)
+                                  =\cos^2x=\frac{1}{1+y^2}.
+                            \end{equation*}
               \colorbox{magenta}{Satz 4.2.9} 
               (Cauchy)
                      Seien 
-                     \textcolor{NavyBlue}{$f,g:[a,b]\longrightarrow\R$}
+                     \textcolor{NavyBlue}{
+                     $f,g:[a,b]\longrightarrow\R$}
                      stetig und in \textcolor{NavyBlue}{$]a,b[$} 
-                     \textbf{differenzierbar}.
-                     Es gibt \textcolor{NavyBlue}{$\xi\in]a,b[$} mit: 
-                     \textcolor{NavyBlue}{$g'(\xi)(f(b)-f(a))=f'(\xi)(g(b)-g(a))$}. 
-                     Wenn \textcolor{NavyBlue}{$g'(x)\neq0\quad\forall x\in]a,b[$} 
-                     ist, folgt: \textcolor{NavyBlue}{$g(a)\neq g(b)$} und 
-                     \textcolor{NavyBlue}{
-                     $\frac{f(b)-f(a)}{g(b)-g(a)}=\frac{f'(\xi)}{g'(\xi)}$}\\ 
-              \colorbox{magenta}{Satz 4.2.10} 
-              (\textbf{Bernoulli} 1691/92, \textbf{de l'Hôpital} 1696) 
-                     Seien \textcolor{NavyBlue}{$f,g:]a,b[\longrightarrow\R$} 
-                     \textbf{differenzierbar} mit 
-                     \textcolor{NavyBlue}{$g'(x)\neq0\quad\forall x\in]a,b[$}. 
+                     \textbf{differenzierbar}. Es gibt 
+                     \textcolor{NavyBlue}{$\xi\in]a,b[$} mit:
+                     \begin{equation*}
+                            g'(\xi)(f(b)-f(a))
+                            =f'(\xi)(g(b)-g(a)).
+                     \end{equation*} 
                      Wenn \textcolor{NavyBlue}{
-                     $\lim\limits_{x\to b^{-}}f(x)=0,\,\lim\limits_{x\to b^{-}}g(x)=0$}
-                     und \textcolor{NavyBlue}{
-                     $\lim\limits_{x\to b^{-}}\frac{f'(x)}{g'(x)}=:\lambda$}
-                     existiert, folgt: \textcolor{NavyBlue}{
-                     $\lim\limits_{x\to b^{-}}\frac{f(x)}{g(x)}
-                     =\lim\limits_{x\to b^{-}}\frac{f'(x)}{g'(x)}$}.\\
+                     $g'(x)\neq0\quad\forall x\in]a,b[$} 
+                     ist, folgt: 
+                     \begin{equation*}
+                            g(a)\neq g(b)
+                            \text{ und }
+                            \frac{f(b)-f(a)}{g(b)-g(a)}
+                            =\frac{f'(\xi)}{g'(\xi)}
+                     \end{equation*}
+              \colorbox{magenta}{Satz 4.2.10} 
+              (\textbf{Bernoulli} 1691/92, 
+              \textbf{de l'Hôpital} 1696) 
+                     Seien \textcolor{NavyBlue}{
+                     $f,g:]a,b[\longrightarrow\R$} 
+                     \textbf{differenzierbar} mit 
+                     \begin{equation*}
+                           g'(x)\neq0\quad\forall x\in]a,b[.
+                     \end{equation*}
+                     Wenn 
+                     \begin{equation*}
+                            \lim\limits_{x\to b^{-}}f(x)=0,\,
+                            \lim\limits_{x\to b^{-}}g(x)=0   
+                     \end{equation*}
+                     und 
+                     \begin{equation*}
+                            \lim\limits_{x\to b^{-}}
+                            \frac{f'(x)}{g'(x)}=:\lambda
+                     \end{equation*}
+                     existiert, folgt: 
+                     \begin{equation*}
+                            \lim\limits_{x\to b^{-}}
+                            \frac{f(x)}{g(x)}
+                            =\lim\limits_{x\to b^{-}}
+                            \frac{f'(x)}{g'(x)}.
+                     \end{equation*}
               \colorbox{green}{Bemerkung 4.2.11} 
-                     Der Satz \textbf{gilt auch} wenn: 
-                     \textcolor{NavyBlue}{
-                     $b=+\infty\qquad\lambda=+\infty\qquad x\to a^{+}$}\\
+                     Der Satz \textbf{gilt auch} wenn:
+                     \begin{equation*}
+                            b=+\infty\qquad\lambda
+                            =+\infty\qquad x\to a^{+}
+                     \end{equation*}
               \colorbox{cyan}{Definition 4.2.13} 
                      \colorbox{SkyBlue}{(1)} 
                             \textcolor{NavyBlue}{$f$}
-                            ist \textbf{konvex} (auf \textcolor{NavyBlue}{$I$}), wenn 
-                            \textcolor{NavyBlue}{$\forall x,y\in I,\,x\leqslant y$ 
+                            ist \textbf{konvex} (auf 
+                            \textcolor{NavyBlue}{$I$}), wenn 
+                            \textcolor{NavyBlue}{
+                            $\forall x,y\in I,\,x\leqslant y$ 
                             und $\lambda\in[0,1]$}
-                            folgendes gilt: \textcolor{NavyBlue}{
-                            $f(\lambda x+(1-\lambda)y)
-                            \leqslant\lambda f(x)+(1-\lambda)f(y)$}\\
+                            folgendes gilt: 
+                            \begin{equation*}
+                                   f(\lambda x+(1-\lambda)y)
+                                   \leqslant\lambda f(x)
+                                   +(1-\lambda)f(y) 
+                            \end{equation*}
                      \colorbox{SkyBlue}{(2)} 
                             \textcolor{NavyBlue}{$f$} ist 
                             \textbf{streng konvex}, 
-                            wenn \textcolor{NavyBlue}{$\forall x,y\in I,\,x<y$}
-                            und \textcolor{NavyBlue}{$\lambda\in]0,1[$} 
+                            wenn \textcolor{NavyBlue}{
+                            $\forall x,y\in I,\,x<y$}
+                            und \textcolor{NavyBlue}{
+                            $\lambda\in]0,1[$} 
                             folgendes gilt: 
-                            \textcolor{NavyBlue}{
-                            $f(\lambda x+(1-\lambda)y)
-                            <\lambda f(x)+(1-\lambda)f(y)$}\\ 
+                            \begin{equation*}
+                                   f(\lambda x+(1-\lambda)y)
+                                   <\lambda f(x)+(1-\lambda)f(y)
+                            \end{equation*}\\
               \colorbox{green}{Bemerkung 4.2.14} 
-                     Sei \textcolor{NavyBlue}{$f:I\longrightarrow\R$} 
-                     \textbf{konvex}. Ein einfacher Induktionsbeweis zeigt, dass 
+                     Sei \textcolor{NavyBlue}{
+                     $f:I\longrightarrow\R$} 
+                     \textbf{konvex}. Ein einfacher 
+                     Induktionsbeweis zeigt, dass
                      \textcolor{NavyBlue}{
-                     $\forall n\geqslant1,\,\{x_1,...,x_n\}\subseteq I$} 
-                     und \textcolor{NavyBlue}{$\lambda_1,...\lambda_n$} in 
+                     $\forall n\geqslant1$},\\
+                     \textcolor{NavyBlue}{$\{x_1,...,x_n\}
+                     \subseteq I$} 
+                     und \textcolor{NavyBlue}{
+                     $\lambda_1,...\lambda_n$} in 
                      \textcolor{NavyBlue}{$[0,1]$} mit 
-                     \textcolor{NavyBlue}{$\sum_{i=1}^n\lambda_i=1$}
-                     folgendes gilt: \textcolor{NavyBlue}{
-                     $f(\sum_{i=1}^n\lambda_i x_i)
-                     \leqslant\sum_{i=1}^n\lambda_if(x_i)$}\\
+                     \textcolor{NavyBlue}{
+                     $\sum_{i=1}^n\lambda_i=1$}
+                     folgendes gilt: 
+                     \begin{equation*}
+                            f(\sum_{i=1}^n\lambda_i x_i)
+                            \leqslant\sum_{i=1}^n\lambda_if(x_i)
+                     \end{equation*}
               \colorbox{yellow}{Lemma 4.2.15} 
-                     Sei \textcolor{NavyBlue}{$f:I\longrightarrow\R$} 
-                     eine beliebige Funktion. Die Funktion \textcolor{NavyBlue}{$f$}
+                     Sei \textcolor{NavyBlue}{
+                     $f:I\longrightarrow\R$} 
+                     eine beliebige Funktion. Die Funktion 
+                     \textcolor{NavyBlue}{$f$}
                      ist \textbf{genau dann konvex, wenn} 
                      \textcolor{NavyBlue}{$\forall x_0<x<x_1$} in 
                      \textcolor{NavyBlue}{$I$}
-                     folgendes gilt: \textcolor{NavyBlue}{
-                     $\frac{f(x)-f(x_0)}{x-x_0}\leqslant\frac{f(x_1)-f(x)}{x_1-x}$}\\ 
+                     folgendes gilt: 
+                     \begin{equation*}
+                           \frac{f(x)-f(x_0)}{x-x_0}
+                     \leqslant\frac{f(x_1)-f(x)}{x_1-x} 
+                     \end{equation*}
               \colorbox{magenta}{Satz 4.2.16} 
-                     Sei \textcolor{NavyBlue}{$f:]a,b[\longrightarrow\R$}
+                     Sei \textcolor{NavyBlue}{
+                     $f:]a,b[\longrightarrow\R$}
                      \textbf{differenzierbar}. 
                      \textcolor{NavyBlue}{$f$} ist 
                      \textbf{genau dann (streng) konvex, wenn} 
-                     \textcolor{NavyBlue}{$f'$} \textbf{(streng) monoton
+                     \textcolor{NavyBlue}{$f'$} 
+                     \textbf{(streng) monoton
                      wachsend} ist.\\
               \colorbox{BurntOrange}{Korollar 4.2.17} 
                      Sei \textcolor{NavyBlue}{$f:]a,b[\longrightarrow\R$}

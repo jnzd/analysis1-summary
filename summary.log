@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.19)  29 JUL 2020 18:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.19)  29 JUL 2020 18:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -458,28 +458,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 1320--1353
 
  []
 
-[5] [6] [7]
-Underfull \hbox (badness 6842) in paragraph at lines 2009--2102
+[5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 1770--1782
+
+ []
+
+[7]
+Underfull \hbox (badness 6842) in paragraph at lines 2138--2231
 [][][][][][] \T1/ppl/m/n/10 (\T1/ppl/b/n/10 Taylor Ap-prox-i-ma-tion\T1/ppl/m/n/10 ) Sei []$\OML/zplm/m/it/10 f \OT1/zplm/m/n/10 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2105--2204
+Underfull \hbox (badness 10000) in paragraph at lines 2234--2333
 \T1/ppl/m/n/10 definieren: []$\OML/zplm/m/it/10 s\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 f\OT1/zplm/m/n/10 ) = [] \OML/zplm/m/it/10 s\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 f\OT1/ppl/m/n/10 , \OML/zplm/m/it/10 P\OT1/zplm/m/n/10 )$[]\T1/ppl/m/n/10 , []$\OML/zplm/m/it/10 S\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 f\OT1/zplm/m/n/10 ) =
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 2310--2345
+Underfull \hbox (badness 10000) in paragraph at lines 2439--2474
 [][][][][][] \T1/ppl/m/n/10 (\T1/ppl/b/n/10 Cauchy-Schwarz Un-gle-ichung\T1/ppl/m/n/10 ) Seien
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2466--2558
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 2595--2687
 
  []
 
-[9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 2773--2779
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 2902--2908
 
  []
 
@@ -487,13 +492,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 2773--2779
 Here is how much of TeX's memory you used:
  4464 strings out of 480478
  57002 string characters out of 5903485
- 347127 words of memory out of 5000000
+ 362522 words of memory out of 5000000
  20396 multiletter control sequences out of 15000+600000
  575223 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,13n,45p,432b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,13n,45p,432b,532s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.pdf" (11 pages, 215395 bytes).
+Output written on "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.pdf" (11 pages, 215035 bytes).
 PDF statistics:
  89 PDF objects out of 1000 (max. 8388607)
  63 compressed objects within 1 object stream
