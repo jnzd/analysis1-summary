@@ -1502,81 +1502,133 @@
        \subsection{Die Ableitung}
               \colorbox{cyan}{Definition 4.1.1} 
                      $f$ ist in $x_0$ \textbf{differenzierbar}, 
-                     wenn der Grenzwert \textcolor{NavyBlue}{
-                     $\lim\limits_{x\to x_0}\frac{f(x)-f(x-0)}{x-x_0}$}
+                     wenn der Grenzwert 
+                     \begin{equation*}
+                            \lim\limits_{x\to x_0}
+                            \frac{f(x)-f(x-0)}{x-x_0}
+                     \end{equation*}
                      existiert. Ist dies der Fall, wird 
-                     der Grenzwert mit \textcolor{NavyBlue}{$f'(x_0)$} bezeichnet.\\
+                     der Grenzwert mit 
+                     \textcolor{NavyBlue}{$f'(x_0)$} 
+                     bezeichnet.\\
               \colorbox{green}{Bemerkung 4.1.2} 
                      Es ist oft von Vorteil in der Definition von 
                      \textcolor{NavyBlue}{$f'(x_0)$},\,
-                     \textcolor{NavyBlue}{$x=x_0+h$} zu setzen, so dass: 
-                     \textcolor{NavyBlue}{
-                     $f'(x_0)=\lim\limits_{h\to 0}\frac{f(x_0+h)-f(x_0)}{h}$}\\
-              \colorbox{magenta}{Satz 4.1.3} (Weierstrass 1861) Sei 
-                     \textcolor{NavyBlue}{$f:D\longrightarrow\R,\,x_0\in D$}
-                     \textbf{Häufungspunkt} von \textcolor{NavyBlue}{$D$}. 
+                     \textcolor{NavyBlue}{$x=x_0+h$} 
+                     zu setzen, so dass: 
+                     \begin{equation*}
+                            f'(x_0)
+                            =\lim\limits_{h\to 0}
+                            \frac{f(x_0+h)-f(x_0)}{h}
+                     \end{equation*}
+              \colorbox{magenta}{Satz 4.1.3} 
+              (Weierstrass 1861) 
+                     Sei \textcolor{NavyBlue}{
+                     $f:D\longrightarrow\R$},\\
+                     \textcolor{NavyBlue}{$x_0\in D$}
+                     \textbf{Häufungspunkt} von 
+                     \textcolor{NavyBlue}{$D$}. 
                      Folgende Aussagen sind 
                      äquivalent: \\
-                     \colorbox{SkyBlue}{(1)} \textcolor{NavyBlue}{$f$} ist in 
+                     \colorbox{SkyBlue}{(1)} 
+                            \textcolor{NavyBlue}{$f$} ist in 
                             \textcolor{NavyBlue}{$x_0$} 
                             \textbf{differenzierbar} \\
-                     \colorbox{SkyBlue}{(2)} Es gibt 
+                     \colorbox{SkyBlue}{(2)} 
+                            Es gibt 
                             \textcolor{NavyBlue}{$c\in\R$} und 
-                            \textcolor{NavyBlue}{$r:D\longrightarrow\R$} mit: \\
+                            \textcolor{NavyBlue}{
+                            $r:D\longrightarrow\R$} mit: \\
                             \colorbox{SeaGreen}{2.1} 
                                    \textcolor{NavyBlue}{
-                                   $f(x)=f(x_0)+c(x-x_0)+r(x)(x-x_0)$} \\
+                                   $f(x)=f(x_0)+c(x-x_0)
+                                   +r(x)(x-x_0)$} \\
                             \colorbox{SeaGreen}{2.2} 
-                                   \textcolor{NavyBlue}{$r(x_0)=0$} und 
-                                   \textcolor{NavyBlue}{$r$} ist \textbf{stetig}
-                                   in \textcolor{NavyBlue}{$x_0$}\\
-                     Wenn dies zutrifft, ist \textcolor{NavyBlue}{$c=f'(x_0)$} 
+                                   \textcolor{NavyBlue}{
+                                   $r(x_0)=0$} und 
+                                   \textcolor{NavyBlue}{$r$} 
+                                   ist \textbf{stetig}
+                                   in \textcolor{NavyBlue}{
+                                   $x_0$}\\
+                     Wenn dies zutrifft, ist 
+                     \textcolor{NavyBlue}{$c=f'(x_0)$} 
                      \textbf{eindeutig} bestimmt.\\
-              \colorbox{magenta}{Satz 4.1.4} Eine Funktion 
-                     \textcolor{NavyBlue}{$f:D\longrightarrow\R$} ist in 
-                     $x_0$ \textbf{genau dann differenzierbar, wenn} es eine 
-                     Funktion \textcolor{NavyBlue}{$\phi:D\longrightarrow\R$}
-                     gibt, die in \textcolor{NavyBlue}{$x_0$} \textbf{stetig} ist 
-                     und \textcolor{NavyBlue}{$f(x)=f(x_0)+\phi(x)(x-x_0)\quad\forall x\in D$}. 
-                     In diesem Fall gilt: \textcolor{NavyBlue}{$\phi(x)=f'(x)$}.\\
+              \colorbox{magenta}{Satz 4.1.4} 
+                     Eine Funktion 
+                     \textcolor{NavyBlue}{
+                     $f:D\longrightarrow\R$} ist in 
+                     $x_0$ \textbf{genau dann 
+                     differenzierbar, wenn} es eine 
+                     Funktion \textcolor{NavyBlue}{
+                     $\phi:D\longrightarrow\R$}
+                     gibt, die in \textcolor{NavyBlue}{$x_0$} 
+                     \textbf{stetig} ist und 
+                     \textcolor{NavyBlue}{$\forall x\in D$}
+                     \begin{equation*}
+                            f(x)=f(x_0)+\phi(x)(x-x_0).
+                     \end{equation*}
+                     In diesem Fall gilt: 
+                     \begin{equation*}
+                            \phi(x)=f'(x).
+                     \end{equation*}
               \colorbox{BurntOrange}{Korollar 4.1.5} 
-                     Sei \textcolor{NavyBlue}{$f:D\longrightarrow\R$}
-                     und \textcolor{NavyBlue}{$x_0$} ein \textbf{Häufungspunkt} von 
+                     Sei \textcolor{NavyBlue}{
+                     $f:D\longrightarrow\R$}
+                     und \textcolor{NavyBlue}{$x_0$} 
+                     ein \textbf{Häufungspunkt} von 
                      \textcolor{NavyBlue}{$D$}. 
-                     Wenn \textcolor{NavyBlue}{$f$} in \textcolor{NavyBlue}{$x_0$} 
-                     \textbf{differenzierbar} ist, ist \textcolor{NavyBlue}{$f$} in 
+                     Wenn \textcolor{NavyBlue}{$f$} in 
+                     \textcolor{NavyBlue}{$x_0$} 
+                     \textbf{differenzierbar} ist, ist 
+                     \textcolor{NavyBlue}{$f$} in 
                      \textcolor{NavyBlue}{$x_0$} 
                      \textbf{stetig}.\\
               \colorbox{cyan}{Definition 4.1.7} 
                      \textcolor{NavyBlue}{$f:D\longrightarrow\R$} 
-                     ist in \textcolor{NavyBlue}{$D$} \textbf{differenzierbar}, 
-                     wenn für \textbf{jeden Häufungspunkt} $x_0\in D,$
-                     \textcolor{NavyBlue}{$f$} in \textcolor{NavyBlue}{$x_0$} 
+                     ist in \textcolor{NavyBlue}{$D$} 
+                     \textbf{differenzierbar}, 
+                     wenn für \textbf{jeden Häufungspunkt} 
+                     $x_0\in D,$
+                     \textcolor{NavyBlue}{$f$} in 
+                     \textcolor{NavyBlue}{$x_0$} 
                      \textbf{differenzierbar} ist.\\
               \colorbox{magenta}{Satz 4.1.9} 
                      Sei \textcolor{NavyBlue}{$D\subseteq\R$},\,
                      \textcolor{NavyBlue}{$x_0\in D$} 
-                     ein \textbf{Häufungspunkt} von \textcolor{NavyBlue}{$D$} 
-                     und \textcolor{NavyBlue}{$f,g:d\longrightarrow\R$} in 
-                     \textcolor{NavyBlue}{$x_0$} \textbf{differenzierbar}. 
+                     ein \textbf{Häufungspunkt} von 
+                     \textcolor{NavyBlue}{$D$} 
+                     und \textcolor{NavyBlue}{
+                     $f,g:d\longrightarrow\R$} in 
+                     \textcolor{NavyBlue}{$x_0$} 
+                     \textbf{differenzierbar}. 
                      Dann gelten:\\
-                     \colorbox{SkyBlue}{(1)} \textcolor{NavyBlue}{$f+g$}
+                     \colorbox{SkyBlue}{(1)} 
+                            \textcolor{NavyBlue}{$f+g$}
                             ist in \textcolor{NavyBlue}{$x_0$} 
                             \textbf{differenzierbar} und 
-                            \textcolor{NavyBlue}{$(f+g)'(x_0)=f'(x_0)+g'(x_0)$}\\
+                            \begin{equation*}
+                                   (f+g)'(x_0)=f'(x_0)+g'(x_0)
+                            \end{equation*}
                      \colorbox{SkyBlue}{(2)} 
                             \textcolor{NavyBlue}{$f\cdot g$} 
                             ist in \textcolor{NavyBlue}{$x_0$} 
                             \textbf{differenzierbar} und 
-                            \textcolor{NavyBlue}{
-                            $(f\cdot g)'(x_0)=f'(x_0)g(x_0)+f(x_0)g'(x_0)$}\\
+                            \begin{equation*}
+                                   (f\cdot g)'(x_0)
+                                   =f'(x_0)g(x_0)+f(x_0)g'(x_0)
+                            \end{equation*}
                      \colorbox{SkyBlue}{(3)} Wenn 
-                            \textcolor{NavyBlue}{$g(x_0)\neq0$} ist, ist 
-                            \textcolor{NavyBlue}{$\frac{f}{g}$} in 
-                            \textcolor{NavyBlue}{$x_0$} \textbf{differenzierbar} und 
                             \textcolor{NavyBlue}{
-                            $(\frac{f}{g})'(x_0)
-                            =\frac{f'(x_0)g(x_0)-f(x_0)g'(x_0)}{g^2(x_0)}$} \\
+                            $g(x_0)\neq0$} ist, ist 
+                            \textcolor{NavyBlue}{
+                            $\frac{f}{g}$} in 
+                            \textcolor{NavyBlue}{$x_0$} 
+                            \textbf{differenzierbar} und 
+                            \begin{equation*}
+                                   (\frac{f}{g})'(x_0)
+                                   =\frac{f'(x_0)g(x_0)
+                                   -f(x_0)g'(x_0)}{g^2(x_0)}
+                            \end{equation*}
               \colorbox{magenta}{Satz 4.1.11}
                      Seien \textcolor{NavyBlue}{$D,E\subseteq\R$}, 
                      sei \textcolor{NavyBlue}{$x_0\in D$}
@@ -1585,93 +1637,157 @@
                      eine in \textcolor{NavyBlue}{$x_0$}
                      \textbf{differenzierbare Funktion}, so dass 
                      \textcolor{NavyBlue}{$y_0:=f(x_0)$} ein 
-                     \textbf{Häufungspunkt} von \textcolor{NavyBlue}{$E$} ist und 
-                     sei \textcolor{NavyBlue}{$g:E\longrightarrow\R$} eine in 
+                     \textbf{Häufungspunkt} von 
+                     \textcolor{NavyBlue}{$E$} ist und 
+                     sei \textcolor{NavyBlue}{
+                     $g:E\longrightarrow\R$} eine in 
                      \textcolor{NavyBlue}{$y_0$} 
-                     \textbf{differenzierbare Funktion}. Dann ist 
-                     \textcolor{NavyBlue}{$g\circ f:D\longrightarrow\R$} in 
-                     \textcolor{NavyBlue}{$x_0$} \textbf{differenzierbar} und 
-                     \textcolor{NavyBlue}{$(g\circ f)'(x_0)=g'(f(x_0))f'(x_0)$}\\
+                     \textbf{differenzierbare Funktion}. 
+                     Dann ist 
+                     \textcolor{NavyBlue}{
+                     $g\circ f:D\longrightarrow\R$} in 
+                     \textcolor{NavyBlue}{$x_0$} 
+                     \textbf{differenzierbar} und 
+                     \begin{equation*}
+                            (g\circ f)'(x_0)=g'(f(x_0))f'(x_0)
+                     \end{equation*}
+              \newpage
               \colorbox{BurntOrange}{Korollar 4.1.12}
-                     Sei \textcolor{NavyBlue}{$f:D\longrightarrow E$} eine 
+                     Sei \textcolor{NavyBlue}{
+                     $f:D\longrightarrow E$} eine 
                      \textbf{bijektive Funktion}, sei 
-                     \textcolor{NavyBlue}{$x_0\in D$} ein \textbf{Häufungspunkt}. 
+                     \textcolor{NavyBlue}{$x_0\in D$} 
+                     ein \textbf{Häufungspunkt}. 
                      Wir nehmen an \textcolor{NavyBlue}{$f$} ist 
-                     in \textcolor{NavyBlue}{$x_0$} \textbf{differenzierbar} und 
-                     \textcolor{NavyBlue}{$f'(x_0)\neq0$}. Zudem nehmen 
-                     wir an \textcolor{NavyBlue}{$f^{-1}$} ist in \textcolor{NavyBlue}{$y_0=f(x_0)$}
-                     \textbf{stetig}. Dann ist \textcolor{NavyBlue}{$y_0$} ein 
-                     \textbf{Häufungspunkt} von \textcolor{NavyBlue}{$E$}, 
-                     \textcolor{NavyBlue}{$f^{-1}$} ist in \textcolor{NavyBlue}{$y_0$} 
-                     \textbf{differenzierbar} 
-                     und \textcolor{NavyBlue}{
-                     $(f^{-1})'(y_0)=\frac{1}{f'(x_0)}$}
+                     in \textcolor{NavyBlue}{$x_0$} 
+                     \textbf{differenzierbar} und 
+                     \textcolor{NavyBlue}{$f'(x_0)\neq0$}. 
+                     Zudem nehmen 
+                     wir an \textcolor{NavyBlue}{$f^{-1}$} 
+                     ist in \textcolor{NavyBlue}{$y_0=f(x_0)$}
+                     \textbf{stetig}. Dann ist 
+                     \textcolor{NavyBlue}{$y_0$} ein 
+                     \textbf{Häufungspunkt} von 
+                     \textcolor{NavyBlue}{$E$}, 
+                     \textcolor{NavyBlue}{$f^{-1}$} ist in 
+                     \textcolor{NavyBlue}{$y_0$} 
+                     \textbf{differenzierbar} und 
+                     \begin{equation*}
+                            (f^{-1})'(y_0)=\frac{1}{f'(x_0)}
+                     \end{equation*}
        \subsection{Zentrale Sätze über die Ableitung}
               \colorbox{cyan}{Definition 4.2.1} 
-                     Sei \textcolor{NavyBlue}{$f:D\longrightarrow\R$},\,
+                     Sei \textcolor{NavyBlue}{
+                     $f:D\longrightarrow\R$},\,
                      \textcolor{NavyBlue}{$D\subseteq\R$}
                      und \textcolor{NavyBlue}{$x_0\in D$}. \\
-                     \colorbox{SkyBlue}{(1)}[\colorbox{SkyBlue}{(2)}] 
-                            \textcolor{NavyBlue}{$f$} besitzt ein 
+                     \colorbox{SkyBlue}{(1)[(2)]}
+                            \textcolor{NavyBlue}{$f$} 
+                            besitzt ein 
                             \textbf{lokales Maximum [Minimum]} in 
                             \textcolor{NavyBlue}{$x_0$}, wenn 
-                            \textcolor{NavyBlue}{$\exists\delta>0$} mit: 
                             \textcolor{NavyBlue}{
-                            $f(x)\leqslant[\geqslant] f(x_0)\quad
-                            \forall x\in]x_0-\delta,x_0+\delta[\cap D$}\\
+                            $\exists\delta>0$} mit: 
+                            \begin{equation*}
+                                   f(x)\leqslant[\geqslant] 
+                                   f(x_0)\quad
+                                   \forall x
+                                   \in]x_0-\delta,x_0+\delta[
+                                   \cap D
+                            \end{equation*}
                      \colorbox{SkyBlue}{(3)} 
-                            $f$ besitzt ein \textbf{lokales Extremum} 
-                            in \textcolor{NavyBlue}{$x_0$}, wenn es ein 
-                            \textbf{lokales Minimum oder Maximum} ist. \\
+                            $f$ besitzt ein 
+                            \textbf{lokales Extremum} 
+                            in \textcolor{NavyBlue}{$x_0$}, 
+                            wenn es ein 
+                            \textbf{lokales Minimum oder 
+                            Maximum} ist. \\
               \colorbox{magenta}{Satz 4.2.2} 
                      Sei \textcolor{NavyBlue}{
                      $f:]a,b[\longrightarrow\R,\,x_0\in]a,b[$}. 
-                     Wir nehmen an, \textcolor{NavyBlue}{$f$} ist in 
-                     \textcolor{NavyBlue}{$x_0$} \textbf{differenzierbar}.\\
-                     \colorbox{SkyBlue}{(1)} Wenn \textcolor{NavyBlue}{$f'(x_0)>0$} 
-                            ist, \textcolor{NavyBlue}{$\exists\delta>0$} mit: 
+                     Wir nehmen an, \textcolor{NavyBlue}{$f$} 
+                     ist in 
+                     \textcolor{NavyBlue}{$x_0$} 
+                     \textbf{differenzierbar}.\\
+                     \colorbox{SkyBlue}{(1)} 
+                            Wenn \textcolor{NavyBlue}{
+                            $f'(x_0)>0$} 
+                            ist, \textcolor{NavyBlue}{
+                            $\exists\delta>0$} mit: 
+                            \begin{align*}
+                                   f(x)>f(x_0)\quad
+                                   \forall x
+                                   \in]x_0,x_0+\delta[ \\
+                                   f(x)<f(x_0)\quad
+                                   \forall x
+                                   \in]x_0-\delta,x_0[
+                            \end{align*}
+                     \colorbox{SkyBlue}{(2)} 
+                            Wenn 
+                            \textcolor{NavyBlue}{$f'(x_0)<0$} 
+                            ist, 
                             \textcolor{NavyBlue}{
-                            $f(x)>f(x_0)\quad\forall x\in]x_0,x_0+\delta[$}
-                            \textcolor{NavyBlue}{
-                            $f(x)<f(x_0)\quad\forall x\in]x_0-\delta,x_0[$}\\
-                     \colorbox{SkyBlue}{(2)} Wenn 
-                            \textcolor{NavyBlue}{$f'(x_0)<0$} ist, 
-                            \textcolor{NavyBlue}{$\exists\delta>0$} mit: 
-                            \textcolor{NavyBlue}{
-                            $f(x)<f(x_0)\quad\forall x\in]x_0,x_0+\delta[$}
-                            \textcolor{NavyBlue}{
-                            $f(x)>f(x_0)\quad\forall x\in]x_0-\delta,x_0[$}\\ 
-                     \colorbox{SkyBlue}{(3)} Wenn \textcolor{NavyBlue}{$f$} in 
+                            $\exists\delta>0$} mit: 
+                            \begin{align*}
+                                   f(x)<f(x_0)\quad
+                                   \forall x
+                                   \in]x_0,x_0+\delta[\\
+                                   f(x)>f(x_0)\quad
+                                   \forall x
+                                   \in]x_0-\delta,x_0[
+                            \end{align*}
+                     \colorbox{SkyBlue}{(3)} 
+                            Wenn \textcolor{NavyBlue}{$f$} in 
                             \textcolor{NavyBlue}{$x_0$} ein 
                             \textbf{lokales Extremum} 
-                            besitzt, folgt \textcolor{NavyBlue}{$f'(x_0)=0$}.\\
+                            besitzt, folgt 
+                            \begin{equation*}
+                                   f'(x_0)=0.
+                            \end{equation*}
               \colorbox{magenta}{Satz 4.2.3} 
               (Rolle 1690) 
-                     Sei \textcolor{NavyBlue}{$f:[a,b]\longrightarrow\R$}
+                     Sei \textcolor{NavyBlue}{
+                     $f:[a,b]\longrightarrow\R$}
                      stetig und in \textcolor{NavyBlue}{$]a,b[$} 
                      \textbf{differenzierbar}. 
-                     Wenn \textcolor{NavyBlue}{$f(a)=f(b)$}, so gibt es 
+                     Wenn \textcolor{NavyBlue}{$f(a)=f(b)$}, 
+                     so gibt es 
                      \textcolor{NavyBlue}{$\xi\in]a,b[$} mit: 
-                     \textcolor{NavyBlue}{$f'(\xi)=0$}.\\
+                     \begin{equation*}
+                            f'(\xi)=0.
+                     \end{equation*}
               \colorbox{magenta}{Satz 4.2.4}
               (Lagrange 1797) 
-                     Sei \textcolor{NavyBlue}{$f\longrightarrow\R$}
-                     \textbf{stetig} und in \textcolor{NavyBlue}{$]a,b[$} 
+                     Sei \textcolor{NavyBlue}{
+                     $f\longrightarrow\R$}
+                     \textbf{stetig} und in 
+                     \textcolor{NavyBlue}{$]a,b[$} 
                      \textbf{differenzierbar}. 
-                     Es gibt \textcolor{NavyBlue}{$\xi\in]a,b[$} mit: 
-                     \textcolor{NavyBlue}{$f(b)-f(a)=f'(\xi)(b-a)$}.\\
+                     Es gibt \textcolor{NavyBlue}{
+                     $\xi\in]a,b[$} mit: 
+                     \begin{equation*}
+                            f(b)-f(a)=f'(\xi)(b-a).
+                     \end{equation*}
               \colorbox{BurntOrange}{Korollar 4.2.5} 
-                     Seien \textcolor{NavyBlue}{$f,g:[a,b]\longrightarrow\R$}
-                     \textbf{stetig} und in \textcolor{NavyBlue}{$]a,b[$} 
+                     Seien \textcolor{NavyBlue}{
+                     $f,g:[a,b]\longrightarrow\R$}
+                     \textbf{stetig} und in 
+                     \textcolor{NavyBlue}{$]a,b[$} 
                      \textbf{differenzierbar}.\\
                      \colorbox{SkyBlue}{(1)} Wenn 
-                            \textcolor{NavyBlue}{$f'(\xi)=0\quad\forall\xi\in]a,b[$} ist, 
-                            ist \textcolor{NavyBlue}{$f$} \textbf{konstant}.\\
-                     \colorbox{SkyBlue}{(2)} Wenn 
-                            \textcolor{NavyBlue}{$f'(\xi)=g'(\xi)\quad\forall\xi\in]a,b[$} 
-                            ist, gibt es \textcolor{NavyBlue}{$c\in\R$} mit: 
                             \textcolor{NavyBlue}{
-                            $f(x)=g(x)+c\quad\forall x\in[a,b]$}.\\
+                            $f'(\xi)=0\quad\forall\xi\in]a,b[$} 
+                            ist, ist \textcolor{NavyBlue}{$f$} 
+                            \textbf{konstant}.\\
+                     \colorbox{SkyBlue}{(2)} 
+                            Wenn \textcolor{NavyBlue}{
+                            $f'(\xi)=g'(\xi)\quad
+                            \forall\xi\in]a,b[$} 
+                            ist, gibt es 
+                            \textcolor{NavyBlue}{$c\in\R$} mit: 
+                            \textcolor{NavyBlue}{
+                            $f(x)=g(x)+c\quad
+                            \forall x\in[a,b]$}.\\
                      \colorbox{SkyBlue}{(3)}[\colorbox{SkyBlue}{(4)}] 
                             Wenn \textcolor{NavyBlue}{
                             $f'(\xi)\geqslant[>]0\quad\forall\xi\in]a,b[$} ist, 
