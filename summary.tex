@@ -2498,7 +2498,8 @@
                      \end{equation*}
        \subsection{Integrierbare Funktionen}
               \colorbox{magenta}{Satz 5.2.1} 
-                     Seien \textcolor{NavyBlue}{$f,g:[a,b]\longrightarrow\R$} 
+                     Seien \textcolor{NavyBlue}{$f,g:[a,b]
+                     \longrightarrow\R$} 
                      \textbf{beschränkt, integrierbar und} 
                      \textcolor{NavyBlue}{$\lambda\in\R$}. 
                      Dann sind \textcolor{NavyBlue}{$f+g$},\,
@@ -2508,63 +2509,109 @@
                      \textcolor{NavyBlue}{$\max(f,g)$},
                      \textcolor{NavyBlue}{$\min(f,g)$} und (falls 
                      \textcolor{NavyBlue}{
-                     $|g(x)\geqslant\beta>0\quad\forall x\in[a,b]$})
+                     $|g(x)|\geqslant\beta>0$\\
+                     $\forall x\in[a,b]$})
                      \textcolor{NavyBlue}{$\frac{f}{g}$}
                      \textbf{integrierbar}.\\
               \colorbox{green}{Bemerkung 5.2.2} 
-                     Sei \textcolor{NavyBlue}{$\phi:[c,d]\longrightarrow\R$} 
-                     eine \textbf{beschränkte Funktion}. Dann ist 
-                     $(*)$\textcolor{NavyBlue}{$\sup\limits_{x,y\in[c,c]}|\phi(x)-\phi(y)|
-                     =\sup\limits_{x\in[c,d]}\phi(x)-\inf\limits_{x\in[c,d]}\phi(x)$}.
+                     Sei \textcolor{NavyBlue}{
+                     $\phi:[c,d]\longrightarrow\R$} 
+                     eine \textbf{beschränkte Funktion}. 
+                     Dann ist 
+                     \begin{equation*}
+                            (*)\enspace
+                            \sup\limits_{x,y\in[c,c]}|
+                            \phi(x)-\phi(y)|
+                            =\sup\limits_{x\in[c,d]}\phi(x)
+                            -\inf\limits_{x\in[c,d]}\phi(x).
+                     \end{equation*}
                      Einerseits gilt offensichtlich 
-                     \textcolor{NavyBlue}{$\forall x,y\in[c,d]$}: 
-                     \textcolor{NavyBlue}{$\phi(x)\leqslant\sup\limits_{[c,d]}\phi,$}
-                     \textcolor{NavyBlue}{$\quad\phi\geqslant\inf\limits_{[c,d]}\phi$}
-                     also ist \textcolor{NavyBlue}{
-                     $\phi(x)-\phi(y)\leqslant\sup\limits_{[c,d]}\phi-\inf\limits_{[c,d]}\phi$}, 
-                     woraus durch vertauschen von \textcolor{NavyBlue}{$x,y$} folgt: 
                      \textcolor{NavyBlue}{
-                     $|\phi(x)-\phi(y)|\leqslant\sup\limits_{[c,d]}-\inf\limits_{[c,d]}\phi$}. 
-                     Andererseits sei \textcolor{NavyBlue}{$\varepsilon>0$}. 
-                     Dann gibt es \textcolor{NavyBlue}{$\xi\in[c,d]$}
-                     und \textcolor{NavyBlue}{$\eta\in[c,d]$ $\phi(\xi)>\varepsilon$} und 
-                     \textcolor{NavyBlue}{$\phi(\eta)<\inf\limits_{[c,d]}\phi+\varepsilon$} 
+                     $\forall x,y\in[c,d]$}: 
+                     \begin{align*}
+                            \phi(x)\leqslant
+                            \sup\limits_{[c,d]}\phi,\qquad
+                            \phi(y)\geqslant
+                            \inf\limits_{[c,d]}\phi
+                     \end{align*}
+                     also ist 
+                     \begin{equation*}
+                            \phi(x)-\phi(y)\leqslant
+                            \sup\limits_{[c,d]}\phi
+                            -\inf\limits_{[c,d]}\phi,
+                     \end{equation*}
+                     woraus durch vertauschen von 
+                     \textcolor{NavyBlue}{$x,y$} folgt:
+                     \begin{equation*}
+                            |\phi(x)-\phi(y)|\leqslant
+                            \sup\limits_{[c,d]}
+                            -\inf\limits_{[c,d]}\phi. 
+                     \end{equation*}
+                     Andererseits sei 
+                     \textcolor{NavyBlue}{$\varepsilon>0$}. 
+                     Dann gibt es 
+                     \textcolor{NavyBlue}{$\xi\in[c,d]$}
+                     und \textcolor{NavyBlue}{
+                     $\eta\in[c,d]$ $\phi(\xi)>\varepsilon$} und 
+                     \textcolor{NavyBlue}{
+                     $\phi(\eta)<\inf\limits_{[c,d]}\phi
+                     +\varepsilon$} 
                      woraus 
-                     \textcolor{NavyBlue}{$\phi(\xi)-\phi(\eta)
-                     >\sup\limits_{[c,d]}\phi-\inf\limits_{[c,d]}\phi-2\varepsilon$}
+                     \begin{equation*}
+                            \phi(\xi)-\phi(\eta)
+                            >\sup\limits_{[c,d]}\phi
+                            -\inf\limits_{[c,d]}\phi-2
+                            \varepsilon  
+                     \end{equation*}
                      folgt. Dies zeigt die Aussage $(*)$ \\
               \colorbox{BurntOrange}{Korollar 5.2.3} 
-                     Seien \textcolor{NavyBlue}{$P,Q$} Polynome und 
+                     Seien \textcolor{NavyBlue}{$P,Q$} 
+                     Polynome und 
                      \textcolor{NavyBlue}{$[a,b]$}
-                     ein \textbf{Intervall} in dem \textcolor{NavyBlue}{$Q$} 
-                     \textbf{keine Nullstelle} besitzt. Dann ist 
-                     \textcolor{NavyBlue}{
-                     $[a,b]\longrightarrow\R,\,x\mapsto\frac{P(x)}{Q(x)}$}
+                     ein \textbf{Intervall} in dem 
+                     \textcolor{NavyBlue}{$Q$} 
+                     \textbf{keine Nullstelle} besitzt. Dann ist
+                     \begin{align*}
+                            [a,b]&\longrightarrow\R,\\
+                            x&\mapsto\frac{P(x)}{Q(x)}
+                     \end{align*} 
                      \textbf{integrierbar}.\\
               \colorbox{cyan}{Definition 5.2.4} 
                      Eine Funktion 
-                     \textcolor{NavyBlue}{$f:D\longrightarrow\R,\,D\subseteq\R$}
+                     \textcolor{NavyBlue}{
+                     $f:D\longrightarrow\R,\,D\subseteq\R$}
                      ist in \textcolor{NavyBlue}{$D$} 
                      \textbf{gleichmässig stetig}, wenn 
                      \textcolor{NavyBlue}{
-                     $\forall\varepsilon>0\,\enspace\exists\delta>0$\quad
-                     $\forall x,y\in D:\qquad|x-y|<\delta
-                     \Longrightarrow|f(x)-f(y)|<\varepsilon$}.\\
+                     $\forall\varepsilon>0\,\enspace
+                     \exists\delta>0$\\
+                     $\forall x,y\in D$}:
+                     \begin{equation*}
+                            |x-y|<\delta
+                            \Longrightarrow|
+                            f(x)-f(y)|<\varepsilon. 
+                     \end{equation*}
               \colorbox{magenta}{Satz 5.2.6} 
                      (Heine 1872) Sei 
-                     \textcolor{NavyBlue}{$f:[a,b]\longrightarrow\R$}
+                     \textcolor{NavyBlue}{
+                     $f:[a,b]\longrightarrow\R$}
                      \textbf{stetig} in dem kompakten Intervall 
                      \textcolor{NavyBlue}{$[a,b]$}. 
                      Dann ist \textcolor{NavyBlue}{$f$} in 
                      \textcolor{NavyBlue}{$[a,b]$}
                      \textbf{gleichmässig stetig}.\\
               \colorbox{magenta}{Satz 5.2.7} 
-                     Sei \textcolor{NavyBlue}{$f:[a,b]\longrightarrow\R$} 
-                     \textbf{stetig}. So ist \textcolor{NavyBlue}{$f$} 
+                     Sei \textcolor{NavyBlue}{
+                     $f:[a,b]\longrightarrow\R$} 
+                     \textbf{stetig}. 
+                     \textcolor{NavyBlue}{$f$} ist
                      \textbf{integrierbar}.\\
               \colorbox{magenta}{Satz 5.2.8} 
-                     Sei \textcolor{NavyBlue}{$f:[a,b]\longrightarrow\R$} 
-                     \textbf{monoton}. So ist \textcolor{NavyBlue}{$f$} 
+                     \textcolor{NavyBlue}{
+                     $f:[a,b]\longrightarrow\R$} 
+                     \textbf{monoton}
+                     $\Rightarrow$
+                     \textcolor{NavyBlue}{$f$} 
                      \textbf{integrierbar}.\\
               \colorbox{green}{Bemerkung 5.2.9} 
                      Seien \textcolor{NavyBlue}{$a<b<c$} und 
@@ -2573,34 +2620,53 @@
                      \textcolor{NavyBlue}{$f|_{[a,b]}$} und 
                      \textcolor{NavyBlue}{$f|_{[b,c]}$} 
                      \textbf{integrierbar}. Dann ist 
-                     \textcolor{NavyBlue}{$f$} integrierbar und $(*)$ 
-                     \textcolor{NavyBlue}{
-                     $\int_a^cf(x)\,dx=\int_a^bf(x)\,dx+\int_b^cf(x)\,dx$}.
-                     In der Tat ergibt die \textbf{Summe einer Obersumme 
+                     \textcolor{NavyBlue}{$f$} integrierbar und 
+                     \begin{equation*}
+                            (*)\enspace
+                            \int_a^cf(x)\,dx
+                            =\int_a^bf(x)\,dx
+                            +\int_b^cf(x)\,dx.
+                     \end{equation*}
+                     In der Tat ergibt die 
+                     \textbf{Summe einer Obersumme 
                      (respektive Untersumme)} für 
                      \textcolor{NavyBlue}{$f|_{[a,b]}$} und 
                      \textcolor{NavyBlue}{$f|_{[b,c]}$} 
-                     \textbf{eine Obersumme (respektive Untersumme)} für 
+                     \textbf{eine Obersumme (respektive 
+                     Untersumme)} für 
                      \textcolor{NavyBlue}{$f$}. Wir
                      erweitern jetzt die Definition von 
-                     \textcolor{NavyBlue}{$\int_a^bf(x)\,dx$} auf: 
-                     \textcolor{NavyBlue}{$\int_a^af(x)\,dx=0$} und wenn 
-                     \textcolor{NavyBlue}{$a<b,\,\int_b^af(x)\,dx:=-\int_a^bf(x)\,dx$}.
-                     Dann gilt $(*)$ für alle Tripel \textcolor{NavyBlue}{$a,b,c$} 
-                     unter den entsprechenden Integrabilitätsvoraussetzungen. \\
+                     \textcolor{NavyBlue}{$\int_a^bf(x)\,dx$} 
+                     auf: 
+                     \textcolor{NavyBlue}{$\int_a^af(x)\,dx=0$} 
+                     und wenn 
+                     \textcolor{NavyBlue}{$a<b$}
+                     \begin{equation*}
+                            \int_b^af(x)\,dx
+                            :=-\int_a^bf(x)\,dx.
+                     \end{equation*}
+                     Dann gilt $(*)$ für alle Tripel 
+                     \textcolor{NavyBlue}{$a,b,c$} 
+                     unter den entsprechenden 
+                     Integrabilitätsvoraussetzungen. \\
               \colorbox{magenta}{Satz 5.2.10}
                      Sei \textcolor{NavyBlue}{$I\subsetneq\R$} 
                      ein \textbf{kompaktes Intervall} 
-                     mit \textbf{Endpunkten} \textcolor{NavyBlue}{$a,b$} sowie 
-                     \textcolor{NavyBlue}{$f_1,f_2:I\longrightarrow\R$}
-                     \textbf{beschränkt 
-                     integrierbar} und \textcolor{NavyBlue}{$\lambda_1,\lambda_2\in\R$}. 
-                     Dann gilt: 
+                     mit \textbf{Endpunkten} 
+                     \textcolor{NavyBlue}{$a,b$} sowie 
                      \textcolor{NavyBlue}{
-                     $\int_a^b(\lambda_1f_1(x)
-                     +\lambda_2f_2(x))\,dx
-                     =\lambda_1\int_1^bf_1(x)\,dx
-                     +\lambda_2\int_a^bf_2(x)\,dx$}.
+                     $f_1,f_2:I\longrightarrow\R$}
+                     \textbf{beschränkt 
+                     integrierbar} und 
+                     \textcolor{NavyBlue}{
+                     $\lambda_1,\lambda_2\in\R$}. 
+                     Dann gilt: 
+                     \begin{align*}
+                            \int_a^b(\lambda_1f_1(x)
+                            &+\lambda_2f_2(x))\,dx \\
+                            =\lambda_1\int_1^bf_1(x)\,dx
+                            &+\lambda_2\int_a^bf_2(x)\,dx.
+                     \end{align*}
        \subsection{Ungleichungen \& Mittelwertsatz}
               \colorbox{magenta}{Satz 5.3.1} 
                      Seien \textcolor{NavyBlue}{$f,g:[a,b]\longrightarrow\R$}
