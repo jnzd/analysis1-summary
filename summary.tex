@@ -2281,136 +2281,221 @@
                      \colorbox{SkyBlue}{(1)} 
                             Wenn \textcolor{NavyBlue}{$n$} 
                             \textbf{gerade} 
-                            ist und \textcolor{NavyBlue}{$x_0$} eine 
-                            \textbf{lokale Extremalstelle} ist, folgt
-                            \textcolor{NavyBlue}{ $f^{(n+1)}(x_0)=0$}. \\
-                     \colorbox{SkyBlue}{(2)} Wenn \textcolor{NavyBlue}{$n$} 
-                            \textbf{ungerade}
                             ist und 
-                            \textcolor{NavyBlue}{$f^{(n+1)}(x_0)>0$} ist, ist 
-                            \textcolor{NavyBlue}{$x_0$} 
-                            eine \textbf{strikt lokale Minimalstelle}. \\
-                     \colorbox{SkyBlue}{(3)} Wenn \textcolor{NavyBlue}{$n$} 
-                            \textbf{ungerade} 
-                            ist und \textcolor{NavyBlue}{$f^{(n+1)}(x_0)<0$} ist,
                             \textcolor{NavyBlue}{$x_0$} eine 
-                            \textbf{strikt lokale Maximalstelle}. \\
+                            \textbf{lokale Extremalstelle} 
+                            ist, folgt
+                            \textcolor{NavyBlue}{
+                            $f^{(n+1)}(x_0)=0$}. \\
+                     \colorbox{SkyBlue}{(2)} 
+                            Wenn \textcolor{NavyBlue}{$n$} 
+                            \textbf{ungerade} ist und 
+                            \textcolor{NavyBlue}{
+                            $f^{(n+1)}(x_0)>0$} ist, ist 
+                            \textcolor{NavyBlue}{$x_0$} 
+                            eine \textbf{strikt lokale 
+                            Minimalstelle}. \\
+                     \colorbox{SkyBlue}{(3)} 
+                            Wenn \textcolor{NavyBlue}{$n$} 
+                            \textbf{ungerade} 
+                            ist und \textcolor{NavyBlue}{
+                            $f^{(n+1)}(x_0)<0$} ist,
+                            \textcolor{NavyBlue}{$x_0$} eine 
+                            \textbf{strikt lokale 
+                            Maximalstelle}. \\
               \colorbox{BurntOrange}{Korollar 4.4.8} 
-                     Sei \textcolor{NavyBlue}{$f:[a,b]\longrightarrow\R$} 
-                     \textbf{stetig} und in \textcolor{NavyBlue}{$]a,b[$}
-                     \textbf{zweimal stetig differenzierbar}. Sei 
+                     Sei \textcolor{NavyBlue}{
+                     $f:[a,b]\longrightarrow\R$} 
+                     \textbf{stetig} und in 
+                     \textcolor{NavyBlue}{$]a,b[$}
+                     \textbf{zweimal stetig 
+                     differenzierbar}. Sei 
                      \textcolor{NavyBlue}{$a<x_0<b$}. 
                      Annahme: \textcolor{NavyBlue}{$f'(x_0)=0$}.\\
-                     \colorbox{SkyBlue}{(1)} Wenn 
-                            \textcolor{NavyBlue}{$f^{(2)}(x_0)>0$} ist, ist 
+                     \colorbox{SkyBlue}{(1)} 
+                            Wenn \textcolor{NavyBlue}{
+                            $f^{(2)}(x_0)>0$} ist, ist 
                             \textcolor{NavyBlue}{$x_0$}
-                            eine \textbf{strikt lokale Minimalstelle}. \\
+                            eine \textbf{strikt lokale 
+                            Minimalstelle}. \\
                      \colorbox{SkyBlue}{(2)} Wenn 
-                            \textcolor{NavyBlue}{$f^{(2)}(x_0)<0$} ist, ist
+                            \textcolor{NavyBlue}{
+                            $f^{(2)}(x_0)<0$} ist, ist
                             \textcolor{NavyBlue}{$x_0$}
-                            eine \textbf{strikt lokale Maximalstelle}.
+                            eine \textbf{strikt lokale 
+                            Maximalstelle}.
 
 \section{Riemann Integral}
        \subsection{Definition und Integrabilitätskriterien}
               \colorbox{cyan}{Definition 5.1.1} 
-                     Eine \textbf{Partition} von \textcolor{NavyBlue}{$I$} 
+                     Eine \textbf{Partition} von 
+                     \textcolor{NavyBlue}{$I$} 
                      ist eine endliche Teilmenge 
                      \textcolor{NavyBlue}{$P\subsetneq[a,b]$} 
-                     wobei \textcolor{NavyBlue}{$\{a,b\}\subseteq P$}. 
+                     wobei \textcolor{NavyBlue}{
+                     $\{a,b\}\subseteq P$}. 
                      Es gilt: 
-                     \textcolor{NavyBlue}{$n:=\operatorname{card} P-1\geqslant1$} 
-                     und es gibt \textbf{genau eine Bijektion} 
                      \textcolor{NavyBlue}{
-                     $\{0,1,2,...,n\}\longrightarrow P,\,j\mapsto x_j$}
+                     $n:=\operatorname{card} P-1\geqslant1$} 
+                     und es gibt \textbf{genau eine Bijektion}
+                     \begin{align*}
+                            \{0,1,2,...,n\}&\longrightarrow P\\
+                            j&\mapsto x_j
+                     \end{align*}
                      mit der Eigenschaft 
-                     \textcolor{NavyBlue}{$i<j\Longrightarrow x_i<x_j$}.\\
-              Eine \textbf{Partition} \textcolor{NavyBlue}{$P'$ }ist eine 
-                     \colorbox{gray}{Verfeinerung} von \textcolor{NavyBlue}{$P$}, 
+                     \textcolor{NavyBlue}{
+                     $i<j\Longrightarrow x_i<x_j$}.\\
+              Eine \textbf{Partition} 
+                     \textcolor{NavyBlue}{$P'$ }ist eine 
+                     \colorbox{gray}{Verfeinerung} von 
+                     \textcolor{NavyBlue}{$P$}, 
                      wenn \textcolor{NavyBlue}{$P\subset P'$}. 
                      Offensichtlich ist die \textbf{Vereinigung} 
-                     \textcolor{NavyBlue}{$P_1\cup P_2$} \textbf{zweier Partitionen} 
+                     \textcolor{NavyBlue}{$P_1\cup P_2$} 
+                     \textbf{zweier Partitionen} 
                      wieder \textbf{eine Partition}. Insbesondere 
                      haben \textbf{zwei Partitionen immer} 
                      eine \textbf{gemeinsame Vereinigung}.
-              Sei \textcolor{NavyBlue}{$f:[a,b]\longrightarrow\R$} eine 
+              Sei \textcolor{NavyBlue}{
+                     $f:[a,b]\longrightarrow\R$} eine 
                      \textbf{beschränkte Funktion}, 
                      das heisst es gibt 
                      \textcolor{NavyBlue}{$M\geqslant0$} mit 
-                     \textcolor{NavyBlue}{$|f(x)|\leqslant M\quad\forall x\in[a,b]$}. 
-              Sei \textcolor{NavyBlue}{$P=\{x_0,x_1,...,x_n\}$} eine 
-                     \textbf{Partition} von 
-                     \textcolor{NavyBlue}{$I$}. Insbesondere gilt: 
-                     \textcolor{NavyBlue}{$x_0=a<x_1<...<x_n=b$}
-              \textbf{Länge des Teilintervalls} 
-                     \textcolor{NavyBlue}{$[x_{i-1},x_i]$},\,
-                     \textcolor{NavyBlue}{$\delta_i:=x_i-x_{i-1},\,i\geqslant1$}\\
-              \colorbox{gray}{Untersumme} 
-                     \textcolor{NavyBlue}{$s(f,P):=\sum_{i=1}^nf_i\delta_i,\,
-                     f_i=\inf\limits_{x_{i-1}\leqslant x\leqslant x_i}f(x)$}\\ 
-              \colorbox{gray}{Obersumme} 
-                     \textcolor{NavyBlue}{$S(f,P):=\sum_{i=1}^nF_i\delta_i,\, 
-                     F_i=\sup\limits_{x_{i-1}\leqslant x\leqslant x_i}f(x)$}\\
-              \colorbox{yellow}{Lemma 5.1.2} 
-                     \colorbox{SkyBlue}{(1)} Sei \textcolor{NavyBlue}{$P'$}
-                     eine \textbf{Verfeinerung} von \textcolor{NavyBlue}{$P$}. Dann gilt: 
                      \textcolor{NavyBlue}{
-                     $s(f,P)\leqslant s(f,P')\leqslant S(f,P')\leqslant S(f,P)$}.\\
-                     \colorbox{SkyBlue}{(2)} Für beliebige Partitionen 
-                     \textcolor{NavyBlue}{$P_1,P_2$}
-                     gilt: \textcolor{NavyBlue}{$s(f,P_1)\leqslant S(f,P_2)$}.\\
+                     $|f(x)|\leqslant M\quad
+                     \forall x\in[a,b]$}.\\
+              Sei \textcolor{NavyBlue}{
+                     $P=\{x_0,x_1,...,x_n\}$} eine 
+                     \textbf{Partition} von 
+                     \textcolor{NavyBlue}{$I$}. 
+                     Insbesondere gilt: 
+                     \textcolor{NavyBlue}{
+                     $x_0=a<x_1<...<x_n=b$}\\
+              \textbf{Länge des Teilintervalls} 
+                     \textcolor{NavyBlue}{
+                     $[x_{i-1},x_i]$} mit
+                     \textcolor{NavyBlue}{
+                     $i\geqslant1$}
+                     \begin{equation*}
+                            \delta_i:=x_i-x_{i-1}
+                     \end{equation*}
+              \colorbox{gray}{Untersumme} 
+                     \textcolor{NavyBlue}{
+                     $s(f,P):=\sum_{i=1}^nf_i\delta_i,\,
+                     f_i=\inf\limits_{x_{i-1}
+                     \leqslant x\leqslant x_i}f(x)$}\\ 
+              \colorbox{gray}{Obersumme} 
+                     \textcolor{NavyBlue}{$S(f,P)
+                     :=\sum_{i=1}^nF_i\delta_i,\, 
+                     F_i=\sup\limits_{x_{i-1}
+                     \leqslant x\leqslant x_i}f(x)$}\\
+              \colorbox{yellow}{Lemma 5.1.2} 
+                     \colorbox{SkyBlue}{(1)} 
+                            Sei \textcolor{NavyBlue}{$P'$}
+                            eine \textbf{Verfeinerung} von 
+                            \textcolor{NavyBlue}{$P$}. 
+                            Dann gilt: 
+                            \begin{equation*}
+                                   s(f,P)\leqslant s(f,P')
+                                   \leqslant S(f,P')
+                                   \leqslant S(f,P).
+                            \end{equation*}
+                     \colorbox{SkyBlue}{(2)} 
+                            Für beliebige Partitionen 
+                            \textcolor{NavyBlue}{$P_1,P_2$}
+                            gilt: 
+                            \begin{equation*}
+                                   s(f,P_1)
+                                   \leqslant S(f,P_2).
+                            \end{equation*}
               Sei \textcolor{NavyBlue}{$\mathcal{P}(I)$} 
                      die \colorbox{gray}{Menge der Partitionen} 
-                     von \textcolor{NavyBlue}{$I$}. Wir definieren: 
-                     \textcolor{NavyBlue}{
-                     $s(f)=\sup\limits_{P\in\mathcal{P}(I)}s(f,P)$},\quad 
-                     \textcolor{NavyBlue}{
-                     $S(f)=\inf\limits_{P\in\mathcal{P}(I)}S(f,P)$}. \\
+                     von \textcolor{NavyBlue}{$I$}. 
+                     Wir definieren: 
+                     \begin{align*}
+                            s(f)=\sup
+                            \limits_{P\in\mathcal{P}(I)}
+                            s(f,P)\\
+                            S(f)=\inf
+                            \limits_{P\in\mathcal{P}(I)}
+                            S(f,P)
+                     \end{align*}
               \colorbox{cyan}{Definition 5.1.3} 
-                     Eine \textbf{beschränkte Funktion} 
-                     \textcolor{NavyBlue}{$f:[a,b]\longrightarrow\R$} 
-                     ist \textbf{(Riemann) integrierbar}, wenn \textcolor{NavyBlue}{$s(f)=S(f)$}. 
+                     Eine \textbf{beschränkte Funktion} \\
+                     \textcolor{NavyBlue}{
+                     $f:[a,b]\longrightarrow\R$} 
+                     ist \textbf{(Riemann) integrierbar}, 
+                     wenn 
+                     \begin{equation*}
+                            s(f)=S(f).
+                     \end{equation*}
                      In diesem Fall 
                      bezeichnen wir den \textbf{gemeinsamen Wert} 
                      von \textcolor{NavyBlue}{$s(f)$} und 
                      \textcolor{NavyBlue}{$S(f)$} mit 
-                     \textcolor{NavyBlue}{$\int_a^bf(x)\,dx$}.\\
+                     \begin{equation*}
+                            \int_a^bf(x)\,dx.
+                     \end{equation*}
               \colorbox{magenta}{Satz 5.1.4} 
               Eine \textbf{beschränkte Funktion} ist 
                      genau dann integrierbar, wenn 
                      \textcolor{NavyBlue}{
-                     $\forall\varepsilon>0\,\exists P\in\mathcal{P}(I)$}:
-                     \textcolor{NavyBlue}{$S(f,P)-s(f,P)<\varepsilon$}.\\
+                     $\forall\varepsilon>0\,
+                     \exists P\in\mathcal{P}(I)$}:
+                     \begin{equation*}
+                            S(f,P)-s(f,P)<\varepsilon
+                     \end{equation*}
+              \vfill\null
+              \columnbreak
               \colorbox{magenta}{Satz 5.1.8} 
               (Du Bois-Reymond 1875, Darboux 1875) 
                      Eine \textbf{beschränkte Funktion} 
-                     \textcolor{NavyBlue}{$f:[a,b]\longrightarrow\R$} 
+                     \textcolor{NavyBlue}{
+                     $f:[a,b]\longrightarrow\R$} 
                      ist \textbf{genau dann 
                      integrierbar, wenn} 
-                     \textcolor{NavyBlue}{$\forall\varepsilon>0\,\exists\delta>0$}, 
-                     so dass: \textcolor{NavyBlue}{
-                     $\forall P\in\mathcal{P}_\delta(I),\,S(f,P)-s(f,P)<\varepsilon$}.
-                     Hier bezeichnet 
-                     \textcolor{NavyBlue}{$\mathcal{P}_\delta(I)$} die 
-                     \textbf{Menge der Partitionen $P$}, für welche 
                      \textcolor{NavyBlue}{
-                     $\max\limits_{1\leqslant i\leqslant n}\delta_i
+                     $\forall\varepsilon>0\,
+                     \exists\delta>0$}, 
+                     so dass: \textcolor{NavyBlue}{
+                     $\forall P\in\mathcal{P}_\delta(I)$},\,
+                     \begin{equation*}
+                            S(f,P)-s(f,P)<\varepsilon.   
+                     \end{equation*}
+                     Hier bezeichnet 
+                     \textcolor{NavyBlue}{
+                     $\mathcal{P}_\delta(I)$} die 
+                     \textbf{Menge der Partitionen $P$}, 
+                     für welche 
+                     \textcolor{NavyBlue}{
+                     $\max\limits_{1\leqslant i
+                     \leqslant n}\delta_i
                      \leqslant\delta$}. \\
               \colorbox{BurntOrange}{Korollar 5.1.9} 
-                     Die \textbf{beschränkte Funktion} 
-                     \textcolor{NavyBlue}{$f:[a,b]\longrightarrow\R$} ist 
+                     Die \textbf{beschränkte Funktion} \\
+                     \textcolor{NavyBlue}{
+                     $f:[a,b]\longrightarrow\R$} ist 
                      \textbf{genau dann integrierbar mit}
-                     \textcolor{NavyBlue}{$A:=\int_a^bf(x)\,dx$}, 
+                     \begin{equation*}
+                            A:=\int_a^bf(x)\,dx,
+                     \end{equation*}
                      \textbf{wenn}: 
                      \textcolor{NavyBlue}{
-                     $\forall\varepsilon>0\enspace\exists\delta>0$}, so dass 
-                     \textcolor{NavyBlue}{$\forall P\in\mathcal{P}(I)$} mit 
-                     \textcolor{NavyBlue}{$\delta(P)<\delta$}
-                     und \textcolor{NavyBlue}{$\xi_1,...,\xi_n$} mit 
-                     \textcolor{NavyBlue}{$\xi_i\in[x_{i-1},x_i]$},\,
-                     \textcolor{NavyBlue}{$P=\{x_0,...,x_n\}$} 
+                     $\forall\varepsilon>0\enspace
+                     \exists\delta>0$}, so dass 
                      \textcolor{NavyBlue}{
-                     $|A-\sum_{i+1}^nf(\xi_i)(x_i-x_{i-1})|
-                     <\varepsilon$}.
+                     $\forall P\in\mathcal{P}(I)$} mit 
+                     \textcolor{NavyBlue}{$\delta(P)<\delta$}
+                     und \textcolor{NavyBlue}{
+                     $\xi_1,...,\xi_n$} mit 
+                     \textcolor{NavyBlue}{
+                     $\xi_i\in[x_{i-1},x_i]$},\,
+                     \textcolor{NavyBlue}{$P=\{x_0,...,x_n\}$} 
+                     \begin{equation*}
+                            |A-\sum_{i+1}^nf(\xi_i)
+                            (x_i-x_{i-1})|
+                            <\varepsilon.
+                     \end{equation*}
        \subsection{Integrierbare Funktionen}
               \colorbox{magenta}{Satz 5.2.1} 
                      Seien \textcolor{NavyBlue}{$f,g:[a,b]\longrightarrow\R$} 
