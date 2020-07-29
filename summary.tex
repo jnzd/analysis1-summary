@@ -2728,69 +2728,104 @@
        \subsection{Fundamentalsatz Differentialrechnung}
               \colorbox{magenta}{Satz 5.4.1}
               (\textbf{Fundamentalsatz der Analysis}) 
-                     Seien \textcolor{NavyBlue}{$a<b$} und 
-                     \textcolor{NavyBlue}{$f:[a,b]\longrightarrow\R$} 
-                     \textbf{stetig}. Die Funktion 
+                     Seien \\ \textcolor{NavyBlue}{$a<b$} und 
                      \textcolor{NavyBlue}{
-                     $F(x)=\int_a^xf(t)\,dt,\quad a\leqslant x\leqslant b$} 
+                     $f:[a,b]\longrightarrow\R$} 
+                     \textbf{stetig}. Die Funktion 
+                     \begin{equation*}
+                            F(x)=\int_a^xf(t)\,dt,
+                            \quad a\leqslant x\leqslant b
+                     \end{equation*}
                      ist in \textcolor{NavyBlue}{$[a,b]$} 
                      \textbf{stetig differenzierbar} 
-                     und \textcolor{NavyBlue}{
-                     $F'(x)=f(x)\quad\forall x\in[a,b]$}.\\
+                     und 
+                     \begin{equation*}
+                            F'(x)=f(x)\quad\forall x\in[a,b].
+                     \end{equation*}
               \colorbox{cyan}{Definition 5.4.2} 
                      Sei \textcolor{NavyBlue}{$a<b$} und 
-                     \textcolor{NavyBlue}{$f:[a,b]\longrightarrow\R$} \textbf{stetig}. 
+                     \textcolor{NavyBlue}{
+                     $f:[a,b]\longrightarrow\R$} \textbf{stetig}. 
                      Eine Funktion 
-                     \textcolor{NavyBlue}{$F:[a,b]\longrightarrow\R$} heisst 
+                     \textcolor{NavyBlue}{
+                     $F:[a,b]\longrightarrow\R$} heisst 
                      \textbf{Stammfunktion} von 
-                     \textcolor{NavyBlue}{$f$}, wenn \textcolor{NavyBlue}{$F$} 
+                     \textcolor{NavyBlue}{$f$}, wenn 
+                     \textcolor{NavyBlue}{$F$} 
                      \textbf{(stetig) differenzierbar} in 
                      \textcolor{NavyBlue}{$[a,b]$}
                      ist und \textcolor{NavyBlue}{$F'=f$} in 
                      \textcolor{NavyBlue}{$[a,b]$} gilt.\\
               \colorbox{magenta}{Satz 5.4.3} 
-              (\textbf{Fundamentalsatz der Differentialrechnung}) 
-                     Sei \textcolor{NavyBlue}{$f:[a,b]\longrightarrow\R$} 
+              (\textbf{Fundamentalsatz Differentialrechnung}) 
+                     Sei \textcolor{NavyBlue}{
+                     $f:[a,b]\longrightarrow\R$} 
                      \textbf{stetig}. So gibt es eine 
-                     \textbf{Stammfunktion} \textcolor{NavyBlue}{$F$} von \textcolor{NavyBlue}{$f$},
-                     die bis auf eine addidive Konstante \textbf{eindeutig} 
-                     bestimmt ist und: 
-                     \textcolor{NavyBlue}{$\int_a^bf(x)\,dx=F(b)-F(a)$}. \\
+                     \textbf{Stammfunktion} 
+                     \textcolor{NavyBlue}{$F$} von 
+                     \textcolor{NavyBlue}{$f$},
+                     die bis auf eine addidive Konstante 
+                     \textbf{eindeutig} bestimmt ist und: 
+                     \begin{equation*}
+                           \int_a^bf(x)\,dx=F(b)-F(a).
+                     \end{equation*}
               \colorbox{magenta}{Satz 5.4.5} 
               (\textbf{Partielle Integration}) 
                      Seien \textcolor{NavyBlue}{$a<b\in\R$} und 
-                     \textcolor{NavyBlue}{$f,g:[a,b]\longrightarrow\R$}
-                     \textbf{stetig differenzierbar}. Dann gilt: 
-                     \textcolor{NavyBlue}{$\int_a^bf(x)g'(x)\,dx
-                     =f(b)g(b)-f(a)g(a)-\int_a^bf'(x)g(x)\,dx$}. \\
+                     \textcolor{NavyBlue}{
+                     $f,g:[a,b]\longrightarrow\R$}
+                     \textbf{stetig differenzierbar}. Dann gilt:
+                     \begin{equation*}
+                            \int_a^bf(x)g'(x)\,dx
+                            =[f(x)g(x)]_a^b
+                            -\int_a^bf'(x)g(x)\,dx
+                     \end{equation*}
               \colorbox{magenta}{Satz 5.4.6} 
               (\textbf{Substitution}) 
                      Sei \textcolor{NavyBlue}{$a<b$},\,
-                     \textcolor{NavyBlue}{$\phi:[a,b]\longrightarrow\R$}
+                     \textcolor{NavyBlue}{
+                     $\phi:[a,b]\longrightarrow\R$}
                      \textbf{stetig differenzierbar}, 
                      \textcolor{NavyBlue}{$I\subseteq\R$}
                      ein Intervall mit 
-                     \textcolor{NavyBlue}{$\phi([a,b])\subseteq I$}
-                     und \textcolor{NavyBlue}{$f:I\longrightarrow\R$} eine 
-                     \textbf{stetige Funktion}. Dann gilt: 
-                     \textcolor{NavyBlue}{$\int_{\phi(a)}^{\phi(b)}f(x)\,dx
-                     =\int_a^bf(\phi(t))\phi'(t)dt$}.\\
+                     \textcolor{NavyBlue}{
+                     $\phi([a,b])\subseteq I$}
+                     und \textcolor{NavyBlue}{
+                     $f:I\longrightarrow\R$} eine 
+                     \textbf{stetige Funktion}. Dann gilt:
+                     \begin{equation*}
+                            \int_{\phi(a)}^{\phi(b)}f(x)\,dx
+                            =\int_a^bf(\phi(t))\phi'(t)dt
+                     \end{equation*}
               \colorbox{BurntOrange}{Korollar 5.4.8} 
                      Sei \textcolor{NavyBlue}{$I\subseteq\R$}
-                     ein Intervall und \textcolor{NavyBlue}{$f:I\longrightarrow\R$} 
+                     ein Intervall und \textcolor{NavyBlue}{
+                     $f:I\longrightarrow\R$} 
                      \textbf{stetig}. \\
-                     \colorbox{SkyBlue}{(1)} Seien \textcolor{NavyBlue}{$a,b,c\in\R$}, 
-                     so dass das abgeschlossene Intervall 
-                     mit \textbf{Endpunkten} \textcolor{NavyBlue}{$a+c,b+c\in I$}. 
-                     Dann gilt: 
-                     \textcolor{NavyBlue}{
-                     $\int_{a+c}^{b+c}f(x)\,dx=\int_a^bf(t+c)\,dt$}.\\
-                     \colorbox{SkyBlue}{(2)} Seien \textcolor{NavyBlue}{$a,b,c\in\R$} mit 
-                     \textcolor{NavyBlue}{$c\neq0$}, so dass das abgeschlossene Intervall mit den 
-                     \textbf{Endpunkten} \textcolor{NavyBlue}{$ac,bc\in I$}. 
-                     Dann gilt: \textcolor{NavyBlue}{
-                     $\int_a^bf(ct)\,dt
-                     =\frac{1}{c}\int_{ac}^{bc}f(x)\,dx$}.
+                     \colorbox{SkyBlue}{(1)} Seien 
+                            \textcolor{NavyBlue}{$a,b,c\in\R$}, 
+                            so dass das abgeschlossene Intervall 
+                            mit \textbf{Endpunkten} 
+                            \textcolor{NavyBlue}{$a+c,b+c\in I$}. 
+                            Dann gilt: 
+                            \begin{equation*}
+                                   int_{a+c}^{b+c}f(x)\,dx
+                                   =\int_a^bf(t+c)\,dt
+                            \end{equation*}
+                     \colorbox{SkyBlue}{(2)} 
+                            Seien \textcolor{NavyBlue}{
+                            $a,b,c\in\R$} mit 
+                            \textcolor{NavyBlue}{$c\neq0$}, 
+                            so dass das abgeschlossene 
+                            Intervall mit den 
+                            \textbf{Endpunkten} \\
+                            \textcolor{NavyBlue}{$ac,bc\in I$}. 
+                            Dann gilt: 
+                            \begin{equation*}
+                                   \int_a^bf(ct)\,dt
+                                   =\frac{1}{c}
+                                   \int_{ac}^{bc}f(x)\,dx
+                            \end{equation*}
        \subsection{Integration konvergenter Reihen}
               \colorbox{magenta}{Satz 5.5.1} 
                      Sei \textcolor{NavyBlue}{$f_n:[a,b]\longrightarrow\R$} 
