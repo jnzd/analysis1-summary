@@ -713,24 +713,30 @@
                             \limsup\limits_{n\to\infty}
                             \sqrt[n]{|a_n|}>1
                             &\Longrightarrow
-                            \sum_{n=1}^\infty a_n \, \text{und} \,
+                            \sum_{n=1}^\infty a_n \, 
+                            \text{und} \,
                             \sum_{n=1}^\infty |a_n| \,
                             \textbf{divergieren}
                      \end{align*}
               \colorbox{gray}{Konvergenzradius} \\
-                     Sei \textcolor{NavyBlue}{$(c_k)_{k\geqslant0}$} 
+                     Sei \textcolor{NavyBlue}{
+                     $(c_k)_{k\geqslant0}$} 
                      eine Folge (in $\R$ oder $\C$). Wenn 
                      \begin{equation*}
-                            \limsup\limits_{k\to\infty}\sqrt[k]{|c_k|}
+                            \limsup\limits_{k\to\infty}
+                            \sqrt[k]{|c_k|}
                      \end{equation*}
                      existiert, definieren wir: 
                      \begin{align*}
                             \rho&=+\infty
-                            \qquad\qquad\text{ wenn } 
-                            \limsup\limits_{k\to\infty}\sqrt[k]{|c_k|}=0\\
-                            \rho&=\frac{1}{\limsup\limits_{k\to\infty}\sqrt[k]{|c_k|}}
-                            \text{ wenn }
-                            \limsup\limits_{k\to\infty}\sqrt[k]{|c_k|} >0
+                            &\text{ wenn } 
+                            \limsup\limits_{k\to\infty}
+                            \sqrt[k]{|c_k|}=0\\
+                            \rho&=\frac{1}{\limsup
+                            \limits_{k\to\infty}\sqrt[k]{|c_k|}}
+                            &\text{ wenn }
+                            \limsup\limits_{k\to\infty}
+                            \sqrt[k]{|c_k|} >0
                      \end{align*}
               \colorbox{gray}{Riemann Zeta Funktion} Sei $s>1$ und 
                      \begin{equation*}
@@ -900,12 +906,18 @@
                      Sei $D\subseteq\R,\,x_0\in D$. 
                      Die Funktion \textcolor{NavyBlue}{$f:D\longrightarrow\R$} 
                      ist in $x_0$ \textbf{stetig}, 
-                     wenn \textcolor{NavyBlue}{
-                     $\forall\varepsilon>0\enspace\exists\delta>0$}, 
+                     wenn 
+                     \begin{equation*}
+                            \forall\varepsilon>0
+                            \enspace\exists\delta>0
+                     \end{equation*}
                      so dass 
-                     \textcolor{NavyBlue}{$\forall x\in D$} die Implikation: 
-                     \textcolor{NavyBlue}{
-                     $|x-x_0|<\delta\Rightarrow|f(x)-f(x_0)|<\varepsilon$} gilt\\
+                     \textcolor{NavyBlue}{$\forall x\in D$} 
+                     die Implikation:
+                     \begin{equation*}
+                            |x-x_0|<\delta\Rightarrow|f(x)-f(x_0)|<\varepsilon
+                     \end{equation*}
+                     gilt\\
               \colorbox{cyan}{Definition 3.2.2} 
                      Die Funktion \textcolor{NavyBlue}{$f:D\longrightarrow\R$}
                      ist \textbf{stetig}, wenn sie in 
@@ -914,17 +926,22 @@
                      \textcolor{NavyBlue}{$x_0\in D\subseteq\R$} und 
                      \textcolor{NavyBlue}{$f:D\longrightarrow\R$}. 
                      Die Funktion \textcolor{NavyBlue}{$f$} ist genau 
-                     dann in \textcolor{NavyBlue}{$x_0$} \textbf{stetig}, wenn für 
+                     dann in \textcolor{NavyBlue}{$x_0$} 
+                     \textbf{stetig}, wenn für 
                      \textbf{jede Folge} 
                      \textcolor{NavyBlue}{$(a_n)_{n\geqslant1}$} 
-                     in $D$ die folgende Implikation gilt: \textcolor{NavyBlue}{
-                     $\lim\limits_{n\to\infty}a_n=x_0\Longrightarrow
-                     \lim\limits_{n\to\infty}f(a_n)=f(x_0)$}.\\
+                     in $D$ die folgende Implikation gilt: 
+                     \begin{equation*}
+                            \lim\limits_{n\to\infty}a_n=x_0\Longrightarrow
+                            \lim\limits_{n\to\infty}f(a_n)=f(x_0). 
+                     \end{equation*}
               \colorbox{BurntOrange}{Korollar 3.2.5} Seien 
                      \textcolor{NavyBlue}{
-                     $x_0\in D\subseteq\R,\,\lambda\in\R$} und 
+                     $x_0\in D\subseteq\R,\,\lambda\in\R$} und \\
                      \textcolor{NavyBlue}{
-                     $f:D\longrightarrow\R,\,g:D\longrightarrow\R$}
+                     $f:D\longrightarrow\R$},\,
+                     \textcolor{NavyBlue}{
+                     $g:D\longrightarrow\R$}
                      beide \textbf{stetig} in \textcolor{NavyBlue}{$x_0$}:\\
                      \colorbox{SkyBlue}{(1)}
                             \textcolor{NavyBlue}{
@@ -932,17 +949,23 @@
                             sind \textbf{stetig} in 
                             \textcolor{NavyBlue}{$x_0$}.\\
                      \colorbox{SkyBlue}{(2)}
-                            Wenn $g(x_0)\neq0$ ist, ist 
-                            \textcolor{NavyBlue}{
-                            $\frac{f}{g}:D\cap\{x\in D:g(x)\neq0\}
-                            \longrightarrow\R,\,
-                            x\longmapsto\frac{f(x)}{g(x)}$} 
+                            Wenn \textcolor{NavyBlue}{$g(x_0)\neq0$}
+                            ist, ist 
+                            \begin{align*}
+                                   \frac{f}{g}:D\cap\{x\in D:g(x)\neq0\}
+                                   \longrightarrow&\R\\
+                                   x\longmapsto&\frac{f(x)}{g(x)}
+                            \end{align*}
                             \textbf{stetig} in \textcolor{NavyBlue}{$x_0$}\\
+
               \colorbox{cyan}{Definition 3.2.6} 
-                     Eine \textbf{polynomielle Funktion} 
+                     Eine \textbf{polynomielle Funktion} \\
                      \textcolor{NavyBlue}{$P:\R\longrightarrow\R$} 
                      ist eine Funktion 
-                     der Form: \textcolor{NavyBlue}{$P(x)=a_nx^n+...+a_0$}
+                     der Form: 
+                     \begin{equation*}
+                            P(x)=a_nx^n+...+a_0
+                     \end{equation*}
                      wobei: \textcolor{NavyBlue}{$a_n,...,a_0\in\R$}. 
                      Wenn \textcolor{NavyBlue}{$a_n\neq0$} ist, ist 
                      \textcolor{NavyBlue}{$n$} 
@@ -955,9 +978,13 @@
                      auf $\R$ mit \textcolor{NavyBlue}{$Q\neq0$}. Seien 
                      \textcolor{NavyBlue}{$x_1,...,x_m$} die Nullstellen von 
                      \textcolor{NavyBlue}{$Q$}. 
-                     Dann ist \textcolor{NavyBlue}{
-                     $\frac{P}{Q}:\R\setminus\{x_1,...,x_m\}\longrightarrow\R,\,
-                     x\longmapsto\frac{P(x)}{Q(x)}$} \textbf{stetig}.\\
+                     Dann ist 
+                     \begin{align*}
+                            \frac{P}{Q}:\R\setminus
+                            \{x_1,...,x_m\}\longrightarrow&\R \\
+                            x\longmapsto&\frac{P(x)}{Q(x)}
+                     \end{align*}
+                     \textbf{stetig}.\\
        \subsection{Zwischenwertsatz}
               \colorbox{magenta}{Satz 3.3.1} (\textbf{Zwischenwertsatz}, Bolzano 1817) Seien 
                      \textcolor{NavyBlue}{$I\subseteq\R$} ein Intervall, 
@@ -1035,18 +1062,25 @@
                      $\exp:\R\longrightarrow]0,+\infty[$}
                      ist \textbf{streng monoton wachsend, stetig und surjektiv}.\\
               \colorbox{BurntOrange}{Korollar 3.6.2} 
-                     \textcolor{NavyBlue}{$\exp(x)>0\quad\forall x\in\R$}. 
+                     \begin{equation*}
+                            \exp(x)>0\quad\forall x\in\R.
+                     \end{equation*}
                      Aus der \textbf{Potenzreihendarstellung} von 
                      \textcolor{NavyBlue}{$\exp$} folgt ausserdem: 
-                     \textcolor{NavyBlue}{$\exp(x)>1\quad\forall x>0$}. 
+                     \begin{equation*}
+                            \exp(x)>1\quad\forall x>0.
+                     \end{equation*} 
                      Wenn \textcolor{NavyBlue}{$y<z$} ist, folgt 
-                     (aus \textbf{2.7.27}) 
-                     \textcolor{NavyBlue}{
-                     $\exp(z)=\exp(y+(z-y))=\exp(y)\exp(z-y)$}  
+                     (aus \textbf{2.7.27})
+                     \begin{align*}
+                            \exp(z)&=\exp(y+(z-y))\\
+                                   &=\exp(y)\exp(z-y)
+                     \end{align*}
                      und da \textcolor{NavyBlue}{$\exp(z-y)>1$} 
                      ist folgt folgendes Korollar:\\
               \colorbox{BurntOrange}{Korollar 3.6.3} 
-                     \textcolor{NavyBlue}{$\exp(z)>exp(y)\quad\forall z>y$}\\
+                     \textcolor{NavyBlue}{
+                     $\exp(z)>exp(y)\quad\forall z>y$}\\
               \colorbox{BurntOrange}{Korollar 3.6.4} 
                      \textcolor{NavyBlue}{
                      $\exp(x)\geqslant1+x\quad\forall x\in\R$}\\
@@ -1054,134 +1088,194 @@
                      Der \textbf{natürlich Logarithmus} 
                      $\ln:]0,+\infty[\longrightarrow\R$ ist eine 
                      \textbf{streng monoton 
-                     wachsende, stetige, bijektive} Funktion. Des weiteren gilt 
-                     \textcolor{NavyBlue}{
-                     $\ln(a\cdot b)=\ln a+\ln b\quad\forall a,b\in]0,+\infty[$}.\\
+                     wachsende, stetige, bijektive} 
+                     Funktion. Des weiteren gilt 
+                     \begin{equation*}
+                            \ln(a\cdot b)=\ln a+\ln b\quad
+                            \forall a,b\in]0,+\infty[.
+                     \end{equation*}
               \colorbox{BurntOrange}{Korollar 3.6.6} 
                      \colorbox{SkyBlue}{(1)/(2)}
                             Für \textcolor{NavyBlue}{$a>$/$<0$} 
-                            ist \textcolor{NavyBlue}{
-                            $]0,+\infty[\longrightarrow]0,+\infty[,$\,
-                            $x\longmapsto x^a$}
+                            ist 
+                            \begin{align*}
+                                   ]0,+\infty[\longrightarrow
+                                   &]0,+\infty[\\
+                                   x\longmapsto &x^a
+                            \end{align*}
                             eine \textbf{stetige, streng monoton 
-                            wachsende/fallende Bijektion}. 
+                            wachsende/fallende Bijektion}. \\
                             \textcolor{NavyBlue}{
                             $\forall a,b\in\R,\,\forall x>0$}:\\
                      \colorbox{SkyBlue}{(3)} 
-                            \textcolor{NavyBlue}{$\ln(x^a)=a\ln(x)$}\\
+                            \textcolor{NavyBlue}{
+                            $\ln(x^a)=a\ln(x)$} \qquad
                      \colorbox{SkyBlue}{(4)} 
-                            \textcolor{NavyBlue}{$x^a\cdot x^b=x^{a+b}$}\\
+                            \textcolor{NavyBlue}{
+                            $x^a\cdot x^b=x^{a+b}$}\\
                      \colorbox{SkyBlue}{(5)} 
-                            \textcolor{NavyBlue}{$(x^a)^b=x^{a\cdot b}$}
+                            \textcolor{NavyBlue}{
+                            $(x^a)^b=x^{a\cdot b}$}
        \subsection{Konvergenz von Funktionenfolgen}
               \colorbox{cyan}{Definition 3.7.1} 
                      Die \textbf{Funktionenfolge} 
                      \textcolor{NavyBlue}{$(f_n)_{n\geqslant0}$}
-                     \textbf{konvergiert punktweise} gegen eine Funktion
-                     \textcolor{NavyBlue}{$f:D\longrightarrow\R$}, wenn 
+                     \textbf{konvergiert punktweise} 
+                     gegen eine Funktion
                      \textcolor{NavyBlue}{
-                     $\forall x\in D:$\quad
-                     $f(x)=\lim\limits_{n\to\infty}f_n(x)$}.\\
+                     $f:D\longrightarrow\R$}, wenn 
+                     \begin{equation*}
+                            \forall x\in D:\,
+                            f(x)
+                            =\lim\limits_{n\to\infty}f_n(x).
+                     \end{equation*}
               \colorbox{cyan}{Definition 3.7.3} 
               (Weierstrass 1841) 
-                     Die Folge \textcolor{NavyBlue}{$f_n:D\longrightarrow\R$} 
+                     Die Folge \\
+                     \textcolor{NavyBlue}{$f_n:D\longrightarrow\R$} 
                      \textbf{konvergiert gleichmässig} in 
                      \textcolor{NavyBlue}{$D$} gegen 
                      \textcolor{NavyBlue}{$f:D\longrightarrow\R$}, 
                      wenn gilt: 
                      \textcolor{NavyBlue}{
                      $\forall\varepsilon>0\,\exists N\geqslant1$}, 
-                     so dass: \textcolor{NavyBlue}{
-                     $\forall n\geqslant N,\,\forall x\in D:\enspace 
-                     |f_n(x)-f(x)|<\varepsilon$}.\\
+                     so dass: 
+                     \begin{equation*}
+                            \forall n\geqslant N,\,
+                            \forall x\in D:\enspace 
+                            |f_n(x)-f(x)|<\varepsilon.
+                     \end{equation*}
               \colorbox{magenta}{Satz 3.7.4} 
                      Sei \textcolor{NavyBlue}{$D\subseteq\R$} und 
                      \textcolor{NavyBlue}{$f_n:D\longrightarrow\R$} 
                      eine \textbf{Funktionenfolge} bestehend aus 
                      (in $D$) \textbf{stetigen Funktionen}, die 
                      (in $D$) \textbf{gleichmässig gegen eine 
-                     Funktion} \textcolor{NavyBlue}{$f:D\longrightarrow\R$} 
+                     Funktion} \textcolor{NavyBlue}{
+                     $f:D\longrightarrow\R$} 
                      \textbf{konvergiert}. 
-                     Dann ist \textcolor{NavyBlue}{$f$} (in $D$) \textbf{stetig}.\\
+                     Dann ist \textcolor{NavyBlue}{$f$}
+                     (in $D$) \textbf{stetig}.\\
               \colorbox{cyan}{Definition 3.7.5} 
                      Eine Funktionenfolge 
                      \textcolor{NavyBlue}{$f_n:D\longrightarrow\R$}
                      ist \textbf{gleichmässig konvergent}, wenn 
                      \textcolor{NavyBlue}{$\forall x\in D$} der 
                      \textbf{Grenzwert} 
-                     \textcolor{NavyBlue}{$f(x):=\lim\limits_{n\to\infty}f_n(x)$}
+                     \textcolor{NavyBlue}{
+                     $f(x):=\lim\limits_{n\to\infty}f_n(x)$}
                      \textbf{existiert und die Folge}
                      \textcolor{NavyBlue}{$(f_n)_{n\geqslant0}$} 
-                     \textbf{gleichmässig gegen} \textcolor{NavyBlue}{$f$} 
+                     \textbf{gleichmässig gegen} 
+                     \textcolor{NavyBlue}{$f$} 
                      \textbf{konvergiert}.\\
               \colorbox{BurntOrange}{Korollar 3.7.6} 
                      Die Funktionenfolge 
-                     \textcolor{NavyBlue}{$f_n:D\longrightarrow\R$}
-                     \textbf{konvergiert genau dann gleichmässig} in $D$, wenn: 
+                     \textcolor{NavyBlue}{
+                     $f_n:D\longrightarrow\R$}
+                     \textbf{konvergiert genau 
+                     dann gleichmässig} in $D$, wenn: \\
                      \textcolor{NavyBlue}{
                      $\forall\varepsilon>0\,\exists N\geqslant1$}, 
                      so dass 
                      \textcolor{NavyBlue}{$\forall n,m\geqslant N$} und 
                      \textcolor{NavyBlue}{
-                     $\forall x\in D:\quad |f_n(x)-f_m(x)|<\varepsilon$}.\\
+                     $\forall x\in D:$}
+                     \begin{equation*}
+                           |f_n(x)-f_m(x)|<\varepsilon. 
+                     \end{equation*}
               \colorbox{BurntOrange}{Korollar 3.7.7} 
-                     Sei \textcolor{NavyBlue}{$D\subseteq\R$}. Wenn 
+                     Sei \textcolor{NavyBlue}{$D\subseteq\R$}. 
+                     Wenn 
                      \textcolor{NavyBlue}{$f_n:D\longrightarrow\R$} 
                      eine \textbf{gleichmässig konvergente Folge 
                      stetiger Funktionen} ist, 
-                     dann ist die Funktion \textcolor{NavyBlue}{
-                     $f(x):=\lim\limits_{n\to\infty}f_n(x)$} \textbf{stetig}.\\
+                     dann ist die Funktion 
+                     \textcolor{NavyBlue}{
+                     $f(x):=\lim\limits_{n\to\infty}f_n(x)$} 
+                     \textbf{stetig}.\\
               \colorbox{cyan}{Definition 3.7.8} 
                      Die \textbf{Reihe}
-                     \textcolor{NavyBlue}{$\sum_{k=0}^\infty f_k(x)$}
-                     \textbf{konvergiert gleichmässig} (in $D$), wenn die durch 
-                     \textcolor{NavyBlue}{$S_n(x):=\sum_{k=0}^\infty f_k(x)$} 
+                     \textcolor{NavyBlue}{
+                     $\sum_{k=0}^\infty f_k(x)$}
+                     \textbf{konvergiert gleichmässig} 
+                     (in $D$), wenn die durch 
+                     \begin{equation*}
+                            S_n(x):=\sum_{k=0}^\infty f_k(x)
+                     \end{equation*}
                      definierte Funktionenfolge 
                      \textbf{gleichmässig konvergiert}.\\
               \colorbox{magenta}{Satz 3.7.9} 
                      Sei \textcolor{NavyBlue}{$D\subseteq\R$} und 
-                     \textcolor{NavyBlue}{$f_n:D\longrightarrow\R$} 
-                     eine Folge \textbf{stetiger Funktionen}. 
-                     Wir nehmen an, dass 
                      \textcolor{NavyBlue}{
-                     $|f_n(x)|\leqslant c_n\enspace\forall x\in D$}
-                     und, dass \textcolor{NavyBlue}{$\sum_{n=0}^\infty c_n$} 
+                     $f_n:D\longrightarrow\R$} 
+                     eine Folge \textbf{stetiger Funktionen}. 
+                     Wir nehmen an, dass \\
+                     \textcolor{NavyBlue}{
+                     $|f_n(x)|\leqslant c_n
+                     \enspace\forall x\in D$}
+                     und, dass 
+                     \textcolor{NavyBlue}{
+                     $\sum_{n=0}^\infty c_n$}
                      \textbf{konvergiert}. 
                      Dann \textbf{konvergiert} die Reihe 
-                     \textcolor{NavyBlue}{$\sum_{n=0}^\infty f_n(x)$} 
+                     \begin{equation*}
+                            \sum_{n=0}^\infty f_n(x)
+                     \end{equation*}
                      \textbf{gleichmässig} 
-                     in $D$ und deren 
-                     Grenzwert 
-                     \textcolor{NavyBlue}{$f(x):=\sum_{n=0}^\infty f_n(x)$} 
+                     in $D$ und deren Grenzwert
+                     \begin{equation*}
+                            f(x):=\sum_{n=0}^\infty f_n(x)
+                     \end{equation*}
                      \textbf{ist eine in $D$ stetige Funktion}.\\
+
               \colorbox{cyan}{Definition 3.7.10} 
                      Die Potenzreihe 
-                     \textcolor{NavyBlue}{$\sum_{k=0}^\infty c_kx^k$}
-                     hat \textbf{positiven Konvergenzradius}, wenn 
-                     \textcolor{NavyBlue}{
-                     $\limsup\limits_{k\to\infty}\sqrt[k]{|c_k|}$} 
+                     \begin{equation*}
+                            \sum_{k=0}^\infty c_kx^k
+                     \end{equation*}
+                     hat \textbf{positiven Konvergenzradius}, 
+                     wenn 
+                     \begin{equation*}
+                            \limsup\limits_{k\to\infty}\sqrt[k]{|c_k|}
+                     \end{equation*}
                      existiert. 
-                     Der \textbf{Konvergenzradius} ist dann definiert als: 
-                     \textcolor{NavyBlue}{$\rho=+\infty$} für
-                     \textcolor{NavyBlue}{
-                     $\limsup\limits_{k\to\infty}\sqrt[k]{|c_k|}=0$},
-                     \textcolor{NavyBlue}{
-                     $\rho=\frac{1}{\limsup\limits_{k\to\infty}\sqrt[k]{|c_k|}}$}
-                     für \textcolor{NavyBlue}{
-                     $\limsup\limits_{k\to\infty}\sqrt[k]{|c_k|}>0$}.\\
+                     Der \textbf{Konvergenzradius} 
+                     ist dann definiert als: 
+                     \begin{align*}
+                            \rho&=+\infty 
+                            &\text{ für } 
+                            \limsup\limits_{k\to\infty}
+                            \sqrt[k]{|c_k|}=0 \\
+                            \rho&=\frac{1}{\limsup
+                            \limits_{k\to\infty}\sqrt[k]{|c_k|}}
+                            &\text{ für }
+                            \limsup\limits_{k\to\infty}
+                            \sqrt[k]{|c_k|}>0
+                     \end{align*}
               \colorbox{magenta}{Satz 3.7.11} 
-                     Sei \textcolor{NavyBlue}{$\sum_{k=0}^\infty$}
+                     Sei \textcolor{NavyBlue}{
+                     $\sum_{k=0}^\infty$}
                      eine \textbf{Potenzreihe} mit 
                      \textbf{positivem Konvergenzradius} 
-                     \textcolor{NavyBlue}{$\rho>0$} und  
+                     \textcolor{NavyBlue}{$\rho>0$} und 
+                     \begin{equation*}
+                            f(x):=\sum_{k=0}^\infty 
+                            c_kc^k,\,|x|<\rho.
+                     \end{equation*}
+                     Dann gilt: 
                      \textcolor{NavyBlue}{
-                     $f(x):=\sum_{k=0}^\infty c_kc^k,\,|x|<\rho$}. 
-                     Dann gilt: \textcolor{NavyBlue}{$\forall0\leqslant r<\rho$} 
+                     $\forall0\leqslant r<\rho$} 
                      \textbf{konvergiert} 
-                     \textcolor{NavyBlue}{$\sum_{k=0}^\infty c_kx^k$} 
-                     \textbf{gleichmässig} auf \textcolor{NavyBlue}{$[-r,r]$}, 
-                     insbesondere 
-                     ist \textcolor{NavyBlue}{$f:]-\rho,\rho[\longrightarrow\R$} 
+                     \begin{equation*}
+                         \sum_{k=0}^\infty c_kx^k   
+                     \end{equation*}
+                     \textbf{gleichmässig} auf 
+                     \textcolor{NavyBlue}{$[-r,r]$}, 
+                     insbesondere ist 
+                     \begin{equation*}
+                         f:]-\rho,\rho[\longrightarrow\R   
+                     \end{equation*}
                      \textbf{stetig}.
        \subsection{Trigonometrische Funktionen}
               \colorbox{magenta}{Satz 3.8.1} 
@@ -1194,8 +1288,10 @@
                      \colorbox{SkyBlue}{(1)} 
                             \textcolor{NavyBlue}{$\exp iz=\cos(z)+i\sin(z)$} \\
                      \colorbox{SkyBlue}{(2)} 
-                            \textcolor{NavyBlue}{$\cos(z)=\cos(-z)$} und 
-                            \textcolor{NavyBlue}{$\sin(-z)=-\sin(z)$}\\
+                            \textcolor{NavyBlue}{
+                            $\cos(z)=\cos(-z)$} und 
+                            \textcolor{NavyBlue}{
+                            $\sin(-z)=-\sin(z)$}\\
                      \colorbox{SkyBlue}{(3)} 
                             \textcolor{NavyBlue}{
                             $\sin(z)=\frac{e^{iz}-e^{-iz}}{2i}$},\,
@@ -1203,94 +1299,137 @@
                             $\cos(z)=\frac{e^{iz}+e^{-iz}}{2}$}\\
                      \colorbox{SkyBlue}{(4)} 
                             \textcolor{NavyBlue}{
-                            $\sin(z+w)=\sin(z)\cos(w)+\cos(z)\sin(w)$},\,
-                            \textcolor{NavyBlue}{
-                            $\cos(z+w)=\cos(z)\cos(w)-\sin(z)\sin(w)$}\\ 
+                            $\sin(z+w)
+                            =\sin(z)\cos(w)+\cos(z)\sin(w)$}\\
                      \colorbox{SkyBlue}{(5)} 
+                            \textcolor{NavyBlue}{
+                            $\cos(z+w)
+                            =\cos(z)\cos(w)-\sin(z)\sin(w)$}\\ 
+                     \colorbox{SkyBlue}{(6)} 
                             \textcolor{NavyBlue}{$\cos^2(z)+\sin^2(z)=1$}\\
               \colorbox{BurntOrange}{Korollar 3.8.3} 
                      \textcolor{NavyBlue}{$\sin(2z)=2\sin(z)\cos(z)$}\\
                      \textcolor{NavyBlue}{$\cos(2z)=\cos^2(z)-\sin^2(z)$}
        \subsection{Die Kreiszahl $\pi$}
-              \colorbox{magenta}{Satz 3.9.1} Die \textbf{Sinusfunktion} hat auf 
+              \colorbox{magenta}{Satz 3.9.1} 
+                     Die \textbf{Sinusfunktion} hat auf 
                      \textcolor{NavyBlue}{$]0,+\infty[$}
                      \textbf{mindestens eine Nullstelle}. Sei 
-                     \textcolor{NavyBlue}{$\pi:=inf\{t>0:\sin t=0\}$}.\\
+                     \begin{equation*}
+                            \pi:=\inf\{t>0:\sin t=0\}.
+                     \end{equation*}
                      \colorbox{SkyBlue}{(1)} 
-                            \textcolor{NavyBlue}{$\sin\pi=0,\,\pi\in]2,4[$}\\
+                            \textcolor{NavyBlue}{
+                            $\sin\pi=0,\,\pi\in]2,4[$} \qquad
                      \colorbox{SkyBlue}{(2)} 
-                            \textcolor{NavyBlue}{$\forall x\in]0,\pi[:\sin x>0$}\\
+                            \textcolor{NavyBlue}{
+                            $\forall x\in]0,\pi[:\sin x>0$}\\
                      \colorbox{SkyBlue}{(3)} 
-                            \textcolor{NavyBlue}{$e^{\frac{i\pi}{2}}=i$}\\
-              \colorbox{BurntOrange}{Korollar 3.9.2} \textcolor{NavyBlue}{
-                     $x\geqslant\sin x\geqslant x-\frac{x^3}{3!}\quad
+                            \textcolor{NavyBlue}{
+                            $e^{\frac{i\pi}{2}}=i$}\\
+              \colorbox{BurntOrange}{Korollar 3.9.2} 
+                     \textcolor{NavyBlue}{
+                     $x\geqslant\sin x\geqslant 
+                     x-\frac{x^3}{3!}\quad
                      \forall0\leqslant x\leqslant\sqrt{6}$}\\
               \colorbox{BurntOrange}{Korollar 3.9.3}
                      Sei \textcolor{NavyBlue}{$x\in\R$}\\
                      \colorbox{SkyBlue}{(1)} 
-                            \textcolor{NavyBlue}{$e^{i\pi}=-1,\,e^{2i\pi}=1$}\\ 
+                            \textcolor{NavyBlue}{
+                            $e^{i\pi}=-1,\,e^{2i\pi}=1$}\\ 
                      \colorbox{SkyBlue}{(2)} 
-                            \textcolor{NavyBlue}{$\sin(x+\frac{\pi}{2})=\cos(x)$},\,
-                            \textcolor{NavyBlue}{$\cos(x+\frac{\pi}{2})=-\sin(x)$}\\ 
+                            \textcolor{NavyBlue}{
+                            $\sin(x+\frac{\pi}{2})=\cos(x)$},\,
+                            \textcolor{NavyBlue}{
+                            $\cos(x+\frac{\pi}{2})=-\sin(x)$}\\ 
                      \colorbox{SkyBlue}{(3)} 
                             \textcolor{NavyBlue}{
-                            $\sin(x+\pi)=-\sin(x),\,\sin(x+2\pi)=\sin(x)$}\\
+                            $\sin(x+\pi)=-\sin(x),\,
+                            \sin(x+2\pi)=\sin(x)$}\\
                      \colorbox{SkyBlue}{(4)}
                             \textcolor{NavyBlue}{
-                            $\cos(x+\pi)=-\cos(x),\,\cos(x+2\pi)=\cos(x)$}\\
+                            $\cos(x+\pi)=-\cos(x),\,
+                            \cos(x+2\pi)=\cos(x)$}\\
+                     \begin{equation*}
+                            \text{Sei } k\in\mathbb{Z}
+                     \end{equation*}
                      \colorbox{SkyBlue}{(5)}
                             \textbf{Nullstellen von Sinus} 
                             \textcolor{NavyBlue}{
-                            $=\{k\cdot\pi:k\in\mathbb{Z}\}$} \qquad
-                            \textcolor{NavyBlue}{
-                            $\sin(x)>0$\quad
-                            $\forall x\in]2k\pi,(2k+1)\pi[,\,k\in\mathbb{Z}$}\\
-                            \textcolor{NavyBlue}{
-                            $\sin(x)<0$\quad
-                            $\forall x\in](2k+1)\pi,(2k+2)\pi[,\,k\in\mathbb{Z}$}\\ 
+                            $=\{k\cdot\pi:k\in\mathbb{Z}\}$} 
+                            \begin{align*}
+                                   \sin(x)&>0
+                                   &\forall x\in
+                                   ]2k\pi,(2k+1)\pi[\\
+                                   \sin(x)&<0
+                                   &\forall x\in
+                                   ](2k+1)\pi,(2k+2)\pi[
+                            \end{align*}
                      \colorbox{SkyBlue}{(6)} 
                             \textbf{Nullstellen von Cosinus}
                             \textcolor{NavyBlue}{
-                            $=\{\frac{\pi}{2}+k\cdot\pi:k\in\mathbb{Z}\}$}
-                            \textcolor{NavyBlue}{$\cos(x)>0$\quad
-                            $\forall x\in]-\frac{\pi}{2}+2k\pi,\,-\frac{\pi}{2}+(2k+1)\pi[,\,
-                            k\in\mathbb{Z}$} \\
-                            \textcolor{NavyBlue}{$\cos(x)<0$\\ 
-                            $\forall x\in]-\frac{\pi}{2}+(2k+1)\pi,\,
-                            -\frac{\pi}{2}+(2k+2)\pi[,\,
-                            k\in\mathbb{Z}$}\\
+                            $=\{\frac{\pi}{2}+k\cdot\pi:
+                            k\in\mathbb{Z}\}$}
+                            \begin{align*}
+                                   \cos(x)&>0
+                                   &\forall x\in
+                                   ]2k\pi-\frac{\pi}{2},\,
+                                   (2k+1)\pi-\frac{\pi}{2}[\\
+                                   \cos(x)&<0
+                                   &\forall x\in
+                                   ](2k+1)\pi-\frac{\pi}{2},\,
+                                   (2k+2)\pi-\frac{\pi}{2}[
+                            \end{align*}
        \subsection{Grenzwerte von Funktionen}
               \colorbox{cyan}{Definition 3.10.1}
                      \textcolor{NavyBlue}{$x_0\in\R$} 
                      ist ein \textbf{Häufungspunkt} 
                      der Menge \textcolor{NavyBlue}{$D$}, 
                      wenn \textcolor{NavyBlue}{
-                     $\delta>0:(]x_0-\delta,x_0+\delta[)
-                     \setminus\{x_0\}\cap D\neq\emptyset$}. \\
+                     $\forall\delta>0$}:
+                     \begin{equation*}
+                            (]x_0-\delta,x_0+\delta[)
+                            \setminus\{x_0\}\cap D\neq\emptyset  
+                     \end{equation*}
               \colorbox{cyan}{Definition 3.10.3}
-                     Sei \textcolor{NavyBlue}{$f:D\longrightarrow\R,\,x_0\in\R$}
-                     ein \textbf{Häufungspunkt} von \textcolor{NavyBlue}{$D$}.
-                     Dann ist \textcolor{NavyBlue}{$A\in\R$} der Grenzwert von 
+                     Sei \textcolor{NavyBlue}{
+                     $f:D\longrightarrow\R,\,x_0\in\R$}
+                     ein \textbf{Häufungspunkt} von 
+                     \textcolor{NavyBlue}{$D$}.
+                     Dann ist \textcolor{NavyBlue}{$A\in\R$} 
+                     der Grenzwert von 
                      \textcolor{NavyBlue}{$f(x)$} für 
                      \textcolor{NavyBlue}{$x\to x_0$}, 
                      bezeichnet mit 
-                     \textcolor{NavyBlue}{$\lim\limits_{x\to x_0}f(x)=A$}, 
-                     wenn \textcolor{NavyBlue}{
-                     $\forall\varepsilon>0\,\exists\delta>0$}, so dass 
                      \textcolor{NavyBlue}{
-                     $\forall x\in D\cap(]x_0-\delta,x_0+\delta[\setminus\{x_0\}):
-                     \enspace|f(x)-A|<\varepsilon$}.\\
+                     $\lim\limits_{x\to x_0}f(x)=A$}, 
+                     wenn \textcolor{NavyBlue}{
+                     $\forall\varepsilon>0\,\exists\delta>0$}, 
+                     so dass 
+                     \textcolor{NavyBlue}{
+                     $\forall x\in 
+                     D\cap(]x_0-\delta,x_0+\delta[
+                     \setminus\{x_0\})$}:
+                     \begin{equation*}
+                            |f(x)-A|<\varepsilon
+                     \end{equation*}
               \colorbox{green}{Bemerkung 3.10.4} 
                      \colorbox{SkyBlue}{(1)} Sei 
-                     \textcolor{NavyBlue}{$f:D\longrightarrow\R$} und 
+                     \textcolor{NavyBlue}{
+                            $f:D\longrightarrow\R$} und 
                             \textcolor{NavyBlue}{$x_0$} ein 
                             \textbf{Häufungspunkt} von $D$. 
                             Dann gilt 
-                            \textcolor{NavyBlue}{$\lim\limits_{x\to x_0}f(x)=A$} 
-                            \textbf{genau, dann wenn} für jede Folge 
-                            \textcolor{NavyBlue}{$(a_n)_{n\geqslant1}$} 
-                            in \textcolor{NavyBlue}{$D\setminus\{x_0\}$} mit 
-                            \textcolor{NavyBlue}{$\lim\limits_{n\to\infty}a_n=x_0$} 
+                            \textcolor{NavyBlue}{
+                            $\lim\limits_{x\to x_0}f(x)=A$} 
+                            \textbf{genau, dann wenn} für 
+                            jede Folge 
+                            \textcolor{NavyBlue}{
+                            $(a_n)_{n\geqslant1}$} 
+                            in \textcolor{NavyBlue}{
+                            $D\setminus\{x_0\}$} mit 
+                            \textcolor{NavyBlue}{
+                            $\lim\limits_{n\to\infty}a_n=x_0$} 
                             folgendes gilt: 
                             \textcolor{NavyBlue}{
                             $\lim\limits_{n\to\infty}f(a_n)=A$}.\\ 
@@ -1302,22 +1441,28 @@
                             $\lim\limits_{x\to x_0}f(x)=f(x_0)$}.\\
                      \colorbox{SkyBlue}{(3)} 
                             Mittels \textbf{(1)} zeigt man leicht, 
-                            dass wenn 
-                            \textcolor{NavyBlue}{$f,g:D\longrightarrow\R$} 
+                            dass wenn \\
+                            \textcolor{NavyBlue}{
+                            $f,g:D\longrightarrow\R$} 
                             und 
                             \textcolor{NavyBlue}{
                             $\lim\limits_{x\to x_)}f(x),$\,
                             $\lim\limits_{x\to x_0}g(x)$}
                             existieren: 
-                            \textcolor{NavyBlue}{$\lim\limits_{x\to x_0}(f+g)(x)
-                            =\lim\limits_{x\to x_0}f(x)+\lim\limits_{x\to x_0}g(x)$} und
-                            \textcolor{NavyBlue}{
-                            $\lim\limits_{x\to x_0}(f\cdot g)(x)
-                            =\lim\limits_{x\to x_0}f(x)\cdot\lim\limits_{x\to x_0}g(x)$} 
+                            \begin{align*}
+                                   \lim\limits_{x\to x_0}(f+g)(x)
+                                   &=\lim\limits_{x\to x_0}f(x)
+                                   +\lim\limits_{x\to x_0}g(x)\\
+                                   \lim\limits_{x\to x_0}(f\cdot g)(x)
+                                   &=\lim\limits_{x\to x_0}f(x)
+                                   \cdot\lim\limits_{x\to x_0}g(x)
+                            \end{align*}
                             folgen.\\
                      \colorbox{SkyBlue}{(4)} 
-                            Seien \textcolor{NavyBlue}{$f,g:D\longrightarrow\R$} mit 
-                            \textcolor{NavyBlue}{$f\leqslant g$}. Dann folgt 
+                            Seien \textcolor{NavyBlue}{
+                            $f,g:D\longrightarrow\R$} mit 
+                            \textcolor{NavyBlue}{
+                            $f\leqslant g$}. Dann folgt 
                             \textcolor{NavyBlue}{
                             $\lim\limits_{x\to x_0}f(x)
                             \leqslant\lim\limits_{x\to x_0}g(x)$}
@@ -1329,22 +1474,29 @@
                             $\lim\limits_{x\to x_0}g_1(x)
                             =\lim\limits_{x\to x_0}g_2(x)$}, 
                             so existiert 
-                            \textcolor{NavyBlue}{$l:=\lim\limits_{x\to x_0}f(x)$} 
+                            \textcolor{NavyBlue}{
+                            $l:=\lim\limits_{x\to x_0}f(x)$} 
                             und \textcolor{NavyBlue}{
                             $l=\lim\limits_{x\to x_0}g_1(x)$}\\
               \colorbox{magenta}{Satz 3.10.6} 
-                     Seien \textcolor{NavyBlue}{$D,E\subseteq\R,\,x_0$} 
+                     Seien \textcolor{NavyBlue}{
+                     $D,E\subseteq\R,\,x_0$} 
                      \textbf{Häufungspunkt} von 
                      \textcolor{NavyBlue}{$D$},\,
                      \textcolor{NavyBlue}{$f:D\longrightarrow E$} 
                      eine \textbf{Funktion}. Wir nehmen an, dass 
-                     \textcolor{NavyBlue}{$y_0:=\lim\limits_{x\to x_0}f(x)$} 
+                     \textcolor{NavyBlue}{
+                     $y_0:=\lim\limits_{x\to x_0}f(x)$} 
                      existiert und 
                      \textcolor{NavyBlue}{$y_0\in E$}. Wenn 
-                     \textcolor{NavyBlue}{$g:E\longrightarrow\R$} in 
-                     \textcolor{NavyBlue}{$y_0$} \textbf{stetig} ist, folgt: 
                      \textcolor{NavyBlue}{
-                     $\lim\limits_{x\to x_0}g(f(x))=g(y_0)$}.
+                     $g:E\longrightarrow\R$} in 
+                     \textcolor{NavyBlue}{$y_0$} 
+                     \textbf{stetig} ist, folgt: 
+                     \begin{equation*}
+                           \lim\limits_{x\to x_0}g(f(x))
+                           =g(y_0). 
+                     \end{equation*}
 
 \section{Differenzierbare Funktionen}
        \subsection{Die Ableitung}
