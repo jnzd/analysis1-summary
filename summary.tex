@@ -2901,97 +2901,164 @@
        \stepcounter{subsection}
        \subsection{Uneigentliche Integrale}
               \colorbox{cyan}{Definition 5.8.1} 
-                     Sei \textcolor{NavyBlue}{$f:[a,\infty[\longrightarrow\R$}
+                     Sei \textcolor{NavyBlue}{
+                     $f:[a,\infty[\longrightarrow\R$}
                      \textbf{beschränkt und integrierbar} auf 
                      \textcolor{NavyBlue}{$[a,b]$} für alle 
                      \textcolor{NavyBlue}{$b>a$}. 
-                     Wenn \textcolor{NavyBlue}{
-                     $\lim\limits_{b\to\infty}\int_a^bf(x)\,dx$} 
-                     existiert, bezeichnen wir den \textbf{Grenzwert} mit 
-                     \textcolor{NavyBlue}{$\int_a^\infty f(x)\,dx$} 
-                     und sagen, dass \textcolor{NavyBlue}{$f$} auf 
+                     Wenn 
+                     \begin{equation*}
+                            \lim\limits_{b\to\infty}
+                            \int_a^bf(x)\,dx   
+                     \end{equation*}
+                     existiert, bezeichnen wir den 
+                     \textbf{Grenzwert} mit
+                     \begin{equation*}
+                            \int_a^\infty f(x)\,dx
+                     \end{equation*}
+                     und sagen, dass 
+                     \textcolor{NavyBlue}{$f$} auf 
                      \textcolor{NavyBlue}{$[a,+\infty[$} 
                      \textbf{integrierbar ist}.\\
               \colorbox{yellow}{Lemma 5.8.3} 
-                     Sei \textcolor{NavyBlue}{$f:[a,\infty[\longrightarrow\R$} 
+                     Sei \textcolor{NavyBlue}{
+                     $f:[a,\infty[\longrightarrow\R$} 
                      \textbf{beschränkt und integrierbar auf} 
-                     \textcolor{NavyBlue}{$[a,b]\enspace\forall b>a$}. 
-                     \colorbox{SkyBlue}{(1)} Wenn 
-                     \textcolor{NavyBlue}{$|f(x)|\leqslant g(x)\quad\forall x\geqslant a$}
-                     und \textcolor{NavyBlue}{$g(x)$} auf \textcolor{NavyBlue}{$[a,\infty[$} 
-                     \textbf{integrierbar} ist, ist 
-                     \textcolor{NavyBlue}{$f$} auf \textcolor{NavyBlue}{$[a,\infty[$}
-                     \textbf{integrierbar}. 
-                     \colorbox{SkyBlue}{(2)} Wenn 
-                     \textcolor{NavyBlue}{$0\leqslant g(x)\leqslant f(x)$} 
-                     und \textcolor{NavyBlue}{$\int_a^\infty g(x)\,dx$} 
-                     \textbf{divergiert}, \textbf{divergiert} auch 
-                     \textcolor{NavyBlue}{$\int_a^\infty f(x)\,dx$}.\\
-              \colorbox{magenta}{Satz 5.8.5} (McLaurin 1742) Sei 
-                     \textcolor{NavyBlue}{$f:[1,\infty[\longrightarrow[0,\infty[$} 
+                     \textcolor{NavyBlue}{
+                     $[a,b]\enspace\forall b>a$}. \\
+                     \colorbox{SkyBlue}{(1)} 
+                            Wenn \textcolor{NavyBlue}{
+                            $|f(x)|\leqslant g(x)\quad
+                            \forall x\geqslant a$}
+                            und \textcolor{NavyBlue}{$g(x)$} auf 
+                            \textcolor{NavyBlue}{$[a,\infty[$} 
+                            \textbf{integrierbar} ist, ist 
+                            \textcolor{NavyBlue}{$f$} auf 
+                            \textcolor{NavyBlue}{$[a,\infty[$}
+                            \textbf{integrierbar}.\\
+                     \colorbox{SkyBlue}{(2)} 
+                            Wenn \textcolor{NavyBlue}{
+                            $0\leqslant g(x)\leqslant f(x)$} 
+                            und \textcolor{NavyBlue}{
+                            $\int_a^\infty g(x)\,dx$} 
+                            \textbf{divergiert}, 
+                            \textbf{divergiert} auch 
+                            \textcolor{NavyBlue}{
+                            $\int_a^\infty f(x)\,dx$}.\\
+              \colorbox{magenta}{Satz 5.8.5} 
+              (McLaurin 1742) 
+                     Sei \textcolor{NavyBlue}{
+                     $f:[1,\infty[\longrightarrow[0,\infty[$} 
                      \textbf{monoton fallend}. Die Reihe 
-                     \textcolor{NavyBlue}{$\sum_{n=1}^\infty f(n)$} 
+                     \textcolor{NavyBlue}{
+                     $\sum_{n=1}^\infty f(n)$} 
                      \textbf{konvergiert genau dann, wenn} 
-                     \textcolor{NavyBlue}{$\int_1^\infty f(x)\,dx$} 
+                     \textcolor{NavyBlue}{
+                     $\int_1^\infty f(x)\,dx$} 
                      \textbf{konvergiert}. \\
               Eine Situation, die zu einem 
-                     \colorbox{gray}{uneigentlichen Integral} führt, 
-                     ist wenn \textcolor{NavyBlue}{$f:]a,b]\longrightarrow\R$} 
+                     \colorbox{gray}{uneigentlichen Integral} 
+                     führt, ist wenn \textcolor{NavyBlue}{
+                     $f:]a,b]\longrightarrow\R$} 
                      auf jedem Intervall 
-                     \textcolor{NavyBlue}{$[a+\varepsilon,b],\enspace\varepsilon>0$} 
-                     \textbf{beschränkt} und \textbf{integrierbar} ist, aber auf 
-                     \textcolor{NavyBlue}{$]a,b]$} \textbf{nicht} notwendigerweise 
-                     \textbf{beschränkt} ist. \\
-              \colorbox{cyan}{Definition 5.8.8} In dieser Situation ist 
-                     \textcolor{NavyBlue}{$f:]a,b]\longrightarrow\R$} 
-                     \textbf{integrierbar}, wenn \textcolor{NavyBlue}{
-                     $\lim\limits_{\varepsilon\to0^+}\int_{a+\varepsilon}^bf(x)\,dx$} 
-                     existiert.In diesem Fall wird der \textbf{Grenzwert} mit 
-                     \textcolor{NavyBlue}{$\int_a^bf(x)\,dx$} bezeichnet. \\
-              \colorbox{cyan}{Definition 5.8.11} 
-                     Für \textcolor{NavyBlue}{$s>0$} definieren wir 
                      \textcolor{NavyBlue}{
-                     $\Gamma(s):=\int_0^\infty e^{-x}x^{s-1}\,dx$}. \\
+                     $[a+\varepsilon,b],\enspace\varepsilon>0$} 
+                     \textbf{beschränkt} und 
+                     \textbf{integrierbar} ist, aber auf 
+                     \textcolor{NavyBlue}{$]a,b]$} 
+                     \textbf{nicht} notwendigerweise 
+                     \textbf{beschränkt} ist. \\
+              \colorbox{cyan}{Definition 5.8.8} 
+                     In dieser Situation ist
+                     \begin{equation*}
+                            f:]a,b]\longrightarrow\R
+                     \end{equation*}
+                     \textbf{integrierbar}, wenn
+                     \begin{equation*}
+                            \lim\limits_{\varepsilon\to0^+}
+                            \int_{a+\varepsilon}^bf(x)\,dx  
+                     \end{equation*}
+                     existiert.In diesem Fall wird der 
+                     \textbf{Grenzwert} mit
+                     \begin{equation*}
+                            \int_a^bf(x)\,dx
+                     \end{equation*}
+                     bezeichnet. \\
+
+              \colorbox{cyan}{Definition 5.8.11} 
+                     Für \textcolor{NavyBlue}{$s>0$} 
+                     definieren wir 
+                     \begin{equation*}
+                            \Gamma(s):=\int_0^\infty 
+                     e^{-x}x^{s-1}\,dx.
+                     \end{equation*}
               \colorbox{magenta}{Satz 5.8.12} 
               \textbf{(Bohr-Mollerup)} \\
                      \colorbox{SkyBlue}{(1)} 
-                            Die \textbf{Gamma Funktion} erfüllt die Relationen:\\ 
+                            Die \textbf{Gamma Funktion} 
+                            erfüllt die Relationen:\\ 
                             \colorbox{SeaGreen}{(a)}
-                                   \textcolor{NavyBlue}{$\Gamma(1)=1$} \qquad
+                                   \textcolor{NavyBlue}{
+                                   $\Gamma(1)=1$} \qquad
                             \colorbox{SeaGreen}{(b)} 
                                    \textcolor{NavyBlue}{
-                                   $\Gamma(s+1)=s\Gamma(s)\quad\forall s>0$} \\
+                                   $\Gamma(s+1)=s\Gamma(s)
+                                   \quad\forall s>0$} \\
                             \colorbox{SeaGreen}{(c)} 
-                                   \textcolor{NavyBlue}{$\gamma$} ist 
-                                   \textbf{logarithmisch konvex}, d.h. 
                                    \textcolor{NavyBlue}{
-                                   $\Gamma(\lambda x+(1-\lambda)y)
-                                   \leqslant\Gamma(x)^\lambda\Gamma(y)^{1--\lambda}$}
-                                   für alle \textcolor{NavyBlue}{$x,y>0$} und 
+                                   $\gamma$} ist 
+                                   \textbf{logarithmisch 
+                                   konvex}, d.h.
+                                   \begin{equation*}
+                                          \Gamma(\lambda x+(1-\lambda)y)
+                                          \leqslant\Gamma(x)^\lambda
+                                          \Gamma(y)^{1--\lambda}
+                                   \end{equation*}
+                                   für alle 
                                    \textcolor{NavyBlue}{
-                                   $0\leqslant\lambda\leqslant1$}.\\
-                     \colorbox{SkyBlue}{(2)} Die \textbf{Gamma Funktion} ist die 
+                                   $x,y>0$} und 
+                                   \textcolor{NavyBlue}{
+                                   $0\leqslant\lambda
+                                   \leqslant1$}.\\
+                     \colorbox{SkyBlue}{(2)} 
+                            Die \textbf{Gamma Funktion} ist die 
                             \textbf{einzige} Funktion 
-                            \textcolor{NavyBlue}{$]0,\infty[\longrightarrow]0,\infty[$},
-                            die (a), (b) und (c) erfüllt. 
-                            Darüberhinaus gilt: 
-                            \textcolor{NavyBlue}{$\Gamma(x)
-                            =\lim\limits_{n\to+\infty}\frac{n!n^x}{x(x+1)...(x+n)}\quad
-                            \forall x>0$}\\
-              \colorbox{yellow}{Lemma 5.8.13} Sei \textcolor{NavyBlue}{$p>1$} und 
+                            \textcolor{NavyBlue}{
+                            $]0,\infty[\longrightarrow]0,
+                            \infty[$},
+                            die \textbf{(a)}, 
+                            \textbf{(b)} und \textbf{(c)} 
+                            erfüllt. Darüberhinaus gilt: 
+                            \textcolor{NavyBlue}{
+                            $\forall x>0$}
+                            \begin{equation*}
+                                   \Gamma(x)
+                                   =\lim\limits_{n\to+\infty}
+                                   \frac{n!n^x}{x(x+1)...(x+n)}
+                            \end{equation*}
+              \colorbox{yellow}{Lemma 5.8.13}
+                     Sei \textcolor{NavyBlue}{$p>1$} und 
                      \textcolor{NavyBlue}{$q>1$} mit 
-                     \textcolor{NavyBlue}{$\frac{1}{p}+{1}{q}=1$}. Dann gilt 
-                     \textcolor{NavyBlue}{$\forall a,b\geqslant0$}: 
                      \textcolor{NavyBlue}{
-                     $a\cdot b\leqslant\frac{a^p}{p}+\frac{b^q}{q}$}.\\
+                     $\frac{1}{p}+{1}{q}=1$}. Dann gilt 
+                     \textcolor{NavyBlue}{
+                     $\forall a,b\geqslant0$}:
+                     \begin{equation*}
+                            a\cdot b\leqslant
+                            \frac{a^p}{p}+\frac{b^q}{q}
+                     \end{equation*}
               \colorbox{magenta}{Satz 5.8.14} 
               (\textbf{Hölder Ungleichung}) 
                      Seien \textcolor{NavyBlue}{$p,q>1$} mit 
-                     \textcolor{NavyBlue}{$\frac{1}{p}+\frac{1}{1}$}. Für 
-                     \textbf{alle stetigen Funktionen} 
-                     \textcolor{NavyBlue}{$f,g:[a,b]\longrightarrow\R$} gilt: 
                      \textcolor{NavyBlue}{
-                     $\int_a^b|f(x)g(x)|\,dx\leqslant\norm{f}_p\norm{g}_q$}\\
+                     $\frac{1}{p}+\frac{1}{1}$}. Für 
+                     \textbf{alle stetigen Funktionen} 
+                     \textcolor{NavyBlue}{
+                     $f,g:[a,b]\longrightarrow\R$} gilt:
+                     \begin{equation*}
+                            \int_a^b|f(x)g(x)|\,dx
+                            \leqslant\norm{f}_p\norm{g}_q
+                     \end{equation*}
        \subsection{Das unbestimmte Integral}
               \colorbox{magenta}{Satz 5.9.3} 
                      Seien \textcolor{NavyBlue}{$P,Q$} \textbf{Polynome} mit 
