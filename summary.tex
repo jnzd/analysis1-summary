@@ -12,6 +12,7 @@
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
 \geometry{a4paper, margin=18mm}
 \usepackage{titlesec}
 \titlespacing*{\section}{0pt}{0mm}{0mm}
@@ -43,15 +44,19 @@
 % \section{Skript}
 \section{$\R$ und $\C$}
               \colorbox{gray}{Ordnungsvollständigkeit:}
-                     Seien $A, B\subseteq\R$ s. d.\\
+                     Seien \textcolor{NavyBlue}{$A$}, 
+                     \textcolor{NavyBlue}{$B\subseteq\R$} s. d.\\
                      \colorbox{SkyBlue}{(i)} 
-                            $A\neq\emptyset$ \qquad
+                            \textcolor{NavyBlue}{$A\neq\emptyset$} \qquad
                      \colorbox{SkyBlue}{(ii)} 
+                            \textcolor{NavyBlue}{
                             $\forall a\in A \enspace \forall b 
-                            \in B \enspace a \leqslant b$ \\
-                      Dann: $\exists c\in\R\enspace$ s.d. 
+                            \in B \enspace a \leqslant b$} \\
+                      Dann: \textcolor{NavyBlue}{
+                     $\exists c\in\R\enspace$} s.d. 
+                     \textcolor{NavyBlue}{
                      $\enspace\forall a\in A\enspace a\leqslant c$
-                     $\forall b\in B\enspace c\leqslant b$\\
+                     $\forall b\in B\enspace c\leqslant b$}\\
               \colorbox{BurntOrange}{Korollar 1.1.7} 
               (\textbf{Archimedisches Prinzip})\\
                      Sei \textcolor{NavyBlue}{$x>0 y\in\R$}
@@ -60,52 +65,81 @@
               \colorbox{magenta}{Satz 1.1.8} \textcolor{NavyBlue}{
                      $\forall t\geqslant 0, t\in\R$} hat \textcolor{NavyBlue}{$x^2=t$} 
                      eine Lösung in $\R$\\
-              \colorbox{magenta}{Satz 1.1.10} $\forall x,y\in\R$
+              \colorbox{magenta}{Satz 1.1.10} 
+                     \textcolor{NavyBlue}{$\forall x,y\in\R$}
                      \begin{multicols}{2}
-                     \colorbox{SkyBlue}{(i)} $|x|\geqslant 0$ \\
-                     \colorbox{SkyBlue}{(ii)} $|xy|=|x||y|$\\
-                     \colorbox{SkyBlue}{(iii)} $|x+y|\leqslant |x|+|y|$\\
-                     \colorbox{SkyBlue}{(iv)} $|x+y|\geqslant ||x|-|y||$\\
+                     \colorbox{SkyBlue}{(i)} 
+                            \textcolor{NavyBlue}{$|x|\geqslant 0$} \\
+                     \colorbox{SkyBlue}{(ii)} 
+                            \textcolor{NavyBlue}{$|xy|=|x||y|$}\\
+                     \colorbox{SkyBlue}{(iii)}
+                            \textcolor{NavyBlue}{
+                            $|x+y|\leqslant |x|+|y|$}\\
+                     \colorbox{SkyBlue}{(iv)} 
+                            \textcolor{NavyBlue}{
+                            $|x+y|\geqslant ||x|-|y||$}
                      \end{multicols}
               \colorbox{magenta}{Satz 1.1.11}
               (\textbf{Young'sche Ungleichung})\\
                      \textcolor{NavyBlue}{
                      $\forall\varepsilon >0, \forall x,y\in\R$} 
                      gilt: \qquad \textcolor{NavyBlue}{
-                     $2|xy|\leqslant\varepsilon x^2+\frac{1}{\varepsilon}y^2$}\\
+                     $2|xy|\leqslant\varepsilon 
+                     x^2+\frac{1}{\varepsilon}y^2$}\\
               \colorbox{cyan}{Definition 1.1.12} 
-                     Sei $A\subset\R$\\
-                     \colorbox{SkyBlue}{(i)}/
-                     \colorbox{SkyBlue}{(ii)} 
-                            $c\in\R$ ist eine 
+                     Sei \textcolor{NavyBlue}{$A\subset\R$}\\
+                     \colorbox{SkyBlue}{(i)/(ii)}
+                            \textcolor{NavyBlue}{
+                            $c\in\R$} ist eine 
                             \textbf{obere/untere Schranke }
-                            von $A$ wenn \textcolor{NavyBlue}{
-                            $\forall a \in A \enspace a\leqslant / \geqslant c$}. 
-                            A ist \textbf{nach oben/unten beschränkt}, 
-                            wenn es eine \textbf{obere/untere Schranke} gibt.\\
-                     \colorbox{SkyBlue}{(iii)}/\colorbox{SkyBlue}{(iv)} 
-                            $m\in\R$ ist ein 
-                            \textbf{Maximum/Minimum} von $A$ wenn $m\in A$ und 
-                            $m$ \textbf{obere/untere Schranke} von $A$ ist. \\
+                            von \textcolor{NavyBlue}{$A$} 
+                            wenn \textcolor{NavyBlue}{
+                            $\forall a \in A \enspace a
+                            \leqslant / \geqslant c$}. 
+                            \textcolor{NavyBlue}{$A$} ist 
+                            \textbf{nach oben/unten beschränkt}, 
+                            wenn es eine \textbf{obere/untere 
+                            Schranke} gibt.\\
+                     \colorbox{SkyBlue}{(iii)/(iv)} 
+                            \textcolor{NavyBlue}{$m\in\R$} ist ein 
+                            \textbf{Maximum/Minimum} von 
+                            \textcolor{NavyBlue}{$A$} wenn 
+                            \textcolor{NavyBlue}{$m\in A$} und 
+                            \textcolor{NavyBlue}{$m$} 
+                            \textbf{obere/untere Schranke} von 
+                            \textcolor{NavyBlue}{$A$} ist. \\
               \colorbox{magenta}{Satz 1.1.15}  
-                     Sei $A\subseteq\R, A\neq\emptyset$ Sei $A$ 
-                     nach oben/unten beschränkt. 
-                     Dann gibt es eine kleinste obere/ grösste 
-                     untere Schranke von A: \quad \textcolor{NavyBlue}{
-                     $c:=sup\,A$ / $c:=inf\,A$}  genannt 
-                     \textbf{Supremum/Infimum} von $A$ \\
+                     Sei \textcolor{NavyBlue}{$A\subseteq\R$}, 
+                     \textcolor{NavyBlue}{$A\neq\emptyset$} Sei 
+                     \textcolor{NavyBlue}{$A$}
+                     nach \textbf{oben/unten beschränkt}. 
+                     Dann gibt es eine \textbf{kleinste obere/ grösste 
+                     untere Schranke} von 
+                     \textcolor{NavyBlue}{$A$}: \quad 
+                     \textcolor{NavyBlue}{$c:=sup\,A$} / 
+                     \textcolor{NavyBlue}{$c:=inf\,A$}  genannt 
+                     \textbf{Supremum/Infimum} von 
+                     \textcolor{NavyBlue}{$A$} \\
               \colorbox{BurntOrange}{Korollar 1.1.16} 
                      Seien \textcolor{NavyBlue}{
-                     $A\subseteq B\subseteq\R$} Wenn B \textbf{nach oben/unten 
-                     beschränkt} ist, folgt \textcolor{NavyBlue}{
-                     $\sup\,A\leqslant \sup\,B$ / $\inf\,B\leqslant \inf\,A$}\\
+                     $A\subseteq B\subseteq\R$} Wenn B
+                     \textbf{nach oben/unten 
+                     beschränkt} ist, folgt
+                     \begin{equation*}
+                            \sup\,A\leqslant \sup\,B \qquad
+                            \inf\,B\leqslant \inf\,A
+                     \end{equation*}
               \colorbox{gray}{Konvention:} 
-                     Wenn $A$ \textbf{nicht beschränkt ist}, definieren wir 
+                     Wenn $A$ \textbf{nicht beschränkt ist}, 
+                     definieren wir 
                      \textcolor{NavyBlue}{$\sup\,A=+\infty$} bzw. 
                      \textcolor{NavyBlue}{$\inf\,A=-\infty$}\\
               \colorbox{magenta}{Satz 1.3.4} 
-              (\textbf{Fundamentalsatz der Algebra}) 
-                     Sei $n\geqslant 1,\,n\in\N,\,a_j\in\C$ und 
+              (\textbf{Fundamentalsatz der Algebra})\\
+                     Sei \textcolor{NavyBlue}{
+                     $n\geqslant 1$},
+                     \textcolor{NavyBlue}{$n\in\N$},
+                     \textcolor{NavyBlue}{$a_j\in\C$} und 
                      \begin{equation*}
                             P(z)=z^n+a_{n-1}z^{n-1}+...+a_0
                      \end{equation*}
@@ -121,29 +155,36 @@
        \subsection{Grenzwert einer Folge}
               \colorbox{cyan}{Definition 2.1.1} 
                      Eine \textbf{Folge (reeller Zahlen)} ist 
-                     eine Abbildung $a:N^{*}\longrightarrow\R$. 
-                     Wir schreiben $a_n$ statt $a(n)$ und 
+                     eine Abbildung \textcolor{NavyBlue}{
+                     $a:N^{*}\longrightarrow\R$}. 
+                     Wir schreiben \textcolor{NavyBlue}{$a_n$} 
+                     statt \textcolor{NavyBlue}{$a(n)$} und 
                      bezeichnen eine Folge mit 
                      \textcolor{NavyBlue}{$(a_n)_{n\geqslant 1}$}\\
               \colorbox{yellow}{Lemma 2.1.3} 
-                     Sei $(a_n)_{n\geqslant 1}$ eine 
-                     Folge. Dann gibt es \textbf{höchstens eine reelle Zahl} 
+                     Sei \textcolor{NavyBlue}{$(a_n)_{n\geqslant 1}$} eine 
+                     Folge. Dann gibt es 
+                     \textbf{höchstens eine reelle Zahl} 
                      \textcolor{NavyBlue}{$l\in\R$} 
                      \textbf{mit} der Eigenschaft: 
-                     \textcolor{NavyBlue}{$\forall\varepsilon >0$} ist die Menge 
+                     \textcolor{NavyBlue}{$\forall\varepsilon >0$} 
+                     ist die Menge 
                      \textcolor{NavyBlue}{
                      $\{n\in\N:a_n\notin ]l-\varepsilon,\,l+\varepsilon[\}$} 
                      \textbf{endlich}.\\
               \colorbox{cyan}{Definition 2.1.4} 
-                     Eine Folge $(a_n)_{n\geqslant 1}$ ist 
-                     \textbf{konvergent}, wenn es \textcolor{NavyBlue}{$l\in\R$} 
+                     Eine Folge \textcolor{NavyBlue}{
+                     $(a_n)_{n\geqslant 1}$} ist 
+                     \textbf{konvergent}, wenn es 
+                     \textcolor{NavyBlue}{$l\in\R$} 
                      gibt, so dass 
-                     \textcolor{NavyBlue}{$\forall\varepsilon >0$} die Menge 
+                     \textcolor{NavyBlue}{$\forall\varepsilon >0$} die Menge\\ 
                      \textcolor{NavyBlue}{
                      $\{n\in\N:a_n\notin ]l-\varepsilon,\, l+\varepsilon[\}$} 
                      \textbf{endlich} ist.\\
               \colorbox{yellow}{Lemma 2.1.6} 
-                     Sei $(a_n)_{n\geqslant 1}$ eine Folge. 
+                     Sei \textcolor{NavyBlue}{
+                     $(a_n)_{n\geqslant 1}$} eine Folge. 
                      Folgende Aussagen sind äquivalent\\
                      \colorbox{SkyBlue}{(1)} 
                             \textcolor{NavyBlue}{$(a_n)_{n\geqslant 1}$} 
@@ -186,7 +227,7 @@
                             $\forall n\geqslant K: \enspace a_n\leqslant b_n$}, 
                             folgt \textcolor{NavyBlue}{$a\leqslant b$}\\
               \colorbox{Dandelion}{Beispiel 2.1.9} 
-                     \textcolor{NavyBlue}{$b\in\mathbb{Z}:\enspace
+                     \textcolor{NavyBlue}{$b\in\Z:\enspace
                      \lim\limits_{n\to\infty}(1+\frac{1}{n})^b=1$}.
                      Das folgt aus
                      \textcolor{NavyBlue}{
@@ -213,7 +254,7 @@
                             [\lim\limits_{n\to\infty}a_n=inf\{a_n:n\geqslant 1\}]
                      \end{equation*}
               \colorbox{Dandelion}{Beispiel 2.2.3} 
-                     Sei \textcolor{NavyBlue}{$a\in\mathbb{Z}$} und 
+                     Sei \textcolor{NavyBlue}{$a\in\Z$} und 
                      \textcolor{NavyBlue}{$0\leqslant q<1$}.
                      Dann gilt 
                      \begin{equation*}
@@ -283,7 +324,7 @@
                             (1+x)^n\geqslant 1+n\cdot x \quad\forall n\in\N,\, x>-1
                      \end{equation*}
        \subsection{Limes superior und Limes inferior}
-              \colorbox{gray}{Limes inferior/ superior:} 
+              \colorbox{gray}{Limes inferior/ superior:} \\
                      Sei \textcolor{NavyBlue}{$(a_n)_{n\geqslant 1}$}
                      eine \textbf{beschränkte Folge}. Sei 
                      \textcolor{NavyBlue}{
@@ -309,14 +350,15 @@
                      \end{align*}
        \subsection{Cauchy Kriterium}
               \colorbox{yellow}{Lemma 2.4.1} 
-                     $(a_n)_{n\geqslant1}$ \textbf{konvergiert genau dann, wenn} 
+                     \textcolor{NavyBlue}{$(a_n)_{n\geqslant1}$} 
+                     \textbf{konvergiert genau dann, wenn} 
                      \textcolor{NavyBlue}{$(a_n)_{n\geqslant1}$} 
                      \textbf{beschränkt} und 
                      \textcolor{NavyBlue}{$\liminf\limits_{n\to\infty}a_n
                      =\limsup\limits_{n\to\infty}a_n$}\\
               \colorbox{magenta}{Satz 2.4.2} 
               (\textbf{Cauchy Kriterium})
-                      $(a_n)_{n\geqslant1}$ ist
+                     \textcolor{NavyBlue}{$(a_n)_{n\geqslant1}$} ist
                      \textbf{genau dann kovergent, wenn} 
                      \textcolor{NavyBlue}{
                      $\forall\varepsilon >0\,\exists N\geqslant1$}, 
@@ -327,7 +369,8 @@
        \subsection{Satz von Bolzano-Wierstrass}
               \colorbox{cyan}{Definition 2.5.1} 
                      Ein \textbf{abgeschlossenes Intervall} 
-                     $I\subseteq\R$ ist von der Form
+                     \textcolor{NavyBlue}{$I\subseteq\R$} 
+                     ist von der Form
                      \begin{multicols}{2} %\noindent
                      \colorbox{SkyBlue}{(1)} 
                             $[a,b]\, a\leqslant b\in\R$\\
@@ -339,18 +382,22 @@
                             $]\scalebox{0.75}[1.0]{\(-\)}\infty,+\infty[=\R$
                      \end{multicols}
               \colorbox{green}{Bemerkung 2.5.2} 
-                     Ein Intervall $I\subseteq\R$ ist \textbf{genau dann 
-                     abgeschlossen, wenn} für jede konvergente Folge 
-                     $(a_n)_{n\geqslant1}$ 
+                     Ein Intervall 
+                     \textcolor{NavyBlue}{$I\subseteq\R$} 
+                     ist \textbf{genau dann abgeschlossen, 
+                     wenn} für jede konvergente Folge 
+                     \textcolor{NavyBlue}{$(a_n)_{n\geqslant1}$}
                      mit \textcolor{NavyBlue}{
                      $a_n\in I$\quad$\lim\limits_{n\to\infty}a_n\in I$}.\\
               \colorbox{green}{Bemerkung 2.5.3}
-                     Seien $I=[a,b],\,J=[c,d]$ mit \\
+                     Seien \textcolor{NavyBlue}{$I=[a,b]$},
+                     \textcolor{NavyBlue}{$J=[c,d]$} mit \\
                      \textcolor{NavyBlue}{
                      $a\leqslant b,\,c\leqslant d,\,a,b,c,d\in\R$}. 
                      Dann ist 
-                     \textcolor{NavyBlue}{$I\subseteq J$} \textbf{genau dann, 
-                     wenn} \textcolor{NavyBlue}{$c\leqslant a,\,b\leqslant d$}\\
+                     \textcolor{NavyBlue}{$I\subseteq J$} 
+                     \textbf{genau dann, wenn} \textcolor{NavyBlue}{
+                     $c\leqslant a,\,b\leqslant d$}\\
               \colorbox{magenta}{Satz 2.5.5.5} 
               (\textbf{Cauchy-Cantor}) 
                      Sei
@@ -409,7 +456,9 @@
                      \textcolor{NavyBlue}{
                      $(a_n)_{n\geqslant1}$}\\
               \colorbox{cyan}{Definition 2.6.2} 
-                     Eine Folge $(a_n)_{n\geqslant1}$ in $\R^d$ 
+                     Eine Folge \textcolor{NavyBlue}{
+                     $(a_n)_{n\geqslant1}$} in 
+                     \textcolor{NavyBlue}{$\R^d$} 
                      ist \textbf{konvergent}, wenn 
                      \textcolor{NavyBlue}{$\exists a\in\R^d$}, 
                      so dass
@@ -447,8 +496,11 @@
                             \limits_{1\leqslant i\leqslant d}|x_i|
                      \end{equation*}
                      folgt.\\
-              \colorbox{green}{Bemerkung 2.6.5} \textbf{Eine konvergente Folge} $(a_n)_{n\geqslant1}$ in 
-                     $\R^d$ \textbf{ist beschränkt}. Das heisst: 
+              \colorbox{green}{Bemerkung 2.6.5} 
+                     \textbf{Eine konvergente Folge} 
+                     \textcolor{NavyBlue}{$(a_n)_{n\geqslant1}$} in 
+                     \textcolor{NavyBlue}{$\R^d$}
+                     \textbf{ist beschränkt}. Das heisst: 
                      \textcolor{NavyBlue}{$\exists R\geqslant0$} mit 
                      \textcolor{NavyBlue}{
                      $\norm{a_n}\leqslant R\enspace\forall n\geqslant1$}\\
@@ -473,14 +525,15 @@
                      wenn die Folge 
                      \textcolor{NavyBlue}{$(S_n)_{n\geqslant1}$} 
                      der \textbf{Partialsummen konvergiert}. In 
-                     diesem Fall definieren wir: 
-                     \textcolor{NavyBlue}{
-                     $\sum_{k=1}^\infty a_k
-                     =\lim\limits_{n\to\infty}S_n$}\\
+                     diesem Fall definieren wir:
+                     \begin{equation*}
+                            \sum_{k=1}^\infty a_k
+                            =\lim\limits_{n\to\infty}S_n   
+                     \end{equation*}
               \colorbox{Dandelion}{Beispiel 2.7.2} 
               (\textbf{Geometrische Reihe}) 
-                     Sei $q\in\C$ mit 
-                     $|q|<1$. Dann konvergiert
+                     Sei \textcolor{NavyBlue}{$q\in\C$} mit 
+                     \textcolor{NavyBlue}{$|q|<1$}. Dann konvergiert
                      \begin{equation*}
                             \sum_{k=0}^\infty q^k=\frac{1}{1-q}
                      \end{equation*}
@@ -505,13 +558,14 @@
                      \end{equation*}
                      Es folgt aus
                      \textbf{Beispiel 2.2.3} 
-                     und $0\leqslant|q|<1$:
+                     und \textcolor{NavyBlue}{$0\leqslant|q|<1$}:
                      \begin{equation*}
                             \lim\limits_{n\to\infty}|S_n-\frac{1}{1-1}|
                             =\lim\limits_{n\to\infty}\frac{|q|^{n+1}}{|1-q|}=0.
                      \end{equation*}
-                     Somit konvergiert $(S_n)_{n\geqslant1}$ gegen
-                     $\frac{1}{1-q}$.\\
+                     Somit konvergiert \textcolor{NavyBlue}{
+                     $(S_n)_{n\geqslant1}$} gegen
+                     \textcolor{NavyBlue}{$\frac{1}{1-q}$}.\\
               \colorbox{Dandelion}{Beispiel 2.7.3} 
               (\textbf{Harmonische Reihe}) 
                      Die Reihe
@@ -521,8 +575,8 @@
                      divergiert.
               \newpage
               \colorbox{magenta}{Satz 2.7.4} Seien 
-                     \textcolor{NavyBlue}{
-                     $\sum_{k=1}^\infty a_k,\,\sum_{j=1}^\infty b_j$} 
+                     \textcolor{NavyBlue}{$\sum_{k=1}^\infty a_k$},
+                     \textcolor{NavyBlue}{$\sum_{j=1}^\infty b_j$}
                      \textbf{konvergent} sowie 
                      \textcolor{NavyBlue}{$\alpha\in\C$}. 
                      Dann ist:\\
@@ -676,9 +730,7 @@
                             1+z+\frac{z^2}{2!}+\frac{z^3}{3!}+\dots
                      \end{equation*}
                      mit allgemeinem Glied
-                     \begin{equation*}
-                            a_n=\frac{z^n}{n!}.
-                     \end{equation*}
+                     \textcolor{NavyBlue}{$a_n=\frac{z^n}{n!}$}.
                      Dann folgt für \textcolor{NavyBlue}{$z\neq0$}:
                      \begin{equation*}
                             \frac{|a_{n+1}|}{|a_n|}
@@ -698,10 +750,9 @@
                      \end{equation*}
               \colorbox{green}{Bemerkung 2.7.19} 
                      Das \textbf{Quotientenkriterium versagt}, wenn z. B. 
-                     \textbf{unenedlich viele Glieder} $a_n$ der Reihe 
+                     \textbf{unenedlich viele Glieder} 
+                     \textcolor{NavyBlue}{$a_n$} der Reihe 
                      \textbf{verschwinden} ($=0$ sind)\\
-              \vfill\null
-              \columnbreak
               \colorbox{magenta}{Satz 2.7.20}
               (\textbf{Wurzelkriterium}, Cauchy 1821)\\
                      \begin{align*}
@@ -718,27 +769,30 @@
                             \sum_{n=1}^\infty |a_n| \,
                             \textbf{divergieren}
                      \end{align*}
-              \colorbox{gray}{Konvergenzradius} \\
-                     Sei \textcolor{NavyBlue}{
-                     $(c_k)_{k\geqslant0}$} 
-                     eine Folge (in $\R$ oder $\C$). Wenn 
-                     \begin{equation*}
-                            \limsup\limits_{k\to\infty}
-                            \sqrt[k]{|c_k|}
-                     \end{equation*}
-                     existiert, definieren wir: 
-                     \begin{align*}
-                            \rho&=+\infty
-                            &\text{ wenn } 
-                            \limsup\limits_{k\to\infty}
-                            \sqrt[k]{|c_k|}=0\\
-                            \rho&=\frac{1}{\limsup
-                            \limits_{k\to\infty}\sqrt[k]{|c_k|}}
-                            &\text{ wenn }
-                            \limsup\limits_{k\to\infty}
-                            \sqrt[k]{|c_k|} >0
-                     \end{align*}
-              \colorbox{gray}{Riemann Zeta Funktion} Sei $s>1$ und 
+              % \colorbox{gray}{Konvergenzradius} \\
+              %        Sei \textcolor{NavyBlue}{
+              %        $(c_k)_{k\geqslant0}$} 
+              %        eine Folge (in 
+              %        \textcolor{NavyBlue}{$\R$} oder 
+              %        \textcolor{NavyBlue}{$\C$}). Wenn 
+              %        \begin{equation*}
+              %               \limsup\limits_{k\to\infty}
+              %               \sqrt[k]{|c_k|}
+              %        \end{equation*}
+              %        existiert, definieren wir: 
+              %        \begin{align*}
+              %               \rho&=+\infty
+              %               &\text{ wenn } 
+              %               \limsup\limits_{k\to\infty}
+              %               \sqrt[k]{|c_k|}=0\\
+              %               \rho&=\frac{1}{\limsup
+              %               \limits_{k\to\infty}\sqrt[k]{|c_k|}}
+              %               &\text{ wenn }
+              %               \limsup\limits_{k\to\infty}
+              %               \sqrt[k]{|c_k|} >0
+              %        \end{align*}
+              \colorbox{gray}{Riemann Zeta Funktion} 
+                     Sei \textcolor{NavyBlue}{$s>1$} und 
                      \begin{equation*}
                             \zeta(s)=\sum_{n=1}^\infty\frac{1}{n^s}.
                      \end{equation*}
@@ -795,8 +849,8 @@
                      absolut mit gleichem Grenzwert}.\\
               \colorbox{cyan}{Definition 2.7.24} 
                      Das \textbf{Cauchy Produkt} der Reihen 
-                     \textcolor{NavyBlue}{
-                     $\sum_{i=0}^\infty a_i,\,\sum_{j=0}^\infty b_j$} 
+                     \textcolor{NavyBlue}{$\sum_{i=0}^\infty a_i$},
+                     \textcolor{NavyBlue}{$\sum_{j=0}^\infty b_j$} 
                      ist die Reihe: 
                      \begin{align*}
                             &\sum_{n=0}^\infty
@@ -805,8 +859,8 @@
                             +(a_0b_2+a_1b_1+a_2b_0)+...
                      \end{align*}
               \colorbox{magenta}{Satz 2.7.26} Falls die Reihen 
-                     \textcolor{NavyBlue}{
-                     $\sum_{i=0}^\infty a_i,\,\sum_{j=0}^\infty b_j$}
+                     \textcolor{NavyBlue}{$\sum_{i=0}^\infty a_i$},
+                     \textcolor{NavyBlue}{$\sum_{j=0}^\infty b_j$}
                      \textbf{absolut konvergieren}, 
                      \textbf{konvergiert ihr Cauchy Produkt}
                      und es gilt: 
@@ -818,8 +872,8 @@
                      \end{align*}
               \colorbox{Dandelion}{Anwendung 2.7.27} 
               (\textbf{Exponentialfunktion})
-                     \textcolor{NavyBlue}{
-                     $\forall z,w\in\C$}
+                     \textcolor{NavyBlue}{$\forall z$},
+                     \textcolor{NavyBlue}{$w\in\C$}
                      \begin{equation*}
                             \exp(w+z)=\exp(w)\exp(z).                            
                      \end{equation*}
@@ -878,8 +932,9 @@
                      \textcolor{NavyBlue}{$f(D)\subseteq\R$} 
                      nach \textbf{[oben/unten] beschränkt} ist.\\
               \colorbox{cyan}{Definition 3.1.2} 
-                     Eine Funktion $f:D\longrightarrow\R$, wobei 
-                     $D\subseteq\R$, ist:\\
+                     Eine Funktion 
+                     \textcolor{NavyBlue}{$f:D\longrightarrow\R$}, wobei 
+                     \textcolor{NavyBlue}{$D\subseteq\R$}, ist:\\
                      \colorbox{SkyBlue}{(1)[(2)]}
                             \textbf{[streng] monoton 
                             wachsend}, wenn 
@@ -903,10 +958,11 @@
                             \textbf{fallend} ist.\\
        \subsection{Stetigkeit}
               \colorbox{cyan}{Definition 3.2.1} 
-                     Sei $D\subseteq\R,\,x_0\in D$. 
-                     Die Funktion \textcolor{NavyBlue}{$f:D\longrightarrow\R$} 
-                     ist in $x_0$ \textbf{stetig}, 
-                     wenn 
+                     Sei \textcolor{NavyBlue}{$D\subseteq\R$},
+                     \textcolor{NavyBlue}{$x_0\in D$}. 
+                     Die Funktion 
+                     \textcolor{NavyBlue}{$f:D\longrightarrow\R$} 
+                     ist in $x_0$ \textbf{stetig}, wenn 
                      \begin{equation*}
                             \forall\varepsilon>0
                             \enspace\exists\delta>0
@@ -921,7 +977,9 @@
               \colorbox{cyan}{Definition 3.2.2} 
                      Die Funktion \textcolor{NavyBlue}{$f:D\longrightarrow\R$}
                      ist \textbf{stetig}, wenn sie in 
-                     \textbf{jedem Punkt von D stetig} ist.\\
+                     \textbf{jedem Punkt} von 
+                     \textcolor{NavyBlue}{$D$} 
+                     \textbf{stetig} ist.\\
               \colorbox{magenta}{Satz 3.2.4} Sei 
                      \textcolor{NavyBlue}{$x_0\in D\subseteq\R$} und 
                      \textcolor{NavyBlue}{$f:D\longrightarrow\R$}. 
@@ -930,22 +988,24 @@
                      \textbf{stetig}, wenn für 
                      \textbf{jede Folge} 
                      \textcolor{NavyBlue}{$(a_n)_{n\geqslant1}$} 
-                     in $D$ die folgende Implikation gilt: 
+                     in \textcolor{NavyBlue}{$D$}
+                     die folgende Implikation gilt: 
                      \begin{equation*}
                             \lim\limits_{n\to\infty}a_n=x_0\Longrightarrow
                             \lim\limits_{n\to\infty}f(a_n)=f(x_0). 
                      \end{equation*}
               \colorbox{BurntOrange}{Korollar 3.2.5} Seien 
+                     \textcolor{NavyBlue}{$x_0\in D\subseteq\R$},
+                     \textcolor{NavyBlue}{$\lambda\in\R$} und \\
                      \textcolor{NavyBlue}{
-                     $x_0\in D\subseteq\R,\,\lambda\in\R$} und \\
-                     \textcolor{NavyBlue}{
-                     $f:D\longrightarrow\R$},\,
+                     $f:D\longrightarrow\R$},
                      \textcolor{NavyBlue}{
                      $g:D\longrightarrow\R$}
                      beide \textbf{stetig} in \textcolor{NavyBlue}{$x_0$}:\\
                      \colorbox{SkyBlue}{(1)}
-                            \textcolor{NavyBlue}{
-                            $f+g,\,\lambda\cdot f,\,f\cdot g$} 
+                            \textcolor{NavyBlue}{$f+g$},
+                            \textcolor{NavyBlue}{$\lambda\cdot f$},
+                            \textcolor{NavyBlue}{$f\cdot g$} 
                             sind \textbf{stetig} in 
                             \textcolor{NavyBlue}{$x_0$}.\\
                      \colorbox{SkyBlue}{(2)}
@@ -986,28 +1046,37 @@
                      \end{align*}
                      \textbf{stetig}.\\
        \subsection{Zwischenwertsatz}
-              \colorbox{magenta}{Satz 3.3.1} (\textbf{Zwischenwertsatz}, Bolzano 1817) Seien 
+              \colorbox{magenta}{Satz 3.3.1} 
+              (\textbf{Zwischenwertsatz}, Bolzano 1817) 
+                     Seien 
                      \textcolor{NavyBlue}{$I\subseteq\R$} ein Intervall, 
                      \textcolor{NavyBlue}{$f:I\longrightarrow\R$} 
                      eine \textbf{stetige Funktion} und 
-                     \textcolor{NavyBlue}{$a,b\in I$}. 
-                     \textbf{Für jedes} \textcolor{NavyBlue}{$c$} \textbf{zwischen} 
-                     \textcolor{NavyBlue}{$f(a)$} und \textcolor{NavyBlue}{$f(b)$} 
+                     \textcolor{NavyBlue}{$a$},
+                     \textcolor{NavyBlue}{$b\in I$}. 
+                     \textbf{Für jedes} \textcolor{NavyBlue}{$c$} 
+                     \textbf{zwischen} 
+                     \textcolor{NavyBlue}{$f(a)$} und 
+                     \textcolor{NavyBlue}{$f(b)$} 
                      \textbf{gibt es ein} \textcolor{NavyBlue}{$z$} 
-                     zwischen \textcolor{NavyBlue}{$a$} und \textcolor{NavyBlue}{$b$} mit 
+                     zwischen \textcolor{NavyBlue}{$a$} und 
+                     \textcolor{NavyBlue}{$b$} mit 
                      \textcolor{NavyBlue}{$f(z)=c$}.
        \subsection{Min-Max Satz}
               \colorbox{cyan}{Definition 3.4.2}
                      Ein \textbf{Intervall} $I\subset\R$ ist 
                      \textbf{kompakt}, wenn es 
                      von der Form 
-                     \textcolor{NavyBlue}{$I=[a,b],\quad a\leqslant b$} ist.\\
+                     \textcolor{NavyBlue}{$I=[a,b]$}, 
+                     \textcolor{NavyBlue}{$a\leqslant b$} ist.\\
               \colorbox{yellow}{Lemma 3.4.3} 
                      Sei \textcolor{NavyBlue}{$D\subseteq\R,\,x_0\in D$} und 
                      \textcolor{NavyBlue}{$f,g:D\longrightarrow\R$} 
                      \textbf{stetig} in \textcolor{NavyBlue}{$x_0$}. So sind 
-                     \textcolor{NavyBlue}{
-                     $|f|,\,\max(f,g),\,\min(f,g)$} \textbf{stetig} in 
+                     \textcolor{NavyBlue}{$|f|$},
+                     \textcolor{NavyBlue}{$\max(f,g)$},
+                     \textcolor{NavyBlue}{$\min(f,g)$} 
+                     \textbf{stetig} in 
                      \textcolor{NavyBlue}{$x_0$}.\\
               \colorbox{yellow}{Lemma 3.4.4} 
                      Sei \textcolor{NavyBlue}{$(x_n)_{n\geqslant1}$}
@@ -1028,8 +1097,10 @@
                      \textcolor{NavyBlue}{$f$} beschränkt}.
        \subsection{Umkehrabbildung}
               \colorbox{magenta}{Satz 3.5.1}
-                     Seien \textcolor{NavyBlue}{$D_1,D_2\subseteq\R$, 
-                     $f:D_1\longrightarrow D_2,\,g:D_2\longrightarrow\R$} und 
+                     Seien \textcolor{NavyBlue}{$D_1$},
+                     \textcolor{NavyBlue}{$D_2\subseteq\R$}, 
+                     \textcolor{NavyBlue}{$f:D_1\longrightarrow D_2$}, \\
+                     \textcolor{NavyBlue}{$g:D_2\longrightarrow\R$} und 
                      \textcolor{NavyBlue}{$x_0\in D_1$}.
                      Wenn \textcolor{NavyBlue}{$f$} in 
                      \textcolor{NavyBlue}{$x_0$} und 
@@ -1084,9 +1155,11 @@
               \colorbox{BurntOrange}{Korollar 3.6.4} 
                      \textcolor{NavyBlue}{
                      $\exp(x)\geqslant1+x\quad\forall x\in\R$}\\
+
               \colorbox{BurntOrange}{Korollar 3.6.5} 
-                     Der \textbf{natürlich Logarithmus} 
-                     $\ln:]0,+\infty[\longrightarrow\R$ ist eine 
+                     Der \textbf{natürlich Logarithmus} \\
+                     \textcolor{NavyBlue}{
+                     $\ln:]0,+\infty[\longrightarrow\R$} ist eine 
                      \textbf{streng monoton 
                      wachsende, stetige, bijektive} 
                      Funktion. Des weiteren gilt 
@@ -1149,13 +1222,16 @@
                      Sei \textcolor{NavyBlue}{$D\subseteq\R$} und 
                      \textcolor{NavyBlue}{$f_n:D\longrightarrow\R$} 
                      eine \textbf{Funktionenfolge} bestehend aus 
-                     (in $D$) \textbf{stetigen Funktionen}, die 
-                     (in $D$) \textbf{gleichmässig gegen eine 
+                     (in \textcolor{NavyBlue}{$D$}) 
+                     \textbf{stetigen Funktionen}, die 
+                     (in \textcolor{NavyBlue}{$D$}) 
+                     \textbf{gleichmässig gegen eine 
                      Funktion} \textcolor{NavyBlue}{
                      $f:D\longrightarrow\R$} 
                      \textbf{konvergiert}. 
                      Dann ist \textcolor{NavyBlue}{$f$}
-                     (in $D$) \textbf{stetig}.\\
+                     (in \textcolor{NavyBlue}{$D$}) 
+                     \textbf{stetig}.\\
               \colorbox{cyan}{Definition 3.7.5} 
                      Eine Funktionenfolge 
                      \textcolor{NavyBlue}{$f_n:D\longrightarrow\R$}
@@ -1178,7 +1254,8 @@
                      \textcolor{NavyBlue}{
                      $\forall\varepsilon>0\,\exists N\geqslant1$}, 
                      so dass 
-                     \textcolor{NavyBlue}{$\forall n,m\geqslant N$} und 
+                     \textcolor{NavyBlue}{$\forall n$},
+                     \textcolor{NavyBlue}{$m\geqslant N$} und 
                      \textcolor{NavyBlue}{
                      $\forall x\in D:$}
                      \begin{equation*}
@@ -1194,12 +1271,14 @@
                      \textcolor{NavyBlue}{
                      $f(x):=\lim\limits_{n\to\infty}f_n(x)$} 
                      \textbf{stetig}.\\
+
               \colorbox{cyan}{Definition 3.7.8} 
                      Die \textbf{Reihe}
                      \textcolor{NavyBlue}{
                      $\sum_{k=0}^\infty f_k(x)$}
                      \textbf{konvergiert gleichmässig} 
-                     (in $D$), wenn die durch 
+                     (in \textcolor{NavyBlue}{$D$}), 
+                     wenn die durch 
                      \begin{equation*}
                             S_n(x):=\sum_{k=0}^\infty f_k(x)
                      \end{equation*}
@@ -1223,17 +1302,18 @@
                             \sum_{n=0}^\infty f_n(x)
                      \end{equation*}
                      \textbf{gleichmässig} 
-                     in $D$ und deren Grenzwert
+                     in \textcolor{NavyBlue}{$D$} und deren Grenzwert
                      \begin{equation*}
                             f(x):=\sum_{n=0}^\infty f_n(x)
-                     \end{equation*}
-                     \textbf{ist eine in $D$ stetige Funktion}.\\
+                     \end{equation*} 
+                     ist eine in 
+                     \textcolor{NavyBlue}{$D$} 
+                     \textbf{stetige Funktion}.\\
 
               \colorbox{cyan}{Definition 3.7.10} 
                      Die Potenzreihe 
-                     \begin{equation*}
-                            \sum_{k=0}^\infty c_kx^k
-                     \end{equation*}
+                     \textcolor{NavyBlue}{
+                     $\sum_{k=0}^\infty c_kx^k$}
                      hat \textbf{positiven Konvergenzradius}, 
                      wenn 
                      \begin{equation*}
@@ -1319,8 +1399,8 @@
                             \pi:=\inf\{t>0:\sin t=0\}.
                      \end{equation*}
                      \colorbox{SkyBlue}{(1)} 
-                            \textcolor{NavyBlue}{
-                            $\sin\pi=0,\,\pi\in]2,4[$} \qquad
+                            \textcolor{NavyBlue}{$\sin\pi=0$},\enspace
+                            \textcolor{NavyBlue}{$\pi\in]2,4[$} \quad
                      \colorbox{SkyBlue}{(2)} 
                             \textcolor{NavyBlue}{
                             $\forall x\in]0,\pi[:\sin x>0$}\\
@@ -1335,8 +1415,8 @@
               \colorbox{BurntOrange}{Korollar 3.9.3}
                      Sei \textcolor{NavyBlue}{$x\in\R$}\\
                      \colorbox{SkyBlue}{(1)} 
-                            \textcolor{NavyBlue}{
-                            $e^{i\pi}=-1,\,e^{2i\pi}=1$}\\ 
+                            \textcolor{NavyBlue}{$e^{i\pi}=-1$}, \qquad
+                            \textcolor{NavyBlue}{$e^{2i\pi}=1$}\\ 
                      \colorbox{SkyBlue}{(2)} 
                             \textcolor{NavyBlue}{
                             $\sin(x+\frac{\pi}{2})=\cos(x)$},\,
@@ -1344,19 +1424,21 @@
                             $\cos(x+\frac{\pi}{2})=-\sin(x)$}\\ 
                      \colorbox{SkyBlue}{(3)} 
                             \textcolor{NavyBlue}{
-                            $\sin(x+\pi)=-\sin(x),\,
-                            \sin(x+2\pi)=\sin(x)$}\\
+                            $\sin(x+\pi)=-\sin(x)$},
+                            \textcolor{NavyBlue}{
+                            $\sin(x+2\pi)=\sin(x)$}\\
                      \colorbox{SkyBlue}{(4)}
                             \textcolor{NavyBlue}{
-                            $\cos(x+\pi)=-\cos(x),\,
-                            \cos(x+2\pi)=\cos(x)$}\\
+                            $\cos(x+\pi)=-\cos(x)$},
+                            \textcolor{NavyBlue}{
+                            $\cos(x+2\pi)=\cos(x)$}\\
                      \begin{equation*}
-                            \text{Sei } k\in\mathbb{Z}
+                            \text{Sei } \textcolor{NavyBlue}{k\in\Z}
                      \end{equation*}
                      \colorbox{SkyBlue}{(5)}
                             \textbf{Nullstellen von Sinus} 
                             \textcolor{NavyBlue}{
-                            $=\{k\cdot\pi:k\in\mathbb{Z}\}$} 
+                            $=\{k\cdot\pi:k\in\Z\}$} 
                             \begin{align*}
                                    \sin(x)&>0
                                    &\forall x\in
@@ -1369,7 +1451,7 @@
                             \textbf{Nullstellen von Cosinus}
                             \textcolor{NavyBlue}{
                             $=\{\frac{\pi}{2}+k\cdot\pi:
-                            k\in\mathbb{Z}\}$}
+                            k\in\Z\}$}
                             \begin{align*}
                                    \cos(x)&>0
                                    &\forall x\in
@@ -1418,7 +1500,8 @@
                      \textcolor{NavyBlue}{
                             $f:D\longrightarrow\R$} und 
                             \textcolor{NavyBlue}{$x_0$} ein 
-                            \textbf{Häufungspunkt} von $D$. 
+                            \textbf{Häufungspunkt} von 
+                            \textcolor{NavyBlue}{$D$}. 
                             Dann gilt 
                             \textcolor{NavyBlue}{
                             $\lim\limits_{x\to x_0}f(x)=A$} 
@@ -1446,7 +1529,8 @@
                             $f,g:D\longrightarrow\R$} 
                             und 
                             \textcolor{NavyBlue}{
-                            $\lim\limits_{x\to x_)}f(x),$\,
+                            $\lim\limits_{x\to x_)}f(x)$},
+                            \textcolor{NavyBlue}{
                             $\lim\limits_{x\to x_0}g(x)$}
                             existieren: 
                             \begin{align*}
@@ -1459,8 +1543,9 @@
                             \end{align*}
                             folgen.\\
                      \colorbox{SkyBlue}{(4)} 
-                            Seien \textcolor{NavyBlue}{
-                            $f,g:D\longrightarrow\R$} mit 
+                            Seien \textcolor{NavyBlue}{$f$},
+                            \textcolor{NavyBlue}{
+                            $g:D\longrightarrow\R$} mit 
                             \textcolor{NavyBlue}{
                             $f\leqslant g$}. Dann folgt 
                             \textcolor{NavyBlue}{
@@ -1479,8 +1564,8 @@
                             und \textcolor{NavyBlue}{
                             $l=\lim\limits_{x\to x_0}g_1(x)$}\\
               \colorbox{magenta}{Satz 3.10.6} 
-                     Seien \textcolor{NavyBlue}{
-                     $D,E\subseteq\R,\,x_0$} 
+                     Seien \textcolor{NavyBlue}{$D$},
+                     \textcolor{NavyBlue}{$E\subseteq\R,\,x_0$} 
                      \textbf{Häufungspunkt} von 
                      \textcolor{NavyBlue}{$D$},\,
                      \textcolor{NavyBlue}{$f:D\longrightarrow E$} 
@@ -1501,7 +1586,9 @@
 \section{Differenzierbare Funktionen}
        \subsection{Die Ableitung}
               \colorbox{cyan}{Definition 4.1.1} 
-                     $f$ ist in $x_0$ \textbf{differenzierbar}, 
+                     \textcolor{NavyBlue}{$f$} ist in 
+                     \textcolor{NavyBlue}{$x_0$} 
+                     \textbf{differenzierbar}, 
                      wenn der Grenzwert 
                      \begin{equation*}
                             \lim\limits_{x\to x_0}
@@ -1588,7 +1675,7 @@
                      ist in \textcolor{NavyBlue}{$D$} 
                      \textbf{differenzierbar}, 
                      wenn für \textbf{jeden Häufungspunkt} 
-                     $x_0\in D,$
+                     \textcolor{NavyBlue}{$x_0\in D$},
                      \textcolor{NavyBlue}{$f$} in 
                      \textcolor{NavyBlue}{$x_0$} 
                      \textbf{differenzierbar} ist.\\
@@ -1630,7 +1717,8 @@
                                    -f(x_0)g'(x_0)}{g^2(x_0)}
                             \end{equation*}
               \colorbox{magenta}{Satz 4.1.11}
-                     Seien \textcolor{NavyBlue}{$D,E\subseteq\R$}, 
+                     Seien \textcolor{NavyBlue}{$D$},
+                     \textcolor{NavyBlue}{$E\subseteq\R$}, 
                      sei \textcolor{NavyBlue}{$x_0\in D$}
                      ein \textbf{Häufungspunkt}, sei 
                      \textcolor{NavyBlue}{$f:D\longrightarrow E$}
@@ -1651,7 +1739,6 @@
                      \begin{equation*}
                             (g\circ f)'(x_0)=g'(f(x_0))f'(x_0)
                      \end{equation*}
-              \newpage
               \colorbox{BurntOrange}{Korollar 4.1.12}
                      Sei \textcolor{NavyBlue}{
                      $f:D\longrightarrow E$} eine 
@@ -1702,9 +1789,11 @@
                             wenn es ein 
                             \textbf{lokales Minimum oder 
                             Maximum} ist. \\
+
               \colorbox{magenta}{Satz 4.2.2} 
                      Sei \textcolor{NavyBlue}{
-                     $f:]a,b[\longrightarrow\R,\,x_0\in]a,b[$}. 
+                     $f:]a,b[\longrightarrow\R$},
+                     \textcolor{NavyBlue}{$x_0\in]a,b[$}. 
                      Wir nehmen an, \textcolor{NavyBlue}{$f$} 
                      ist in 
                      \textcolor{NavyBlue}{$x_0$} 
@@ -1769,8 +1858,8 @@
                             f(b)-f(a)=f'(\xi)(b-a).
                      \end{equation*}
               \colorbox{BurntOrange}{Korollar 4.2.5} 
-                     Seien \textcolor{NavyBlue}{
-                     $f,g:[a,b]\longrightarrow\R$}
+                     Seien \textcolor{NavyBlue}{$f$},
+                     \textcolor{NavyBlue}{$g:[a,b]\longrightarrow\R$}
                      \textbf{stetig} und in 
                      \textcolor{NavyBlue}{$]a,b[$} 
                      \textbf{differenzierbar}.\\
@@ -1779,8 +1868,6 @@
                             $f'(\xi)=0\quad\forall\xi\in]a,b[$} 
                             ist, ist \textcolor{NavyBlue}{$f$} 
                             \textbf{konstant}.\\
-
-                     \columnbreak
                      \colorbox{SkyBlue}{(2)} 
                             Wenn \textcolor{NavyBlue}{
                             $f'(\xi)=g'(\xi)\quad
@@ -1809,9 +1896,9 @@
                             \textcolor{NavyBlue}{$M\geqslant0$} gibt, mit: 
                             \textcolor{NavyBlue}{
                             $|f'(\xi)|\leqslant M\quad
-                            \forall\xi\in]a,b[$}, 
-                            folgt \textcolor{NavyBlue}{ 
-                            $\forall x_1,x_2\in[a,b]$}
+                            \forall\xi\in]a,b[$}, folgt 
+                            \textcolor{NavyBlue}{$\forall x_1$},
+                            \textcolor{NavyBlue}{$x_2\in[a,b]$}
                             \begin{equation*}
                                    |f(x_1)-f(x_2)|
                                    \leqslant M|x_1-x_2|.
@@ -1843,7 +1930,7 @@
                             \textcolor{NavyBlue}{
                             $\sin$}. Nach 
                             \textbf{Korollar 4.1.12} 
-                            ist sie auf $]-1,1[$ 
+                            ist sie auf \textcolor{NavyBlue}{$]-1,1[$ }
                             differenzierbar und für\\
                             \textcolor{NavyBlue}{
                             $y=\sin x,\enspace 
@@ -1900,7 +1987,7 @@
                             Für 
                             \textcolor{NavyBlue}{
                             $x\notin\frac{\pi}{2}
-                            +\pi\cdot\mathbb{Z}$}
+                            +\pi\cdot\Z$}
                             hatten wir die Tangensfunktion 
                             definiert:
                             \textcolor{NavyBlue}{
@@ -1942,8 +2029,8 @@
               \colorbox{magenta}{Satz 4.2.9} 
               (Cauchy)
                      Seien 
-                     \textcolor{NavyBlue}{
-                     $f,g:[a,b]\longrightarrow\R$}
+                     \textcolor{NavyBlue}{$f$},
+                     \textcolor{NavyBlue}{$g:[a,b]\longrightarrow\R$}
                      stetig und in \textcolor{NavyBlue}{$]a,b[$} 
                      \textbf{differenzierbar}. Es gibt 
                      \textcolor{NavyBlue}{$\xi\in]a,b[$} mit:
@@ -1997,9 +2084,11 @@
                             \textcolor{NavyBlue}{$f$}
                             ist \textbf{konvex} (auf 
                             \textcolor{NavyBlue}{$I$}), wenn 
-                            \textcolor{NavyBlue}{
-                            $\forall x,y\in I,\,x\leqslant y$ 
-                            und $\lambda\in[0,1]$}
+                            \textcolor{NavyBlue}{$\forall x$},
+                            \textcolor{NavyBlue}{$y\in I$},
+                            \textcolor{NavyBlue}{$x\leqslant y$}
+                            und 
+                            \textcolor{NavyBlue}{$\lambda\in[0,1]$}
                             folgendes gilt: 
                             \begin{equation*}
                                    f(\lambda x+(1-\lambda)y)
@@ -2009,8 +2098,9 @@
                      \colorbox{SkyBlue}{(2)} 
                             \textcolor{NavyBlue}{$f$} ist 
                             \textbf{streng konvex}, 
-                            wenn \textcolor{NavyBlue}{
-                            $\forall x,y\in I,\,x<y$}
+                            wenn \textcolor{NavyBlue}{$\forall x$},
+                            \textcolor{NavyBlue}{$y\in I$},
+                            \textcolor{NavyBlue}{$x<y$}
                             und \textcolor{NavyBlue}{
                             $\lambda\in]0,1[$} 
                             folgendes gilt: 
@@ -2072,9 +2162,11 @@
        \subsection{Höhere Ableitungen}
               \colorbox{cyan}{Definition 4.3.1} 
                      \colorbox{SkyBlue}{(1)}
-                            Für $n\geqslant2$ ist 
-                            $f\,n$\textbf{-mal differenzierbar 
-                            in} $D$, wenn 
+                            Für \textcolor{NavyBlue}{
+                            $n\geqslant2$} ist 
+                            \textcolor{NavyBlue}{$f$}
+                            $n$\textbf{-mal differenzierbar 
+                            in} \textcolor{NavyBlue}{$D$}, wenn 
                             \textcolor{NavyBlue}{
                             $f^{(n-1)}$} in 
                             \textcolor{NavyBlue}{$D$}
@@ -2157,7 +2249,7 @@
                      $E,D\subseteq\R$} Teilmengen 
                      für die \textbf{jeder Punkt 
                      Häufungspunkt} ist. Seien 
-                     \textcolor{NavyBlue}{$f:D\longrightarrow E$},
+                     \textcolor{NavyBlue}{$f:D\longrightarrow E$},\\
                      \textcolor{NavyBlue}{$g:E\longrightarrow\R$} 
                      \textbf{$n$-mal differenzierba}r.
                      Dann ist \textcolor{NavyBlue}{$f\circ g$} 
@@ -2229,8 +2321,6 @@
                      \begin{equation*}
                             c_j=\frac{f^{(j)}(x_0)}{j!}.  
                      \end{equation*}
-              \vfill\null
-              \columnbreak
               \colorbox{magenta}{Satz 4.4.5} 
                      Sei \textcolor{NavyBlue}{
                      $f:[a,b]\longrightarrow\R$}
@@ -2254,7 +2344,7 @@
                      \textbf{stetig} und in 
                      \textcolor{NavyBlue}{$]c,d[$} 
                      \textbf{$(n+1)$-mal differenzierbar}. Sei 
-                     \textcolor{NavyBlue}{$c<a<d$}. 
+                     \textcolor{NavyBlue}{$c<a<d$}. \\
                      \textcolor{NavyBlue}{
                      $\forall x\in[c,d]\,\exists\xi$} zwischen 
                      \textcolor{NavyBlue}{$x$} und 
@@ -2312,19 +2402,14 @@
                      differenzierbar}. Sei 
                      \textcolor{NavyBlue}{$a<x_0<b$}. 
                      Annahme: \textcolor{NavyBlue}{$f'(x_0)=0$}.\\
-                     \colorbox{SkyBlue}{(1)} 
+                     \colorbox{SkyBlue}{(1)/(2)} 
                             Wenn \textcolor{NavyBlue}{
-                            $f^{(2)}(x_0)>0$} ist, ist 
-                            \textcolor{NavyBlue}{$x_0$}
-                            eine \textbf{strikt lokale 
-                            Minimalstelle}. \\
-                     \colorbox{SkyBlue}{(2)} Wenn 
+                            $f^{(2)}(x_0)>0$} /
                             \textcolor{NavyBlue}{
-                            $f^{(2)}(x_0)<0$} ist, ist
+                            $f^{(2)}(x_0)<0$} ist, ist 
                             \textcolor{NavyBlue}{$x_0$}
                             eine \textbf{strikt lokale 
-                            Maximalstelle}.
-
+                            Minimalstelle / Maximalstelle}.
 \section{Riemann Integral}
        \subsection{Definition und Integrabilitätskriterien}
               \colorbox{cyan}{Definition 5.1.1} 
@@ -2334,7 +2419,7 @@
                      \textcolor{NavyBlue}{$P\subsetneq[a,b]$} 
                      wobei \textcolor{NavyBlue}{
                      $\{a,b\}\subseteq P$}. 
-                     Es gilt: 
+                     Es gilt: \\
                      \textcolor{NavyBlue}{
                      $n:=\operatorname{card} P-1\geqslant1$} 
                      und es gibt \textbf{genau eine Bijektion}
@@ -2360,7 +2445,7 @@
                      $f:[a,b]\longrightarrow\R$} eine 
                      \textbf{beschränkte Funktion}, 
                      das heisst es gibt 
-                     \textcolor{NavyBlue}{$M\geqslant0$} mit 
+                     \textcolor{NavyBlue}{$M\geqslant0$} mit \\
                      \textcolor{NavyBlue}{
                      $|f(x)|\leqslant M\quad
                      \forall x\in[a,b]$}.\\
@@ -2445,8 +2530,6 @@
                      \begin{equation*}
                             S(f,P)-s(f,P)<\varepsilon
                      \end{equation*}
-              \vfill\null
-              \columnbreak
               \colorbox{magenta}{Satz 5.1.8} 
               (Du Bois-Reymond 1875, Darboux 1875) 
                      Eine \textbf{beschränkte Funktion} 
@@ -2598,7 +2681,7 @@
                      \textbf{stetig} in dem kompakten Intervall 
                      \textcolor{NavyBlue}{$[a,b]$}. 
                      Dann ist \textcolor{NavyBlue}{$f$} in 
-                     \textcolor{NavyBlue}{$[a,b]$}
+                     \textcolor{NavyBlue}{$[a,b]$}\\
                      \textbf{gleichmässig stetig}.\\
               \colorbox{magenta}{Satz 5.2.7} 
                      Sei \textcolor{NavyBlue}{
@@ -2649,6 +2732,7 @@
                      \textcolor{NavyBlue}{$a,b,c$} 
                      unter den entsprechenden 
                      Integrabilitätsvoraussetzungen. \\
+
               \colorbox{magenta}{Satz 5.2.10}
                      Sei \textcolor{NavyBlue}{$I\subsetneq\R$} 
                      ein \textbf{kompaktes Intervall} 
@@ -2716,7 +2800,7 @@
                      \textbf{stetig}, 
                      \textcolor{NavyBlue}{$g$} 
                      \textbf{beschränkt} und 
-                     \textbf{integrierbar} mit 
+                     \textbf{integrierbar} mit \\
                      \textcolor{NavyBlue}{
                      $g\geqslant0\quad\forall x\in[a,b]$}. 
                      Dann gibt es 
@@ -2782,7 +2866,7 @@
                      \end{equation*}
               \colorbox{magenta}{Satz 5.4.6} 
               (\textbf{Substitution}) 
-                     Sei \textcolor{NavyBlue}{$a<b$},\,
+                     Sei \textcolor{NavyBlue}{$a<b$},\\
                      \textcolor{NavyBlue}{
                      $\phi:[a,b]\longrightarrow\R$}
                      \textbf{stetig differenzierbar}, 
@@ -2806,10 +2890,11 @@
                             \textcolor{NavyBlue}{$a,b,c\in\R$}, 
                             so dass das abgeschlossene Intervall 
                             mit \textbf{Endpunkten} 
-                            \textcolor{NavyBlue}{$a+c,b+c\in I$}. 
+                            \textcolor{NavyBlue}{$a+c$},
+                            \textcolor{NavyBlue}{$b+c\in I$}. 
                             Dann gilt: 
                             \begin{equation*}
-                                   int_{a+c}^{b+c}f(x)\,dx
+                                   \int_{a+c}^{b+c}f(x)\,dx
                                    =\int_a^bf(t+c)\,dt
                             \end{equation*}
                      \colorbox{SkyBlue}{(2)} 
@@ -2968,6 +3053,8 @@
                      \textcolor{NavyBlue}{$]a,b]$} 
                      \textbf{nicht} notwendigerweise 
                      \textbf{beschränkt} ist. \\
+              \vfill\null
+              \columnbreak
               \colorbox{cyan}{Definition 5.8.8} 
                      In dieser Situation ist
                      \begin{equation*}
@@ -2978,7 +3065,7 @@
                             \lim\limits_{\varepsilon\to0^+}
                             \int_{a+\varepsilon}^bf(x)\,dx  
                      \end{equation*}
-                     existiert.In diesem Fall wird der 
+                     existiert. In diesem Fall wird der 
                      \textbf{Grenzwert} mit
                      \begin{equation*}
                             \int_a^bf(x)\,dx
@@ -3059,10 +3146,18 @@
                             \int_a^b|f(x)g(x)|\,dx
                             \leqslant\norm{f}_p\norm{g}_q
                      \end{equation*}
+              \vfill\null\columnbreak
        \subsection{Das unbestimmte Integral}
+                     \begin{equation*}
+                            (*) \quad
+                            Q(x)=\prod_{j=1}^l
+                            ((x-\alpha_j)^2+\beta_j^2)^{m_j}
+                            \prod_{i=1}^k
+                            (x-\gamma_i)^{n_i}
+                     \end{equation*}
               \colorbox{magenta}{Satz 5.9.3} 
                      Seien \textcolor{NavyBlue}{$P,Q$} 
-                     \textbf{Polynome} mit 
+                     \textbf{Polynome} mit \\
                      \textcolor{NavyBlue}{
                      $\operatorname{grad}(P)
                      <\operatorname{grad}(Q)$} und 
@@ -3077,7 +3172,7 @@
                             \frac{(A_{ij}+B_{ij}x)}{((x-a_i)^2
                             +\beta_i^2)^j}
                             +\sum_{i=1}^k\sum_{j=1}^{n_i}
-                            \frac{C_{ij}}{x-\gamma_i)^j}
+                            \frac{C_{ij}}{(x-\gamma_i)^j}
                      \end{equation*}
 
 
@@ -3204,13 +3299,13 @@
               \end{equation*}
               \textbf{Tangensfunktion} für 
               \textcolor{NavyBlue}{
-              $z\notin\frac{\pi}{2}+\pi\cdot\mathbb{Z}$}:
+              $z\notin\frac{\pi}{2}+\pi\cdot\Z$}:
               \begin{equation*}
                      \tan z=\frac{\sin z}{\cos z}
               \end{equation*}
               \textbf{Cotangensfunktion} für
               \textcolor{NavyBlue}{
-              $z\notin\pi\cdot\mathbb{Z}$}:
+              $z\notin\pi\cdot\Z$}:
               \begin{equation*}
                      \cot z=\frac{\cos z}{\sin z}
               \end{equation*}
@@ -3318,24 +3413,35 @@ $\operatorname{artanh}'y=\frac{1}{1-y^2}\quad\forall y\in]-1,1[$
 
 
 \subsection{Integrale}
-$\int x^s\,dx=\frac{x^{s+1}}{s+1}+C\quad s\neq-1$\qquad
-                $\int x^s\,dx=\ln x+C\quad s=-1$\\
+$\int x^s\,dx=\frac{x^{s+1}}{s+1}+C\quad s\neq-1$\\
+$\int x^s\,dx=\ln x+C\quad s=-1$\\
 $\int\sin x\,dx=-\cos x+C$\\
 $\int\cos x\,dx=\sin x+C$\\
+$\int\tan x\,dx=-\ln|\cos x|+C\qquad 
+       x\neq k\pi+\frac{\pi}{2},\,k\in\Z$\\
+$\int\frac{1}{cos^2x}\,dx=\tan x+C\qquad\qquad\quad
+       x\neq k\pi+\frac{\pi}{2},\,k\in\Z$\\
 $\int\sinh x\,dx=\cosh x+C$\\
 $\int\cosh x\,dx=\sinh x+C$\\
 $\int\frac{1}{\sqrt{1-x^2}}\,dx=\arcsin x+C$\\
-$\int\frac{1}{\sqrt{1+x^2}}\,dx=\operatorname{arsinh} x+C$\\
+$\int\frac{-1}{\sqrt{1-x^2}}\,dx=\arccos x+C$\\
 $\int\frac{1}{1+x^2}\,dx=\arctan x+C$\\
-$\int\frac{1}{\sqrt{x^2-1}}\,dx=\operatorname{arcosh}+C$\\
+$\int\frac{1}{\sqrt{1+x^2}}\,dx=\operatorname{arcsinh} x+C$\\
+$\int\frac{1}{\sqrt{x^2-1}}\,dx=\operatorname{arccosh}+C$\\
 $\int e^x\,dx=e^x+C$\\
 $\int\ln x\,dx=x\ln x-x+C$ (verwende $\ln x=\ln x\cdot1$)\\
 $\int x\ln x\,dx=\frac{x^2}{2}\ln x-\frac{x^2}{4}+C$\\
 $\int x^2\sin x\,dx=-x^2\cos x+2x\sin x+2\cos x$\\
 $n\geqslant1\quad I_n=\int\sin^nx\,dx=-\frac{1}{n}\cos x\sin^{n-1}x
                 +\frac{n-1}{n}I_{n-2}$\\
-$\int(ax+b)^s\,dx=\frac{1}{a(s+1)}(ax+b)^{s+1}+C\quad s\neq1$\qquad
-                $\int(ax+b)^s\,dx=\frac{1}{a}\ln|ax+b|+C$
+$\int(ax+b)^s\,dx=\frac{1}{a(s+1)}(ax+b)^{s+1}+C\quad s\neq1$\\
+$\int(ax+b)^s\,dx=\frac{1}{a}\ln|ax+b|+C\quad s=1$\\
+$\int\frac{x}{1+x^2}\,dx=\frac{1}{2}\ln(1+x^2)+C$\\
+$\int\frac{x}{(1+x^2)^n}\,dx=\frac{-1}{2n-2}\cdot
+       \frac{1}{(1+x^2)^{n-1}}+C$\\
+$\int\frac{1}{(1+x^2)^n}\,dx=\frac{1}{2n-2}\cdot
+       \frac{x}{(1+x^2)^{n-1}}+\frac{2n-3}{2n-2}\cdot
+       \int\frac{1}{(1+x^2)^{n-1}}\,dx$\\
 
 % ln x 
 % arcsin x
@@ -3369,6 +3475,82 @@ $\cos x-\cos y=-2\sin\frac{x+y}{2}\sin\frac{x-y}{2}$\\
 $\sin x\sin y=\frac{1}{2}(\cos(x-y)-\cos(x+y))$\\
 $\cos x\cos y=\frac{1}{2}(\cos(x-y)+\cos(x+y))$\\
 $\sin x\cos y=\frac{1}{2}(\sin(x-y)+\sin(x+y))$
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+       \hline
+              $x$
+              & $\sin x$ 
+              & $\cos x$
+              & $\tan x$ \\
+       \hline
+              $0$
+              & $0$
+              & $1$
+              & $0$\\
+       \hline
+              $\frac{1}{6}\pi$
+              & $\frac{1}{2}$
+              & $\frac{\sqrt{3}}{2}$
+              & $\frac{1}{\sqrt{3}}$\\
+       \hline 
+              $\frac{1}{4}\pi$ 
+              & $\frac{1}{\sqrt{2}}$
+              & $\frac{1}{\sqrt{2}}$
+              & $1$ \\
+       \hline 
+              $\frac{1}{3}\pi$
+              & $\frac{\sqrt{3}}{2}$
+              & $\frac{1}{2}$
+              & $\sqrt{3}$ \\
+       \hline 
+              $\frac{1}{2}\pi$
+              & $1$
+              & $0$
+              & N/A \\
+       \hline 
+              $\frac{2}{3}\pi$
+              & $\frac{\sqrt{3}}{2}$
+              & $-\frac{1}{2}$
+              & $-\sqrt{3}$ \\
+       \hline 
+              $\frac{3}{4}\pi$
+              & $\frac{1}{\sqrt{2}}$
+              & $-\frac{1}{\sqrt{2}}$
+              & $-1$ \\
+       \hline 
+              $\frac{5}{6}\pi$
+              & $\frac{1}{\sqrt{2}}$
+              & $-\frac{\sqrt{3}}{2}$
+              & $-\frac{\sqrt{3}}{3}$ \\
+       \hline 
+              $\pi$
+              & $0$
+              & $-1$
+              & $0$\\
+       \hline 
+              $\frac{7}{6}\pi$
+              & $-\frac{1}{2}$
+              & $-\frac{\sqrt{3}}{2}$ 
+              & $\frac{\sqrt{3}}{3}$\\
+       \hline 
+              $\frac{5}{4}\pi$ 
+              & $-\frac{1}{\sqrt{2}}$
+              & $-\frac{1}{\sqrt{2}}$
+              & $1$ \\
+       \hline 
+              $\frac{4}{3}\pi$
+              & $-\frac{\sqrt{3}}{2}$
+              & $-\frac{1}{2}$
+              & $\sqrt{3}$ \\
+       \hline 
+              $\frac{3}{2}\pi$
+              & $-1$
+              & $0$
+              & N/A \\
+       \hline 
+\end{tabular}
+\end{center}
 
 \subsection{Grenzwerte}
 $\lim\limits_{x\to\infty}(1+\frac{x}{n})^n=e^x$\\
