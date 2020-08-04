@@ -2083,9 +2083,9 @@
                      \colorbox{SkyBlue}{(1)} 
                             \textcolor{NavyBlue}{$f$}
                             ist \textbf{konvex} (auf 
-                            \textcolor{NavyBlue}{$I$}), wenn 
-                            \textcolor{NavyBlue}{$\forall x$},
-                            \textcolor{NavyBlue}{$y\in I$},
+                            \textcolor{NavyBlue}{$I$}), wenn \\
+                            \textcolor{NavyBlue}{
+                            $\forall x,y\in I$},
                             \textcolor{NavyBlue}{$x\leqslant y$}
                             und 
                             \textcolor{NavyBlue}{$\lambda\in[0,1]$}
@@ -2098,8 +2098,8 @@
                      \colorbox{SkyBlue}{(2)} 
                             \textcolor{NavyBlue}{$f$} ist 
                             \textbf{streng konvex}, 
-                            wenn \textcolor{NavyBlue}{$\forall x$},
-                            \textcolor{NavyBlue}{$y\in I$},
+                            wenn \textcolor{NavyBlue}{
+                            $\forall x,y\in I$},
                             \textcolor{NavyBlue}{$x<y$}
                             und \textcolor{NavyBlue}{
                             $\lambda\in]0,1[$} 
@@ -2118,7 +2118,7 @@
                      \textcolor{NavyBlue}{$\{x_1,...,x_n\}
                      \subseteq I$} 
                      und \textcolor{NavyBlue}{
-                     $\lambda_1,...\lambda_n$} in 
+                     $\lambda_1,...,\lambda_n$} in 
                      \textcolor{NavyBlue}{$[0,1]$} mit 
                      \textcolor{NavyBlue}{
                      $\sum_{i=1}^n\lambda_i=1$}
@@ -3370,7 +3370,7 @@
               Also ist tanh auf \textcolor{NavyBlue}{$\R$} streng
               monoton wachsend und man zeigt, dass 
               \begin{align*}
-                     \lim\limits_{x\to+\infty}\tanh x=1\\
+                     \lim\limits_{x\to+\infty}\tanh x=1\qquad
                      \lim\limits_{x\to-\infty}\tanh x=-1.
               \end{align*}
               Die Funktion \textcolor{NavyBlue}{
@@ -3387,13 +3387,13 @@
                      =\frac{1}{1-y^2}\enspace
                      \forall y\in]-1,1[
               \end{equation*}
-
-
 \subsection{Ableitungen}
+\begin{multicols}{2}
 $(ax^z)'=azx^{z-1}$\\
-$(x^x)'=(e^{x\ln x})'=(\ln(x)+1)e^x$\\
+$(x^x)'=(e^{x\ln x})'\\
+       =(\ln(x)+1)e^x$\\
 $(x\ln x)'=\ln(x)+1$\\
-$e'^x=e^x$\\
+$(e^x)'=e^x$\\
 $\sin'x=\cos x$\\
 $\cos'x=-\sin x$\\
 $\tan'x=\frac{1}{\cos^2x}$\\
@@ -3406,11 +3406,14 @@ $\sinh'x=\cosh x$\\
 $\cosh'x=\sinh x$\\
 $\tanh'x=\frac{1}{\cosh^2x}$\\
 $\operatorname{arsinh}'y
-        =\frac{1}{\sqrt{1+y^2}}\quad\forall y\in\R$\\
+        =\frac{1}{\sqrt{1+y^2}}\\
+        \forall y\in\R$\\
 $\operatorname{arcosh'y}
-        =\frac{1}{\sqrt{y^2-1}}\quad\forall y\in]1,+\infty[$\\
-$\operatorname{artanh}'y=\frac{1}{1-y^2}\quad\forall y\in]-1,1[$
-
+        =\frac{1}{\sqrt{y^2-1}}\\
+        \forall y\in]1,+\infty[$\\
+$\operatorname{artanh}'y=\frac{1}{1-y^2}\\
+       \forall y\in]-1,1[$
+\end{multicols}
 
 \subsection{Integrale}
 $\int x^s\,dx=\frac{x^{s+1}}{s+1}+C\quad s\neq-1$\\
@@ -3419,10 +3422,27 @@ $\int\sin x\,dx=-\cos x+C$\\
 $\int\cos x\,dx=\sin x+C$\\
 $\int\tan x\,dx=-\ln|\cos x|+C\qquad 
        x\neq k\pi+\frac{\pi}{2},\,k\in\Z$\\
+$\int \sin^n x \, dx 
+       = - \frac{\sin^{n-1} {x} \cos {x}}{n} 
+       + \frac{n-1}{n} 
+       \int \sin^{n-2}{x} \, dx$\\
+$\int \cos^n x \, dx
+       = \frac{\cos^{n-1} {x} \sin {x}}{n} 
+       + \frac{n-1}{n} 
+       \int \cos^{n-2}{x} \, dx$\\
+$\int \arcsin{x} \, dx 
+       = x \arcsin{x} + \sqrt{1 - x^2} + C$\\
+$\int \arccos{x} \, dx 
+       = x \arccos{x} - \sqrt{1 - x^2} + C$\\
+$\int \arctan{x} \, dx 
+       = x \arctan{x} 
+       - \frac{1}{2} 
+       \ln { \vert 1 + x^2 \vert } + C$\\
 $\int\frac{1}{cos^2x}\,dx=\tan x+C\qquad\qquad\quad
        x\neq k\pi+\frac{\pi}{2},\,k\in\Z$\\
 $\int\sinh x\,dx=\cosh x+C$\\
 $\int\cosh x\,dx=\sinh x+C$\\
+$\int \tanh x \, dx = \ln \cosh x + C$\\
 $\int\frac{1}{\sqrt{1-x^2}}\,dx=\arcsin x+C$\\
 $\int\frac{-1}{\sqrt{1-x^2}}\,dx=\arccos x+C$\\
 $\int\frac{1}{1+x^2}\,dx=\arctan x+C$\\
@@ -3432,8 +3452,8 @@ $\int e^x\,dx=e^x+C$\\
 $\int\ln x\,dx=x\ln x-x+C$ (verwende $\ln x=\ln x\cdot1$)\\
 $\int x\ln x\,dx=\frac{x^2}{2}\ln x-\frac{x^2}{4}+C$\\
 $\int x^2\sin x\,dx=-x^2\cos x+2x\sin x+2\cos x$\\
-$n\geqslant1\quad I_n=\int\sin^nx\,dx=-\frac{1}{n}\cos x\sin^{n-1}x
-                +\frac{n-1}{n}I_{n-2}$\\
+% $n\geqslant1\quad I_n=\int\sin^nx\,dx=-\frac{1}{n}\cos x\sin^{n-1}x
+%                 +\frac{n-1}{n}I_{n-2}$\\
 $\int(ax+b)^s\,dx=\frac{1}{a(s+1)}(ax+b)^{s+1}+C\quad s\neq1$\\
 $\int(ax+b)^s\,dx=\frac{1}{a}\ln|ax+b|+C\quad s=1$\\
 $\int\frac{x}{1+x^2}\,dx=\frac{1}{2}\ln(1+x^2)+C$\\
@@ -3442,6 +3462,12 @@ $\int\frac{x}{(1+x^2)^n}\,dx=\frac{-1}{2n-2}\cdot
 $\int\frac{1}{(1+x^2)^n}\,dx=\frac{1}{2n-2}\cdot
        \frac{x}{(1+x^2)^{n-1}}+\frac{2n-3}{2n-2}\cdot
        \int\frac{1}{(1+x^2)^{n-1}}\,dx$\\
+$\int \cos ax\, e^{bx}\, dx 
+       = \frac{e^{bx}}{a^2+b^2}
+       \left( a\sin ax + b\cos ax \right) + C$\\
+$\int \sin ax\, e^{bx}\, dx 
+       = \frac{e^{bx}}{a^2+b^2}
+       \left( b\sin ax - a\cos ax \right) + C$\\
 
 % ln x 
 % arcsin x
@@ -3476,6 +3502,38 @@ $\sin x\sin y=\frac{1}{2}(\cos(x-y)-\cos(x+y))$\\
 $\cos x\cos y=\frac{1}{2}(\cos(x-y)+\cos(x+y))$\\
 $\sin x\cos y=\frac{1}{2}(\sin(x-y)+\sin(x+y))$
 
+\subsection{Grenzwerte}
+$\lim\limits_{x\to\infty}(1+\frac{x}{n})^n=e^x$\\
+$\forall\alpha\in\R\quad\lim\limits_{x\to\infty}\sqrt[n]{n^\alpha}=1$\\
+$\lim\limits_{x\to\infty}\sqrt[n]{n!}=\infty$\\
+$\forall\alpha\in\R,\,|q|<1\quad\lim\limits_{x\to\infty}n^\alpha\cdot q^n=0$\\
+$\lim\limits_{x\to c}x^{\frac{1}{a}}=c^{\frac{1}{a}}$ \\
+$\lim\limits_{x\to\infty} x^{\frac{1}{a}}
+       =\lim\limits_{x\to\infty}\sqrt[a]{x}
+       = \infty \text{ for any } a > 0 $\\
+$\lim\limits_{x\to\infty}\sqrt[x]{a}
+       =\lim\limits_{x\to\infty}{a}^{\frac{1}{x}}=
+       \begin{cases} 1, & a > 0 \\ 0, & a 
+       = 0 \\ \text{does not exist}, 
+       & a < 0 \end{cases}$\\
+$\lim\limits_{x \to 0^+} x^{-n} 
+       =\lim\limits_{x \to 0^+} 
+       \frac{1}{x^n}= +\infty$\\
+$\lim\limits_{x \to 0^-} x^{-n} 
+       =\lim\limits_{x \to 0^-} \frac{1}{x^n} 
+       =\begin{cases} -\infty, & 
+       \text{if } n \text{ is odd} \\ 
+       +\infty, & \text{if } n 
+       \text{ is even}\end{cases}$\\
+$\lim\limits_{x\to\infty} ax^{-1}
+       =\lim\limits_{x\to\infty}\frac{a}{x}=0 
+       \text{ for any real }a$\\
+$\lim\limits_{n\to\infty} \frac{n}{\sqrt[n]{n!}}=e$\\
+$\lim\limits_{n\to\infty}\left(n!\right)^{\frac{1}{n}}=\infty$
+       (Consider: $e^x\geq \frac{x^n}{n!} \text{ at }
+       x=n$)\\
+
+\subsection{Sinus, Kosinus, Tangens}
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
        \hline
@@ -3552,12 +3610,5 @@ $\sin x\cos y=\frac{1}{2}(\sin(x-y)+\sin(x+y))$
 \end{tabular}
 \end{center}
 
-\subsection{Grenzwerte}
-$\lim\limits_{x\to\infty}(1+\frac{x}{n})^n=e^x$\\
-$\forall\alpha\in\R\quad\lim\limits_{x\to\infty}\sqrt[n]{n^\alpha}=1$\\
-$\lim\limits_{x\to\infty}\sqrt[n]{n!}=\infty$\\
-$\forall\alpha\in\R,\,|q|<1\quad\lim\limits_{x\to\infty}n^\alpha\cdot q^n=0$\\
-$\lim\limits_{x\to0}\sqrt[x]x=...$\\
-$\lim\limits_{x\to0}x^x=...$\\
 \end{multicols}
 \end{document}
