@@ -1,13 +1,7 @@
 # Fdb version 3
-<<<<<<< HEAD
-["pdflatex"] 1596046992 "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.tex" "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.pdf" "summary" 1596046993
-  "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.aux" 1596046993 4872 38283250d5ba5fdc9cb457cb0ea9a41a ""
-  "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.tex" 1596046990 171494 75d8e2aa62142724a0ae898488de7386 ""
-=======
-["pdflatex"] 1595704010 "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.tex" "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.pdf" "summary" 1595704013
-  "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.aux" 1595704013 619 0e9ef1388f54d3e84ce57b5dd183e366 ""
-  "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.tex" 1595704004 116664 2c9028245e55670c61dedd1a5a0f3f97 ""
->>>>>>> master
+["pdflatex"] 1596539995 "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.tex" "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.pdf" "summary" 1596539997
+  "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.aux" 1596539997 4870 52142c669fe6a92d11d2e595572fcebf ""
+  "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.tex" 1596539993 178835 9c2fd41d01d7c3299b8a08b05b8ff7b6 ""
   "c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc" 1592590909 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1592591937 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm" 1592595977 2532 9ad73cf4dd2173a847f2a5f5608e0b9a ""
@@ -93,21 +87,11 @@
   "c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1592598274 4893970 ca77e6d9335aab0bec73a6894477765b ""
   "c:/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1592598444 2434758 076c9d1a4510657c828fc8214e2e9a92 ""
   "c:/texlive/2020/texmf.cnf" 1592598233 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-<<<<<<< HEAD
-  "summary.aux" 1596046993 4872 38283250d5ba5fdc9cb457cb0ea9a41a "pdflatex"
-  "summary.tex" 1596046990 171494 75d8e2aa62142724a0ae898488de7386 ""
+  "summary.aux" 1596539997 4870 52142c669fe6a92d11d2e595572fcebf "pdflatex"
+  "summary.tex" 1596539993 178835 9c2fd41d01d7c3299b8a08b05b8ff7b6 ""
   (generated)
-  "summary.pdf"
-=======
-  "summary.aux" 1595704013 619 0e9ef1388f54d3e84ce57b5dd183e366 "pdflatex"
-  "summary.tex" 1595704004 116664 2c9028245e55670c61dedd1a5a0f3f97 ""
-  (generated)
->>>>>>> master
   "summary.log"
-  "summary.aux"
   "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.log"
-  "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.pdf"
-<<<<<<< HEAD
-=======
+  "summary.aux"
   "summary.pdf"
->>>>>>> master
+  "c:/Users/jonas/OneDrive/Documents/ETH/BP2/Analysis/exam summary analysis/summary tex/summary.pdf"
